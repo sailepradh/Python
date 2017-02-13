@@ -1,0 +1,736 @@
+#-* Category -*-# 
+>HORROR
+The Thing;1982;8.2;271166
+Alien;1979;8.5;590208
+Diabolique;1955;8.1;44157
+Psycho;1960;8.5;442250
+The Shining;1980;8.4;640611
+>CRIME
+North by Northwest;1959;8.4;228498
+On the Waterfront;1954;8.2;105342
+To Kill a Mockingbird;1962;8.3;225098
+La Haine;1995;8.1;108838
+Léon: The Professional;1994;8.6;760170
+The Green Mile;1999;8.5;826259
+Taxi Driver;1976;8.3;531584
+Se7en;1995;8.6;1072305
+Heat;1995;8.2;447658
+The Departed;2006;8.5;912797
+A Clockwork Orange;1971;8.3;583340
+Goodfellas;1990;8.7;760740
+Pulp Fiction;1994;8.9;1381242
+Reservoir Dogs;1992;8.4;695276
+Infernal Affairs;2002;8.1;95409
+Once Upon a Time in America;1984;8.4;231176
+The Sting;1973;8.3;183256
+The Silence of the Lambs;1991;8.6;932204
+Dog Day Afternoon;1975;8;189580
+The 400 Blows;1959;8.1;73437
+Kind Hearts and Coronets;1949;8.1;28373
+L.A. Confidential;1997;8.3;429419
+The Godfather: Part II;1974;9;827593
+Touch of Evil;1958;8.1;75968
+Rashomon;1950;8.3;107597
+Strangers on a Train;1951;8.1;100824
+Fargo;1996;8.1;474405
+Hera Pheri;2000;8.4;34924
+Gangs of Wasseypur;2012;8.3;50415
+Sin City;2005;8;676040
+Lock, Stock and Two Smoking Barrels;1998;8.2;430650
+Scarface;1983;8.3;560981
+Memories of Murder;2003;8.1;72658
+Casino;1995;8.2;348719
+Zootopia;2016;8.1;257837
+Gone Girl;2014;8.1;611887
+Kill Bill: Vol. 1;2003;8.1;766937
+The Godfather;1972;9.2;1204631
+Drishyam;2015;8.5;35866
+Butch Cassidy and the Sundance Kid;1969;8.1;158470
+The Usual Suspects;1995;8.6;773106
+The Dark Knight;2008;9;1746562
+The Shawshank Redemption;1994;9.3;1764021
+Dial M for Murder;1954;8.2;112121
+Diabolique;1955;8.1;44157
+No Country for Old Men;2007;8.1;641957
+Cool Hand Luke;1967;8.2;124406
+Snatch;2000;8.3;624505
+The Big Lebowski;1998;8.2;561909
+The Maltese Falcon;1941;8.1;117984
+The Wolf of Wall Street;2013;8.2;833168
+Prisoners;2013;8.1;412893
+12 Angry Men;1957;8.9;473922
+Double Indemnity;1944;8.4;102275
+City of God;2002;8.7;554498
+Witness for the Prosecution;1957;8.4;67404
+Catch Me If You Can;2002;8;563172
+Spotlight;2015;8.1;244793
+American History X;1998;8.6;815531
+A Wednesday;2008;8.4;47640
+M;1931;8.4;103343
+The Bandit;1996;8.5;38186
+>COMEDY
+The Gold Rush;1925;8.2;71379
+Up;2009;8.3;700599
+Toy Story;1995;8.3;654418
+La La Land;2016;8.6;122144
+Rang De Basanti;2006;8.3;76527
+City Lights;1931;8.6;114472
+Monty Python and the Holy Grail;1975;8.3;396712
+Groundhog Day;1993;8;456988
+The Sting;1973;8.3;183256
+Kind Hearts and Coronets;1949;8.1;28373
+Andaz Apna Apna;1994;8.4;36146
+Finding Nemo;2003;8.1;728936
+The Great Dictator;1940;8.5;145043
+Mary and Max;2009;8.2;125457
+The Grand Budapest Hotel;2014;8.1;510634
+Amélie;2001;8.4;557438
+Toy Story 3;2010;8.3;570493
+Hera Pheri;2000;8.4;34924
+Back to the Future;1985;8.5;769019
+It Happened One Night;1934;8.2;68141
+Lock, Stock and Two Smoking Barrels;1998;8.2;430650
+3 Idiots;2009;8.4;227144
+Munna Bhai M.B.B.S.;2003;8.3;47297
+Life Is Beautiful;1997;8.6;444161
+Zootopia;2016;8.1;257837
+How to Train Your Dragon;2010;8.2;509335
+Some Like It Hot;1959;8.3;182517
+The Intouchables;2011;8.6;537140
+Annie Hall;1977;8.1;202015
+Life of Brian;1979;8.1;283395
+Modern Times;1936;8.5;151346
+The Kid;1921;8.3;72321
+Dr. Strangelove or: How I Learned to Stop Worrying and Love the Bomb;1964;8.5;355976
+Mr. Smith Goes to Washington;1939;8.2;80532
+Wild Tales;2014;8.1;102622
+Monsters, Inc.;2001;8.1;615595
+Snatch;2000;8.3;624505
+Forrest Gump;1994;8.8;1316690
+Inside Out;2015;8.2;391109
+The Big Lebowski;1998;8.2;561909
+Singin' in the Rain;1952;8.3;158458
+Sholay;1975;8.4;35095
+The Truman Show;1998;8.1;700169
+The General;1926;8.2;56141
+The Wolf of Wall Street;2013;8.2;833168
+The Apartment;1960;8.3;114632
+>SPORT
+Dangal;2016;9;31801
+Warrior;2011;8.2;346667
+Rush;2013;8.1;329840
+Raging Bull;1980;8.2;244328
+Chak de! India;2007;8.3;52797
+Rocky;1976;8.1;394360
+Million Dollar Baby;2004;8.1;502673
+>MUSIC
+Like Stars on Earth;2007;8.5;95218
+Whiplash;2014;8.5;447502
+Amadeus;1984;8.3;282797
+>ANIMATION
+Up;2009;8.3;700599
+Toy Story;1995;8.3;654418
+Nausicaä of the Valley of the Wind;1984;8.1;101702
+Finding Nemo;2003;8.1;728936
+Mary and Max;2009;8.2;125457
+Toy Story 3;2010;8.3;570493
+Princess Mononoke;1997;8.4;234600
+Howl's Moving Castle;2004;8.2;226408
+My Neighbor Totoro;1988;8.2;184145
+Zootopia;2016;8.1;257837
+How to Train Your Dragon;2010;8.2;509335
+Grave of the Fireflies;1988;8.5;147933
+WALL·E;2008;8.4;754619
+The Lion King;1994;8.5;678743
+Monsters, Inc.;2001;8.1;615595
+Inside Out;2015;8.2;391109
+Spirited Away;2001;8.6;443251
+>SCI-FI
+Nausicaä of the Valley of the Wind;1984;8.1;101702
+Aliens;1986;8.4;507592
+Inception;2010;8.8;1538265
+Blade Runner;1982;8.2;481024
+Eternal Sunshine of the Spotless Mind;2004;8.3;697740
+A Clockwork Orange;1971;8.3;583340
+Donnie Darko;2001;8.1;604668
+Star Wars: Episode V - The Empire Strikes Back;1980;8.8;880224
+Star Wars: Episode VII - The Force Awakens;2015;8.1;631606
+2001: A Space Odyssey;1968;8.3;447621
+Back to the Future;1985;8.5;769019
+The Terminator;1984;8;625340
+Star Wars: Episode VI - Return of the Jedi;1983;8.4;719490
+The Thing;1982;8.2;271166
+Twelve Monkeys;1995;8;479915
+Jurassic Park;1993;8.1;644931
+Metropolis;1927;8.3;117037
+WALL·E;2008;8.4;754619
+Alien;1979;8.5;590208
+The Matrix;1999;8.7;1269833
+The Prestige;2006;8.5;885833
+Terminator 2: Judgment Day;1991;8.5;774804
+The Truman Show;1998;8.1;700169
+Stalker;1979;8.1;72504
+Star Wars: Episode IV - A New Hope;1977;8.7;954081
+Mad Max: Fury Road;2015;8.1;604345
+Arrival;2016;8.2;157729
+Interstellar;2014;8.6;1001881
+>THRILLER
+North by Northwest;1959;8.4;228498
+On the Waterfront;1954;8.2;105342
+Aliens;1986;8.4;507592
+Léon: The Professional;1994;8.6;760170
+Inception;2010;8.8;1538265
+Se7en;1995;8.6;1072305
+Rebecca;1940;8.2;91114
+The Secret in Their Eyes;2009;8.2;139838
+Blade Runner;1982;8.2;481024
+Heat;1995;8.2;447658
+Die Hard;1988;8.2;616704
+The Departed;2006;8.5;912797
+Reservoir Dogs;1992;8.4;695276
+Donnie Darko;2001;8.1;604668
+The Great Escape;1963;8.2;172839
+Infernal Affairs;2002;8.1;95409
+Vertigo;1958;8.4;261277
+The Silence of the Lambs;1991;8.6;932204
+L.A. Confidential;1997;8.3;429419
+Touch of Evil;1958;8.1;75968
+Rear Window;1954;8.5;330299
+Yojimbo;1961;8.3;77338
+Amores Perros;2000;8.1;180028
+Strangers on a Train;1951;8.1;100824
+Fargo;1996;8.1;474405
+Hera Pheri;2000;8.4;34924
+Gangs of Wasseypur;2012;8.3;50415
+Sin City;2005;8;676040
+Jaws;1975;8;430742
+Memento;2000;8.5;881369
+Twelve Monkeys;1995;8;479915
+Persona;1966;8.1;65484
+Oldboy;2003;8.4;374424
+Memories of Murder;2003;8.1;72658
+The Wages of Fear;1953;8.2;37072
+Jurassic Park;1993;8.1;644931
+Das Boot;1981;8.4;174954
+V for Vendetta;2005;8.2;826742
+The Bourne Ultimatum;2007;8.1;513930
+Gone Girl;2014;8.1;611887
+Kill Bill: Vol. 1;2003;8.1;766937
+Drishyam;2015;8.5;35866
+The Usual Suspects;1995;8.6;773106
+The Dark Knight;2008;9;1746562
+The Lives of Others;2006;8.5;271113
+Shutter Island;2010;8.1;828690
+The Sixth Sense;1999;8.1;731507
+The Prestige;2006;8.5;885833
+Dial M for Murder;1954;8.2;112121
+Diabolique;1955;8.1;44157
+The Third Man;1949;8.3;118314
+No Country for Old Men;2007;8.1;641957
+Wild Tales;2014;8.1;102622
+Psycho;1960;8.5;442250
+Chinatown;1974;8.2;225512
+Sholay;1975;8.4;35095
+Prisoners;2013;8.1;412893
+Double Indemnity;1944;8.4;102275
+The Dark Knight Rises;2012;8.5;1192748
+Mad Max: Fury Road;2015;8.1;604345
+Witness for the Prosecution;1957;8.4;67404
+A Wednesday;2008;8.4;47640
+M;1931;8.4;103343
+Arrival;2016;8.2;157729
+The Bandit;1996;8.5;38186
+>HISTORY
+The Passion of Joan of Arc;1928;8.3;27632
+Rang De Basanti;2006;8.3;76527
+Hotel Rwanda;2004;8.1;274607
+Downfall;2004;8.3;258641
+Gone with the Wind;1939;8.2;223733
+The Great Escape;1963;8.2;172839
+Braveheart;1995;8.4;767294
+Schindler's List;1993;8.9;904301
+The Message;1976;8.3;34090
+The Grapes of Wrath;1940;8.1;65987
+Gandhi;1982;8.1;178716
+Lawrence of Arabia;1962;8.3;201193
+Hacksaw Ridge;2016;8.4;68782
+Barry Lyndon;1975;8.1;106406
+12 Years a Slave;2013;8.1;467815
+Ben-Hur;1959;8.1;168940
+Spotlight;2015;8.1;244793
+Amadeus;1984;8.3;282797
+>ACTION
+North by Northwest;1959;8.4;228498
+Aliens;1986;8.4;507592
+Inception;2010;8.8;1538265
+Heat;1995;8.2;447658
+Die Hard;1988;8.2;616704
+Warrior;2011;8.2;346667
+Batman Begins;2005;8.3;1022985
+Dog Day Afternoon;1975;8;189580
+Rush;2013;8.1;329840
+Star Wars: Episode V - The Empire Strikes Back;1980;8.8;880224
+Yojimbo;1961;8.3;77338
+Indiana Jones and the Last Crusade;1989;8.3;537998
+Star Wars: Episode VII - The Force Awakens;2015;8.1;631606
+Gangs of Wasseypur;2012;8.3;50415
+Ran;1985;8.2;81110
+The Terminator;1984;8;625340
+Star Wars: Episode VI - Return of the Jedi;1983;8.4;719490
+Raiders of the Lost Ark;1981;8.5;688275
+Gladiator;2000;8.5;1026108
+How to Train Your Dragon;2010;8.2;509335
+V for Vendetta;2005;8.2;826742
+The Bourne Ultimatum;2007;8.1;513930
+Kill Bill: Vol. 1;2003;8.1;766937
+The Dark Knight;2008;9;1746562
+The Matrix;1999;8.7;1269833
+Terminator 2: Judgment Day;1991;8.5;774804
+Sholay;1975;8.4;35095
+The General;1926;8.2;56141
+The Dark Knight Rises;2012;8.5;1192748
+Star Wars: Episode IV - A New Hope;1977;8.7;954081
+Mad Max: Fury Road;2015;8.1;604345
+>FAMILY
+The Gold Rush;1925;8.2;71379
+Up;2009;8.3;700599
+Toy Story;1995;8.3;654418
+Like Stars on Earth;2007;8.5;95218
+The Princess Bride;1987;8.1;305899
+The Wizard of Oz;1939;8.1;303104
+Andaz Apna Apna;1994;8.4;36146
+Finding Nemo;2003;8.1;728936
+Toy Story 3;2010;8.3;570493
+Howl's Moving Castle;2004;8.2;226408
+My Neighbor Totoro;1988;8.2;184145
+Chak de! India;2007;8.3;52797
+Children of Heaven;1997;8.4;32148
+Zootopia;2016;8.1;257837
+How to Train Your Dragon;2010;8.2;509335
+WALL·E;2008;8.4;754619
+Modern Times;1936;8.5;151346
+The Kid;1921;8.3;72321
+The Lion King;1994;8.5;678743
+Monsters, Inc.;2001;8.1;615595
+Inside Out;2015;8.2;391109
+It's a Wonderful Life;1946;8.6;291406
+Hachi: A Dog's Tale;2009;8.1;169226
+Spirited Away;2001;8.6;443251
+>ROMANCE
+Before Sunrise;1995;8.1;193539
+La La Land;2016;8.6;122144
+Rebecca;1940;8.2;91114
+The Princess Bride;1987;8.1;305899
+Rang De Basanti;2006;8.3;76527
+City Lights;1931;8.6;114472
+Sunrise;1927;8.3;31205
+Eternal Sunshine of the Spotless Mind;2004;8.3;697740
+American Beauty;1999;8.4;855936
+Gone with the Wind;1939;8.2;223733
+Groundhog Day;1993;8;456988
+Vertigo;1958;8.4;261277
+Andaz Apna Apna;1994;8.4;36146
+Wild Strawberries;1957;8.2;66066
+Amélie;2001;8.4;557438
+It Happened One Night;1934;8.2;68141
+Munna Bhai M.B.B.S.;2003;8.3;47297
+Some Like It Hot;1959;8.3;182517
+Annie Hall;1977;8.1;202015
+Casablanca;1942;8.6;403031
+Modern Times;1936;8.5;151346
+Singin' in the Rain;1952;8.3;158458
+The Best Years of Our Lives;1946;8.1;41977
+The Apartment;1960;8.3;114632
+>WESTERN
+For a Few Dollars More;1965;8.3;165646
+Unforgiven;1992;8.3;289064
+The Treasure of the Sierra Madre;1948;8.3;82542
+Once Upon a Time in the West;1968;8.6;225926
+The Good, the Bad and the Ugly;1966;8.9;524578
+Butch Cassidy and the Sundance Kid;1969;8.1;158470
+Django Unchained;2012;8.4;1006690
+The General;1926;8.2;56141
+>HISTORICAL
+There Will Be Blood;2007;8.1;390442
+>MYSTERY
+North by Northwest;1959;8.4;228498
+Citizen Kane;1941;8.4;309411
+The Green Mile;1999;8.5;826259
+Se7en;1995;8.6;1072305
+Rebecca;1940;8.2;91114
+The Secret in Their Eyes;2009;8.2;139838
+A Separation;2011;8.4;159676
+Infernal Affairs;2002;8.1;95409
+Incendies;2010;8.2;88113
+Vertigo;1958;8.4;261277
+L.A. Confidential;1997;8.3;429419
+Rear Window;1954;8.5;330299
+Rashomon;1950;8.3;107597
+2001: A Space Odyssey;1968;8.3;447621
+The Thing;1982;8.2;271166
+Harry Potter and the Deathly Hallows: Part 2;2011;8.1;572387
+Memento;2000;8.5;881369
+Twelve Monkeys;1995;8;479915
+Oldboy;2003;8.4;374424
+Memories of Murder;2003;8.1;72658
+Zootopia;2016;8.1;257837
+The Bourne Ultimatum;2007;8.1;513930
+Gone Girl;2014;8.1;611887
+Drishyam;2015;8.5;35866
+The Usual Suspects;1995;8.6;773106
+Shutter Island;2010;8.1;828690
+The Sixth Sense;1999;8.1;731507
+The Prestige;2006;8.5;885833
+Diabolique;1955;8.1;44157
+The Third Man;1949;8.3;118314
+Psycho;1960;8.5;442250
+The Big Lebowski;1998;8.2;561909
+Chinatown;1974;8.2;225512
+The Maltese Falcon;1941;8.1;117984
+Prisoners;2013;8.1;412893
+Double Indemnity;1944;8.4;102275
+Witness for the Prosecution;1957;8.4;67404
+Spirited Away;2001;8.6;443251
+A Wednesday;2008;8.4;47640
+M;1931;8.4;103343
+Arrival;2016;8.2;157729
+>WAR
+Paths of Glory;1957;8.5;126807
+Full Metal Jacket;1987;8.3;507622
+Hotel Rwanda;2004;8.1;274607
+Downfall;2004;8.3;258641
+Gone with the Wind;1939;8.2;223733
+The Great Escape;1963;8.2;172839
+Braveheart;1995;8.4;767294
+Incendies;2010;8.2;88113
+Judgment at Nuremberg;1961;8.3;47136
+Platoon;1986;8.1;302952
+The Great Dictator;1940;8.5;145043
+Apocalypse Now;1979;8.5;468111
+The Message;1976;8.3;34090
+The Battle of Algiers;1966;8.1;39445
+The Bridge on the River Kwai;1957;8.2;156066
+Lawrence of Arabia;1962;8.3;201193
+Life Is Beautiful;1997;8.6;444161
+Hacksaw Ridge;2016;8.4;68782
+The Pianist;2002;8.5;524953
+Das Boot;1981;8.4;174954
+Barry Lyndon;1975;8.1;106406
+Grave of the Fireflies;1988;8.5;147933
+Casablanca;1942;8.6;403031
+Come and See;1985;8.3;28358
+Pan's Labyrinth;2006;8.2;486909
+Saving Private Ryan;1998;8.6;923719
+The General;1926;8.2;56141
+The Best Years of Our Lives;1946;8.1;41977
+Inglourious Basterds;2009;8.3;930341
+The Deer Hunter;1978;8.2;242145
+>DRAMA
+Paths of Glory;1957;8.5;126807
+The Gold Rush;1925;8.2;71379
+The Passion of Joan of Arc;1928;8.3;27632
+On the Waterfront;1954;8.2;105342
+In the Name of the Father;1993;8.1;115523
+To Kill a Mockingbird;1962;8.3;225098
+The Elephant Man;1980;8.2;168822
+Before Sunrise;1995;8.1;193539
+La Haine;1995;8.1;108838
+Full Metal Jacket;1987;8.3;507622
+Léon: The Professional;1994;8.6;760170
+The Nights of Cabiria;1957;8.2;27720
+Citizen Kane;1941;8.4;309411
+The Green Mile;1999;8.5;826259
+La La Land;2016;8.6;122144
+Unforgiven;1992;8.3;289064
+Taxi Driver;1976;8.3;531584
+Se7en;1995;8.6;1072305
+Rebecca;1940;8.2;91114
+Manchester by the Sea;2016;8.3;30517
+The Secret in Their Eyes;2009;8.2;139838
+Like Stars on Earth;2007;8.5;95218
+There Will Be Blood;2007;8.1;390442
+The Treasure of the Sierra Madre;1948;8.3;82542
+Whiplash;2014;8.5;447502
+Rang De Basanti;2006;8.3;76527
+Hotel Rwanda;2004;8.1;274607
+City Lights;1931;8.6;114472
+Heat;1995;8.2;447658
+Tokyo Story;1953;8.3;29202
+Sunrise;1927;8.3;31205
+Eternal Sunshine of the Spotless Mind;2004;8.3;697740
+The Departed;2006;8.5;912797
+Dangal;2016;9;31801
+A Clockwork Orange;1971;8.3;583340
+Goodfellas;1990;8.7;760740
+Pulp Fiction;1994;8.9;1381242
+Reservoir Dogs;1992;8.4;695276
+Warrior;2011;8.2;346667
+A Separation;2011;8.4;159676
+Gran Torino;2008;8.2;583010
+American Beauty;1999;8.4;855936
+Downfall;2004;8.3;258641
+Donnie Darko;2001;8.1;604668
+Gone with the Wind;1939;8.2;223733
+The Great Escape;1963;8.2;172839
+Braveheart;1995;8.4;767294
+Into the Wild;2007;8.2;446769
+The Lord of the Rings: The Two Towers;2002;8.7;1147707
+Infernal Affairs;2002;8.1;95409
+Incendies;2010;8.2;88113
+The Hunt;2012;8.3;183833
+Judgment at Nuremberg;1961;8.3;47136
+Once Upon a Time in America;1984;8.4;231176
+The Sting;1973;8.3;183256
+The Silence of the Lambs;1991;8.6;932204
+Dog Day Afternoon;1975;8;189580
+The 400 Blows;1959;8.1;73437
+Trainspotting;1996;8.2;492707
+Platoon;1986;8.1;302952
+L.A. Confidential;1997;8.3;429419
+Cinema Paradiso;1988;8.5;160634
+Wild Strawberries;1957;8.2;66066
+The Godfather: Part II;1974;9;827593
+The Great Dictator;1940;8.5;145043
+Touch of Evil;1958;8.1;75968
+Good Will Hunting;1997;8.3;635909
+Mary and Max;2009;8.2;125457
+Rush;2013;8.1;329840
+Raging Bull;1980;8.2;244328
+Ikiru;1952;8.3;44608
+The Grand Budapest Hotel;2014;8.1;510634
+Schindler's List;1993;8.9;904301
+Rashomon;1950;8.3;107597
+Yojimbo;1961;8.3;77338
+One Flew Over the Cuckoo's Nest;1975;8.7;707648
+My Father and My Son;2005;8.6;41705
+8½;1963;8.1;82008
+The Lord of the Rings: The Fellowship of the Ring;2001;8.8;1288700
+Amores Perros;2000;8.1;180028
+Apocalypse Now;1979;8.5;468111
+Fight Club;1999;8.8;1410072
+The Message;1976;8.3;34090
+The Lord of the Rings: The Return of the King;2003;8.9;1266795
+Fargo;1996;8.1;474405
+The Seventh Seal;1957;8.2;116936
+The Battle of Algiers;1966;8.1;39445
+Gangs of Wasseypur;2012;8.3;50415
+Ran;1985;8.2;81110
+Seven Samurai;1954;8.7;238665
+Room;2015;8.2;202512
+Scarface;1983;8.3;560981
+The Bridge on the River Kwai;1957;8.2;156066
+The Grapes of Wrath;1940;8.1;65987
+Gandhi;1982;8.1;178716
+Gladiator;2000;8.5;1026108
+Jaws;1975;8;430742
+Requiem for a Dream;2000;8.4;597979
+Harry Potter and the Deathly Hallows: Part 2;2011;8.1;572387
+3 Idiots;2009;8.4;227144
+Munna Bhai M.B.B.S.;2003;8.3;47297
+Lawrence of Arabia;1962;8.3;201193
+Persona;1966;8.1;65484
+Life Is Beautiful;1997;8.6;444161
+Oldboy;2003;8.4;374424
+Memories of Murder;2003;8.1;72658
+The Help;2011;8.1;332836
+The Wages of Fear;1953;8.2;37072
+Chak de! India;2007;8.3;52797
+Casino;1995;8.2;348719
+Hacksaw Ridge;2016;8.4;68782
+Children of Heaven;1997;8.4;32148
+Stand by Me;1986;8.1;283747
+The Pianist;2002;8.5;524953
+Das Boot;1981;8.4;174954
+Barry Lyndon;1975;8.1;106406
+Metropolis;1927;8.3;117037
+V for Vendetta;2005;8.2;826742
+The Intouchables;2011;8.6;537140
+Grave of the Fireflies;1988;8.5;147933
+Gone Girl;2014;8.1;611887
+The Godfather;1972;9.2;1204631
+Drishyam;2015;8.5;35866
+Casablanca;1942;8.6;403031
+Butch Cassidy and the Sundance Kid;1969;8.1;158470
+A Beautiful Mind;2001;8.2;641971
+The Usual Suspects;1995;8.6;773106
+The Dark Knight;2008;9;1746562
+The Lives of Others;2006;8.5;271113
+12 Years a Slave;2013;8.1;467815
+The Sixth Sense;1999;8.1;731507
+The Shawshank Redemption;1994;9.3;1764021
+Modern Times;1936;8.5;151346
+The Prestige;2006;8.5;885833
+The Kid;1921;8.3;72321
+Come and See;1985;8.3;28358
+Ben-Hur;1959;8.1;168940
+Diabolique;1955;8.1;44157
+Rocky;1976;8.1;394360
+The Lion King;1994;8.5;678743
+Pan's Labyrinth;2006;8.2;486909
+No Country for Old Men;2007;8.1;641957
+Mr. Smith Goes to Washington;1939;8.2;80532
+Cool Hand Luke;1967;8.2;124406
+Wild Tales;2014;8.1;102622
+Million Dollar Baby;2004;8.1;502673
+Forrest Gump;1994;8.8;1316690
+Inside Out;2015;8.2;391109
+Saving Private Ryan;1998;8.6;923719
+Chinatown;1974;8.2;225512
+Django Unchained;2012;8.4;1006690
+It's a Wonderful Life;1946;8.6;291406
+Sholay;1975;8.4;35095
+The Truman Show;1998;8.1;700169
+The General;1926;8.2;56141
+The Best Years of Our Lives;1946;8.1;41977
+Udaan;2010;8.3;32675
+Hachi: A Dog's Tale;2009;8.1;169226
+The Wolf of Wall Street;2013;8.2;833168
+Prisoners;2013;8.1;412893
+12 Angry Men;1957;8.9;473922
+Double Indemnity;1944;8.4;102275
+City of God;2002;8.7;554498
+Stalker;1979;8.1;72504
+All About Eve;1950;8.3;86295
+Sunset Blvd.;1950;8.5;145610
+Inglourious Basterds;2009;8.3;930341
+The Deer Hunter;1978;8.2;242145
+The Apartment;1960;8.3;114632
+Bicycle Thieves;1948;8.3;99571
+Witness for the Prosecution;1957;8.4;67404
+Catch Me If You Can;2002;8;563172
+Network;1976;8.1;108398
+Spotlight;2015;8.1;244793
+American History X;1998;8.6;815531
+Amadeus;1984;8.3;282797
+A Wednesday;2008;8.4;47640
+M;1931;8.4;103343
+Arrival;2016;8.2;157729
+The Bandit;1996;8.5;38186
+Interstellar;2014;8.6;1001881
+The Shining;1980;8.4;640611
+>FILM-NOIR
+Touch of Evil;1958;8.1;75968
+Strangers on a Train;1951;8.1;100824
+Dial M for Murder;1954;8.2;112121
+The Third Man;1949;8.3;118314
+The Maltese Falcon;1941;8.1;117984
+Double Indemnity;1944;8.4;102275
+Sunset Blvd.;1950;8.5;145610
+>BIOGRAPHY
+The Passion of Joan of Arc;1928;8.3;27632
+In the Name of the Father;1993;8.1;115523
+The Elephant Man;1980;8.2;168822
+Hotel Rwanda;2004;8.1;274607
+Dangal;2016;9;31801
+Goodfellas;1990;8.7;760740
+Downfall;2004;8.3;258641
+Braveheart;1995;8.4;767294
+Into the Wild;2007;8.2;446769
+Dog Day Afternoon;1975;8;189580
+Rush;2013;8.1;329840
+Raging Bull;1980;8.2;244328
+Schindler's List;1993;8.9;904301
+The Message;1976;8.3;34090
+Gandhi;1982;8.1;178716
+Lawrence of Arabia;1962;8.3;201193
+Casino;1995;8.2;348719
+The Pianist;2002;8.5;524953
+The Intouchables;2011;8.6;537140
+Butch Cassidy and the Sundance Kid;1969;8.1;158470
+A Beautiful Mind;2001;8.2;641971
+12 Years a Slave;2013;8.1;467815
+The Wolf of Wall Street;2013;8.2;833168
+Catch Me If You Can;2002;8;563172
+Amadeus;1984;8.3;282797
+>ADVENTURE
+The Gold Rush;1925;8.2;71379
+Up;2009;8.3;700599
+North by Northwest;1959;8.4;228498
+Toy Story;1995;8.3;654418
+Nausicaä of the Valley of the Wind;1984;8.1;101702
+Aliens;1986;8.4;507592
+Inception;2010;8.8;1538265
+The Treasure of the Sierra Madre;1948;8.3;82542
+The Princess Bride;1987;8.1;305899
+The Wizard of Oz;1939;8.1;303104
+Monty Python and the Holy Grail;1975;8.3;396712
+The Great Escape;1963;8.2;172839
+Into the Wild;2007;8.2;446769
+The Lord of the Rings: The Two Towers;2002;8.7;1147707
+Batman Begins;2005;8.3;1022985
+Finding Nemo;2003;8.1;728936
+Star Wars: Episode V - The Empire Strikes Back;1980;8.8;880224
+The Grand Budapest Hotel;2014;8.1;510634
+The Lord of the Rings: The Fellowship of the Ring;2001;8.8;1288700
+Indiana Jones and the Last Crusade;1989;8.3;537998
+Toy Story 3;2010;8.3;570493
+Star Wars: Episode VII - The Force Awakens;2015;8.1;631606
+The Message;1976;8.3;34090
+The Lord of the Rings: The Return of the King;2003;8.9;1266795
+2001: A Space Odyssey;1968;8.3;447621
+Back to the Future;1985;8.5;769019
+Star Wars: Episode VI - Return of the Jedi;1983;8.4;719490
+Seven Samurai;1954;8.7;238665
+Raiders of the Lost Ark;1981;8.5;688275
+Princess Mononoke;1997;8.4;234600
+The Bridge on the River Kwai;1957;8.2;156066
+Gladiator;2000;8.5;1026108
+Howl's Moving Castle;2004;8.2;226408
+Jaws;1975;8;430742
+Harry Potter and the Deathly Hallows: Part 2;2011;8.1;572387
+Lawrence of Arabia;1962;8.3;201193
+The Wages of Fear;1953;8.2;37072
+Jurassic Park;1993;8.1;644931
+Stand by Me;1986;8.1;283747
+Zootopia;2016;8.1;257837
+How to Train Your Dragon;2010;8.2;509335
+Das Boot;1981;8.4;174954
+Barry Lyndon;1975;8.1;106406
+WALL·E;2008;8.4;754619
+Ben-Hur;1959;8.1;168940
+The Lion King;1994;8.5;678743
+Monsters, Inc.;2001;8.1;615595
+Inside Out;2015;8.2;391109
+Sholay;1975;8.4;35095
+The General;1926;8.2;56141
+Star Wars: Episode IV - A New Hope;1977;8.7;954081
+Mad Max: Fury Road;2015;8.1;604345
+Inglourious Basterds;2009;8.3;930341
+Spirited Away;2001;8.6;443251
+Interstellar;2014;8.6;1001881
+>FANTASY
+Toy Story;1995;8.3;654418
+Nausicaä of the Valley of the Wind;1984;8.1;101702
+The Green Mile;1999;8.5;826259
+The Princess Bride;1987;8.1;305899
+The Wizard of Oz;1939;8.1;303104
+Monty Python and the Holy Grail;1975;8.3;396712
+Eternal Sunshine of the Spotless Mind;2004;8.3;697740
+Groundhog Day;1993;8;456988
+The Lord of the Rings: The Two Towers;2002;8.7;1147707
+Star Wars: Episode V - The Empire Strikes Back;1980;8.8;880224
+8½;1963;8.1;82008
+The Lord of the Rings: The Fellowship of the Ring;2001;8.8;1288700
+Indiana Jones and the Last Crusade;1989;8.3;537998
+Toy Story 3;2010;8.3;570493
+Star Wars: Episode VII - The Force Awakens;2015;8.1;631606
+The Lord of the Rings: The Return of the King;2003;8.9;1266795
+The Seventh Seal;1957;8.2;116936
+Star Wars: Episode VI - Return of the Jedi;1983;8.4;719490
+Princess Mononoke;1997;8.4;234600
+Howl's Moving Castle;2004;8.2;226408
+Harry Potter and the Deathly Hallows: Part 2;2011;8.1;572387
+My Neighbor Totoro;1988;8.2;184145
+How to Train Your Dragon;2010;8.2;509335
+Pan's Labyrinth;2006;8.2;486909
+Monsters, Inc.;2001;8.1;615595
+Inside Out;2015;8.2;391109
+It's a Wonderful Life;1946;8.6;291406
+Star Wars: Episode IV - A New Hope;1977;8.7;954081
+Spirited Away;2001;8.6;443251
+>MUSICAL
+La La Land;2016;8.6;122144
+The Wizard of Oz;1939;8.1;303104
+The Lion King;1994;8.5;678743
+Singin' in the Rain;1952;8.3;158458
+Sholay;1975;8.4;35095

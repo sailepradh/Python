@@ -1,0 +1,2015 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Uppsala Homes</title>
+    <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
+    <style>
+      #map { height: 100%; }
+      html, body { height: 100%; margin: 0; padding: 0; }
+    </style>
+  </head>
+  <body>
+    <div id="map"></div>
+    <script>
+
+      function initMap() {
+
+      //var centerIcon = { path: google.maps.SymbolPath.CIRCLE, strokeColor: "black", fillColor: "red", scale: 3 }
+      var centerIcon = "http://maps.google.com/mapfiles/ms/icons/blue-dot.png"
+      var greenMakerIcon = "https://mt.googleapis.com/vt/icon/name=icons/onion/61-green-dot.png"
+      var circleIcon = { path: google.maps.SymbolPath.CIRCLE, strokeColor: "red", scale: 2 }
+      // var circleIcon = "https://storage.googleapis.com/support-kms-prod/SNP_2752129_en_v0"
+      var map = new google.maps.Map(document.getElementById("map"),{ zoom: 12, center: {lat: 0, lng: 0 }});
+      var centerWindow = new google.maps.InfoWindow();
+      var center = new google.maps.Marker({ position: { lat: 0, lng: 0 }, map: map, title: "center", draggable:true, icon: centerIcon });
+      center.addListener('click',function(){ 
+          var p = center.getPosition();
+          centerWindow.setContent('Lat: '+p.lat()+' <br/> Lng: '+p.lng());
+          centerWindow.open(map,center);
+      });
+      var radius = new google.maps.Circle({ map: map, fillColor: '#f8cef9'});
+      radius.bindTo('center', center, 'position');
+map.setCenter({lat: 59.865795990339876, lng: 17.64583576202392 });
+center.setPosition({lat: 59.865795990339876, lng: 17.64583576202392 });
+radius.setRadius(2000);
+map.setZoom(14);
+var marker_45 = new google.maps.Marker({
+ position: { lat: 59.87093911, lng: 17.65907474 },
+ map: map,
+ title: "id: 45",
+ icon: circleIcon
+});
+var infowindow_45 = new google.maps.InfoWindow({ content: "<section><p>id: 45</p><p>type: Lägenhet</p><p>location: Gränby</p><p>address: Molngatan 27</p><p>date: 2016-02-18</p><p>asked_price: 1685000.0</p><p>price: 2100000.0</p><p>rooms: 2.0</p><p>area: 61.5</p><p>rent: 2811.0</p><p>latitude: 59.87093911</p><p>longitude: 17.65907474</p></section>" });
+google.maps.event.addListener(marker_45, 'click', function() { infowindow_45.open(map,marker_45); });
+
+var marker_75 = new google.maps.Marker({
+ position: { lat: 59.86423513, lng: 17.62280039 },
+ map: map,
+ title: "id: 75",
+ icon: circleIcon
+});
+var infowindow_75 = new google.maps.InfoWindow({ content: "<section><p>id: 75</p><p>type: Lägenhet</p><p>location: Luthagen</p><p>address: Geijersgatan 12A</p><p>date: 2016-02-11</p><p>asked_price: 2595000.0</p><p>price: 3050000.0</p><p>rooms: 2.0</p><p>area: 72.0</p><p>rent: 2794.0</p><p>latitude: 59.86423513</p><p>longitude: 17.62280039</p></section>" });
+google.maps.event.addListener(marker_75, 'click', function() { infowindow_75.open(map,marker_75); });
+
+var marker_79 = new google.maps.Marker({
+ position: { lat: 59.87085292, lng: 17.65881995 },
+ map: map,
+ title: "id: 79",
+ icon: circleIcon
+});
+var infowindow_79 = new google.maps.InfoWindow({ content: "<section><p>id: 79</p><p>type: Lägenhet</p><p>location: Gränby</p><p>address: Molngatan 29</p><p>date: 2016-02-11</p><p>asked_price: 1595000.0</p><p>price: 1920000.0</p><p>rooms: 2.0</p><p>area: 61.5</p><p>rent: 2860.0</p><p>latitude: 59.87085292</p><p>longitude: 17.65881995</p></section>" });
+google.maps.event.addListener(marker_79, 'click', function() { infowindow_79.open(map,marker_79); });
+
+var marker_183 = new google.maps.Marker({
+ position: { lat: 59.87677838, lng: 17.61816278 },
+ map: map,
+ title: "id: 183",
+ icon: circleIcon
+});
+var infowindow_183 = new google.maps.InfoWindow({ content: "<section><p>id: 183</p><p>type: Lägenhet</p><p>location: Tuna Backar</p><p>address: Väpnargatan 7C</p><p>date: 2016-01-29</p><p>asked_price: 1795000.0</p><p>price: 1930000.0</p><p>rooms: 2.0</p><p>area: 59.0</p><p>rent: 2689.0</p><p>latitude: 59.87677838</p><p>longitude: 17.61816278</p></section>" });
+google.maps.event.addListener(marker_183, 'click', function() { infowindow_183.open(map,marker_183); });
+
+var marker_193 = new google.maps.Marker({
+ position: { lat: 59.87474428, lng: 17.6483037 },
+ map: map,
+ title: "id: 193",
+ icon: circleIcon
+});
+var infowindow_193 = new google.maps.InfoWindow({ content: "<section><p>id: 193</p><p>type: Lägenhet</p><p>location: Bellman</p><p>address: Stagneliusgatan 13</p><p>date: 2016-01-28</p><p>asked_price: 1695000.0</p><p>price: 1935000.0</p><p>rooms: 2.0</p><p>area: 59.0</p><p>rent: 2471.0</p><p>latitude: 59.87474428</p><p>longitude: 17.6483037</p></section>" });
+google.maps.event.addListener(marker_193, 'click', function() { infowindow_193.open(map,marker_193); });
+
+var marker_234 = new google.maps.Marker({
+ position: { lat: 59.8620004, lng: 17.6224361 },
+ map: map,
+ title: "id: 234",
+ icon: circleIcon
+});
+var infowindow_234 = new google.maps.InfoWindow({ content: "<section><p>id: 234</p><p>type: Lägenhet</p><p>location: Främre Luthagen</p><p>address: Luthagsesplanaden 17A</p><p>date: 2016-01-24</p><p>asked_price: 2490000.0</p><p>price: 2610000.0</p><p>rooms: 2.0</p><p>area: 67.5</p><p>rent: 2399.0</p><p>latitude: 59.8620004</p><p>longitude: 17.6224361</p></section>" });
+google.maps.event.addListener(marker_234, 'click', function() { infowindow_234.open(map,marker_234); });
+
+var marker_292 = new google.maps.Marker({
+ position: { lat: 59.86016958, lng: 17.6421069 },
+ map: map,
+ title: "id: 292",
+ icon: circleIcon
+});
+var infowindow_292 = new google.maps.InfoWindow({ content: "<section><p>id: 292</p><p>type: Lägenhet</p><p>location: Centrum</p><p>address: Vaksalagatan 18B</p><p>date: 2016-01-16</p><p>asked_price: 2295000.0</p><p>price: 2600000.0</p><p>rooms: 2.0</p><p>area: 564.0</p><p>rent: 2737.0</p><p>latitude: 59.86016958</p><p>longitude: 17.6421069</p></section>" });
+google.maps.event.addListener(marker_292, 'click', function() { infowindow_292.open(map,marker_292); });
+
+var marker_298 = new google.maps.Marker({
+ position: { lat: 59.86399, lng: 17.6256924 },
+ map: map,
+ title: "id: 298",
+ icon: circleIcon
+});
+var infowindow_298 = new google.maps.InfoWindow({ content: "<section><p>id: 298</p><p>type: Lägenhet</p><p>location: Luthagen</p><p>address: Luthagsesplanaden 6B</p><p>date: 2016-01-16</p><p>asked_price: 2395000.0</p><p>price: 2395000.0</p><p>rooms: 2.0</p><p>area: 635.0</p><p>rent: 2338.0</p><p>latitude: 59.86399</p><p>longitude: 17.6256924</p></section>" });
+google.maps.event.addListener(marker_298, 'click', function() { infowindow_298.open(map,marker_298); });
+
+var marker_311 = new google.maps.Marker({
+ position: { lat: 59.87661444, lng: 17.61833245 },
+ map: map,
+ title: "id: 311",
+ icon: circleIcon
+});
+var infowindow_311 = new google.maps.InfoWindow({ content: "<section><p>id: 311</p><p>type: Lägenhet</p><p>location: Svartbäcken</p><p>address: Väpnargatan 7B</p><p>date: 2016-01-15</p><p>asked_price: 1750000.0</p><p>price: 1780000.0</p><p>rooms: 2.0</p><p>area: 59.0</p><p>rent: 2645.0</p><p>latitude: 59.87661444</p><p>longitude: 17.61833245</p></section>" });
+google.maps.event.addListener(marker_311, 'click', function() { infowindow_311.open(map,marker_311); });
+
+var marker_314 = new google.maps.Marker({
+ position: { lat: 59.8621599, lng: 17.67486696 },
+ map: map,
+ title: "id: 314",
+ icon: circleIcon
+});
+var infowindow_314 = new google.maps.InfoWindow({ content: "<section><p>id: 314</p><p>type: Lägenhet</p><p>location: Sala Backe</p><p>address: Murargatan 9</p><p>date: 2016-01-15</p><p>asked_price: 1895000.0</p><p>price: 2190000.0</p><p>rooms: 2.0</p><p>area: 62.5</p><p>rent: 2584.0</p><p>latitude: 59.8621599</p><p>longitude: 17.67486696</p></section>" });
+google.maps.event.addListener(marker_314, 'click', function() { infowindow_314.open(map,marker_314); });
+
+var marker_431 = new google.maps.Marker({
+ position: { lat: 59.866822, lng: 17.64858 },
+ map: map,
+ title: "id: 431",
+ icon: circleIcon
+});
+var infowindow_431 = new google.maps.InfoWindow({ content: "<section><p>id: 431</p><p>type: Lägenhet</p><p>location: Kvarngärdet</p><p>address: Kvarntorget 11</p><p>date: 2015-12-03</p><p>asked_price: 3175000.0</p><p>price: 3050000.0</p><p>rooms: 2.5</p><p>area: 86.0</p><p>rent: 2854.0</p><p>latitude: 59.866822</p><p>longitude: 17.64858</p></section>" });
+google.maps.event.addListener(marker_431, 'click', function() { infowindow_431.open(map,marker_431); });
+
+var marker_478 = new google.maps.Marker({
+ position: { lat: 59.8599156, lng: 17.652238 },
+ map: map,
+ title: "id: 478",
+ icon: circleIcon
+});
+var infowindow_478 = new google.maps.InfoWindow({ content: "<section><p>id: 478</p><p>type: Lägenhet</p><p>location: Fålhagen</p><p>address: Väderkvarnsgatan 42C</p><p>date: 2015-11-28</p><p>asked_price: 2895000.0</p><p>price: 3300000.0</p><p>rooms: 2.0</p><p>area: 67.0</p><p>rent: 2648.0</p><p>latitude: 59.8599156</p><p>longitude: 17.652238</p></section>" });
+google.maps.event.addListener(marker_478, 'click', function() { infowindow_478.open(map,marker_478); });
+
+var marker_506 = new google.maps.Marker({
+ position: { lat: 59.87040831, lng: 17.65915234 },
+ map: map,
+ title: "id: 506",
+ icon: circleIcon
+});
+var infowindow_506 = new google.maps.InfoWindow({ content: "<section><p>id: 506</p><p>type: Lägenhet</p><p>location: Gränby</p><p>address: Blixtgatan 15</p><p>date: 2015-11-24</p><p>asked_price: 1695000.0</p><p>price: 1770000.0</p><p>rooms: 2.0</p><p>area: 61.5</p><p>rent: 2811.0</p><p>latitude: 59.87040831</p><p>longitude: 17.65915234</p></section>" });
+google.maps.event.addListener(marker_506, 'click', function() { infowindow_506.open(map,marker_506); });
+
+var marker_531 = new google.maps.Marker({
+ position: { lat: 59.87210494, lng: 17.67315724 },
+ map: map,
+ title: "id: 531",
+ icon: circleIcon
+});
+var infowindow_531 = new google.maps.InfoWindow({ content: "<section><p>id: 531</p><p>type: Lägenhet</p><p>location: Salabacke</p><p>address: Källparksgatan 10B</p><p>date: 2015-11-20</p><p>asked_price: 1695000.0</p><p>price: 1815000.0</p><p>rooms: 2.5</p><p>area: 61.2</p><p>rent: 2751.0</p><p>latitude: 59.87210494</p><p>longitude: 17.67315724</p></section>" });
+google.maps.event.addListener(marker_531, 'click', function() { infowindow_531.open(map,marker_531); });
+
+var marker_532 = new google.maps.Marker({
+ position: { lat: 59.8654715, lng: 17.6566624 },
+ map: map,
+ title: "id: 532",
+ icon: circleIcon
+});
+var infowindow_532 = new google.maps.InfoWindow({ content: "<section><p>id: 532</p><p>type: Lägenhet</p><p>location: Fålhagen</p><p>address: Österängsgatan 22D</p><p>date: 2015-11-20</p><p>asked_price: 1995000.0</p><p>price: 2140000.0</p><p>rooms: 2.0</p><p>area: 67.4</p><p>rent: 2980.0</p><p>latitude: 59.8654715</p><p>longitude: 17.6566624</p></section>" });
+google.maps.event.addListener(marker_532, 'click', function() { infowindow_532.open(map,marker_532); });
+
+var marker_545 = new google.maps.Marker({
+ position: { lat: 59.86589, lng: 17.6674 },
+ map: map,
+ title: "id: 545",
+ icon: circleIcon
+});
+var infowindow_545 = new google.maps.InfoWindow({ content: "<section><p>id: 545</p><p>type: Lägenhet</p><p>location: Salabacke</p><p>address: Byggmästargatan 7A</p><p>date: 2015-11-20</p><p>asked_price: 1995000.0</p><p>price: 2020000.0</p><p>rooms: 2.0</p><p>area: 67.0</p><p>rent: 2929.0</p><p>latitude: 59.86589</p><p>longitude: 17.6674</p></section>" });
+google.maps.event.addListener(marker_545, 'click', function() { infowindow_545.open(map,marker_545); });
+
+var marker_560 = new google.maps.Marker({
+ position: { lat: 59.86167653, lng: 17.67412579 },
+ map: map,
+ title: "id: 560",
+ icon: circleIcon
+});
+var infowindow_560 = new google.maps.InfoWindow({ content: "<section><p>id: 560</p><p>type: Lägenhet</p><p>location: Salabacke</p><p>address: Murargatan 1</p><p>date: 2015-11-19</p><p>asked_price: 1890000.0</p><p>price: 2015000.0</p><p>rooms: 2.0</p><p>area: 63.0</p><p>rent: 2584.0</p><p>latitude: 59.86167653</p><p>longitude: 17.67412579</p></section>" });
+google.maps.event.addListener(marker_560, 'click', function() { infowindow_560.open(map,marker_560); });
+
+var marker_594 = new google.maps.Marker({
+ position: { lat: 59.8649715, lng: 17.6243922 },
+ map: map,
+ title: "id: 594",
+ icon: circleIcon
+});
+var infowindow_594 = new google.maps.InfoWindow({ content: "<section><p>id: 594</p><p>type: Lägenhet</p><p>location: Luthagen</p><p>address: Götgatan 22A</p><p>date: 2015-11-14</p><p>asked_price: 2250000.0</p><p>price: 2375000.0</p><p>rooms: 2.0</p><p>area: 60.0</p><p>rent: 2645.0</p><p>latitude: 59.8649715</p><p>longitude: 17.6243922</p></section>" });
+google.maps.event.addListener(marker_594, 'click', function() { infowindow_594.open(map,marker_594); });
+
+var marker_642 = new google.maps.Marker({
+ position: { lat: 59.87474428, lng: 17.6483037 },
+ map: map,
+ title: "id: 642",
+ icon: circleIcon
+});
+var infowindow_642 = new google.maps.InfoWindow({ content: "<section><p>id: 642</p><p>type: Lägenhet</p><p>location: Heidenstam</p><p>address: Stagneliusgatan 13</p><p>date: 2015-11-11</p><p>asked_price: 1700000.0</p><p>price: 1880000.0</p><p>rooms: 2.0</p><p>area: 65.5</p><p>rent: 2836.0</p><p>latitude: 59.87474428</p><p>longitude: 17.6483037</p></section>" });
+google.maps.event.addListener(marker_642, 'click', function() { infowindow_642.open(map,marker_642); });
+
+var marker_652 = new google.maps.Marker({
+ position: { lat: 59.86423513, lng: 17.62280039 },
+ map: map,
+ title: "id: 652",
+ icon: circleIcon
+});
+var infowindow_652 = new google.maps.InfoWindow({ content: "<section><p>id: 652</p><p>type: Lägenhet</p><p>location: Luthagen</p><p>address: Geijersgatan 12A</p><p>date: 2015-11-07</p><p>asked_price: 2095000.0</p><p>price: 2350000.0</p><p>rooms: 2.0</p><p>area: 64.5</p><p>rent: 2501.0</p><p>latitude: 59.86423513</p><p>longitude: 17.62280039</p></section>" });
+google.maps.event.addListener(marker_652, 'click', function() { infowindow_652.open(map,marker_652); });
+
+var marker_665 = new google.maps.Marker({
+ position: { lat: 59.86194957, lng: 17.67449813 },
+ map: map,
+ title: "id: 665",
+ icon: circleIcon
+});
+var infowindow_665 = new google.maps.InfoWindow({ content: "<section><p>id: 665</p><p>type: Lägenhet</p><p>location: Salabacke</p><p>address: Murargatan 5</p><p>date: 2015-11-06</p><p>asked_price: 1895000.0</p><p>price: 1910000.0</p><p>rooms: 2.0</p><p>area: 62.5</p><p>rent: 2584.0</p><p>latitude: 59.86194957</p><p>longitude: 17.67449813</p></section>" });
+google.maps.event.addListener(marker_665, 'click', function() { infowindow_665.open(map,marker_665); });
+
+var marker_667 = new google.maps.Marker({
+ position: { lat: 59.86565661, lng: 17.66822529 },
+ map: map,
+ title: "id: 667",
+ icon: circleIcon
+});
+var infowindow_667 = new google.maps.InfoWindow({ content: "<section><p>id: 667</p><p>type: Lägenhet</p><p>location: Salabacke</p><p>address: Byggmästargatan 9B</p><p>date: 2015-11-06</p><p>asked_price: 1650000.0</p><p>price: 1780000.0</p><p>rooms: 2.0</p><p>area: 63.0</p><p>rent: 2154.0</p><p>latitude: 59.86565661</p><p>longitude: 17.66822529</p></section>" });
+google.maps.event.addListener(marker_667, 'click', function() { infowindow_667.open(map,marker_667); });
+
+var marker_680 = new google.maps.Marker({
+ position: { lat: 59.87271446, lng: 17.67069141 },
+ map: map,
+ title: "id: 680",
+ icon: circleIcon
+});
+var infowindow_680 = new google.maps.InfoWindow({ content: "<section><p>id: 680</p><p>type: Lägenhet</p><p>location: Salabacke</p><p>address: Källparksgatan 2</p><p>date: 2015-11-04</p><p>asked_price: 1560000.0</p><p>price: 1730000.0</p><p>rooms: 2.0</p><p>area: 59.2</p><p>rent: 2574.0</p><p>latitude: 59.87271446</p><p>longitude: 17.67069141</p></section>" });
+google.maps.event.addListener(marker_680, 'click', function() { infowindow_680.open(map,marker_680); });
+
+var marker_701 = new google.maps.Marker({
+ position: { lat: 59.86343305, lng: 17.67877662 },
+ map: map,
+ title: "id: 701",
+ icon: circleIcon
+});
+var infowindow_701 = new google.maps.InfoWindow({ content: "<section><p>id: 701</p><p>type: Lägenhet</p><p>location: Salabacke</p><p>address: Murargatan 27</p><p>date: 2015-11-02</p><p>asked_price: 1850000.0</p><p>price: 1855000.0</p><p>rooms: 2.0</p><p>area: 64.3</p><p>rent: 2406.0</p><p>latitude: 59.86343305</p><p>longitude: 17.67877662</p></section>" });
+google.maps.event.addListener(marker_701, 'click', function() { infowindow_701.open(map,marker_701); });
+
+var marker_813 = new google.maps.Marker({
+ position: { lat: 59.8718941, lng: 17.6234662 },
+ map: map,
+ title: "id: 813",
+ icon: circleIcon
+});
+var infowindow_813 = new google.maps.InfoWindow({ content: "<section><p>id: 813</p><p>type: Lägenhet</p><p>location: Svartbäcken</p><p>address: Folkungagatan 8A</p><p>date: 2015-10-21</p><p>asked_price: 1975000.0</p><p>price: 1975000.0</p><p>rooms: 2.0</p><p>area: 63.0</p><p>rent: 2938.0</p><p>latitude: 59.8718941</p><p>longitude: 17.6234662</p></section>" });
+google.maps.event.addListener(marker_813, 'click', function() { infowindow_813.open(map,marker_813); });
+
+var marker_860 = new google.maps.Marker({
+ position: { lat: 59.87462152, lng: 17.64810047 },
+ map: map,
+ title: "id: 860",
+ icon: circleIcon
+});
+var infowindow_860 = new google.maps.InfoWindow({ content: "<section><p>id: 860</p><p>type: Lägenhet</p><p>location: Heidenstam</p><p>address: Stagneliusgatan 11</p><p>date: 2015-10-16</p><p>asked_price: 1675000.0</p><p>price: 1870000.0</p><p>rooms: 2.0</p><p>area: 65.5</p><p>rent: 2814.0</p><p>latitude: 59.87462152</p><p>longitude: 17.64810047</p></section>" });
+google.maps.event.addListener(marker_860, 'click', function() { infowindow_860.open(map,marker_860); });
+
+var marker_884 = new google.maps.Marker({
+ position: { lat: 59.86327259, lng: 17.63267357 },
+ map: map,
+ title: "id: 884",
+ icon: circleIcon
+});
+var infowindow_884 = new google.maps.InfoWindow({ content: "<section><p>id: 884</p><p>type: Lägenhet</p><p>location: Centrum</p><p>address: Eddagatan 4A</p><p>date: 2015-10-13</p><p>asked_price: 2195000.0</p><p>price: 2330000.0</p><p>rooms: 2.0</p><p>area: 61.5</p><p>rent: 2959.0</p><p>latitude: 59.86327259</p><p>longitude: 17.63267357</p></section>" });
+google.maps.event.addListener(marker_884, 'click', function() { infowindow_884.open(map,marker_884); });
+
+var marker_919 = new google.maps.Marker({
+ position: { lat: 59.86575045, lng: 17.64750273 },
+ map: map,
+ title: "id: 919",
+ icon: circleIcon
+});
+var infowindow_919 = new google.maps.InfoWindow({ content: "<section><p>id: 919</p><p>type: Lägenhet</p><p>location: Höganäs</p><p>address: Alriksgatan 1A</p><p>date: 2015-10-08</p><p>asked_price: 1995000.0</p><p>price: 2570000.0</p><p>rooms: 2.5</p><p>area: 60.0</p><p>rent: 2777.0</p><p>latitude: 59.86575045</p><p>longitude: 17.64750273</p></section>" });
+google.maps.event.addListener(marker_919, 'click', function() { infowindow_919.open(map,marker_919); });
+
+var marker_924 = new google.maps.Marker({
+ position: { lat: 59.86297813, lng: 17.62799811 },
+ map: map,
+ title: "id: 924",
+ icon: circleIcon
+});
+var infowindow_924 = new google.maps.InfoWindow({ content: "<section><p>id: 924</p><p>type: Lägenhet</p><p>location: Främre Luthagen</p><p>address: Götgatan 10B</p><p>date: 2015-10-07</p><p>asked_price: 2495000.0</p><p>price: 2800000.0</p><p>rooms: 2.0</p><p>area: 64.0</p><p>rent: 2813.0</p><p>latitude: 59.86297813</p><p>longitude: 17.62799811</p></section>" });
+google.maps.event.addListener(marker_924, 'click', function() { infowindow_924.open(map,marker_924); });
+
+var marker_935 = new google.maps.Marker({
+ position: { lat: 59.86327259, lng: 17.63267357 },
+ map: map,
+ title: "id: 935",
+ icon: circleIcon
+});
+var infowindow_935 = new google.maps.InfoWindow({ content: "<section><p>id: 935</p><p>type: Lägenhet</p><p>location: Innerstaden</p><p>address: Eddagatan 4A</p><p>date: 2015-10-05</p><p>asked_price: 2495000.0</p><p>price: 2460000.0</p><p>rooms: 2.0</p><p>area: 62.0</p><p>rent: 2917.0</p><p>latitude: 59.86327259</p><p>longitude: 17.63267357</p></section>" });
+google.maps.event.addListener(marker_935, 'click', function() { infowindow_935.open(map,marker_935); });
+
+var marker_1049 = new google.maps.Marker({
+ position: { lat: 59.86278863, lng: 17.63261133 },
+ map: map,
+ title: "id: 1049",
+ icon: circleIcon
+});
+var infowindow_1049 = new google.maps.InfoWindow({ content: "<section><p>id: 1049</p><p>type: Lägenhet</p><p>location: Centrum Uppsala</p><p>address: Skolgatan 20A</p><p>date: 2015-09-25</p><p>asked_price: 2195000.0</p><p>price: 2195000.0</p><p>rooms: 2.0</p><p>area: 63.0</p><p>rent: 2805.0</p><p>latitude: 59.86278863</p><p>longitude: 17.63261133</p></section>" });
+google.maps.event.addListener(marker_1049, 'click', function() { infowindow_1049.open(map,marker_1049); });
+
+var marker_1211 = new google.maps.Marker({
+ position: { lat: 59.86492036, lng: 17.67330794 },
+ map: map,
+ title: "id: 1211",
+ icon: circleIcon
+});
+var infowindow_1211 = new google.maps.InfoWindow({ content: "<section><p>id: 1211</p><p>type: Lägenhet</p><p>location: Salabacke</p><p>address: Verkmästargatan 5</p><p>date: 2015-09-11</p><p>asked_price: 1595000.0</p><p>price: 1710000.0</p><p>rooms: 2.0</p><p>area: 60.0</p><p>rent: 2958.0</p><p>latitude: 59.86492036</p><p>longitude: 17.67330794</p></section>" });
+google.maps.event.addListener(marker_1211, 'click', function() { infowindow_1211.open(map,marker_1211); });
+
+var marker_1213 = new google.maps.Marker({
+ position: { lat: 59.85929692, lng: 17.62606537 },
+ map: map,
+ title: "id: 1213",
+ icon: circleIcon
+});
+var infowindow_1213 = new google.maps.InfoWindow({ content: "<section><p>id: 1213</p><p>type: Lägenhet</p><p>location: Centrum</p><p>address: Skolgatan 13</p><p>date: 2015-09-10</p><p>asked_price: 2695000.0</p><p>price: 2995000.0</p><p>rooms: 2.0</p><p>area: 65.0</p><p>rent: 2136.0</p><p>latitude: 59.85929692</p><p>longitude: 17.62606537</p></section>" });
+google.maps.event.addListener(marker_1213, 'click', function() { infowindow_1213.open(map,marker_1213); });
+
+var marker_1366 = new google.maps.Marker({
+ position: { lat: 59.86565661, lng: 17.66822529 },
+ map: map,
+ title: "id: 1366",
+ icon: circleIcon
+});
+var infowindow_1366 = new google.maps.InfoWindow({ content: "<section><p>id: 1366</p><p>type: Lägenhet</p><p>location: Salabacke</p><p>address: Byggmästargatan 5C</p><p>date: 2015-08-27</p><p>asked_price: 1850000.0</p><p>price: 2015000.0</p><p>rooms: 2.5</p><p>area: 66.0</p><p>rent: 2846.0</p><p>latitude: 59.86565661</p><p>longitude: 17.66822529</p></section>" });
+google.maps.event.addListener(marker_1366, 'click', function() { infowindow_1366.open(map,marker_1366); });
+
+var marker_1382 = new google.maps.Marker({
+ position: { lat: 59.86407836, lng: 17.62179212 },
+ map: map,
+ title: "id: 1382",
+ icon: circleIcon
+});
+var infowindow_1382 = new google.maps.InfoWindow({ content: "<section><p>id: 1382</p><p>type: Lägenhet</p><p>location: Luthagen</p><p>address: Sysslomansgatan 30B</p><p>date: 2015-08-27</p><p>asked_price: 2910000.0</p><p>price: 2910000.0</p><p>rooms: 2.0</p><p>area: 73.0</p><p>rent: 2991.0</p><p>latitude: 59.86407836</p><p>longitude: 17.62179212</p></section>" });
+google.maps.event.addListener(marker_1382, 'click', function() { infowindow_1382.open(map,marker_1382); });
+
+var marker_1385 = new google.maps.Marker({
+ position: { lat: 59.8609459, lng: 17.62172849 },
+ map: map,
+ title: "id: 1385",
+ icon: circleIcon
+});
+var infowindow_1385 = new google.maps.InfoWindow({ content: "<section><p>id: 1385</p><p>type: Lägenhet</p><p>location: Främre Luthagen</p><p>address: Gluntens gränd 4B</p><p>date: 2015-08-27</p><p>asked_price: 2375000.0</p><p>price: 2550000.0</p><p>rooms: 2.5</p><p>area: 61.0</p><p>rent: 2679.0</p><p>latitude: 59.8609459</p><p>longitude: 17.62172849</p></section>" });
+google.maps.event.addListener(marker_1385, 'click', function() { infowindow_1385.open(map,marker_1385); });
+
+var marker_1387 = new google.maps.Marker({
+ position: { lat: 59.86435615, lng: 17.66813473 },
+ map: map,
+ title: "id: 1387",
+ icon: circleIcon
+});
+var infowindow_1387 = new google.maps.InfoWindow({ content: "<section><p>id: 1387</p><p>type: Lägenhet</p><p>location: Salabacke</p><p>address: Byggmästargatan 11B</p><p>date: 2015-08-27</p><p>asked_price: 1895000.0</p><p>price: 2200000.0</p><p>rooms: 2.5</p><p>area: 66.0</p><p>rent: 2846.0</p><p>latitude: 59.86435615</p><p>longitude: 17.66813473</p></section>" });
+google.maps.event.addListener(marker_1387, 'click', function() { infowindow_1387.open(map,marker_1387); });
+
+var marker_1404 = new google.maps.Marker({
+ position: { lat: 59.86334206, lng: 17.63994315 },
+ map: map,
+ title: "id: 1404",
+ icon: circleIcon
+});
+var infowindow_1404 = new google.maps.InfoWindow({ content: "<section><p>id: 1404</p><p>type: Lägenhet</p><p>location: Höganäs</p><p>address: Storgatan 9C</p><p>date: 2015-08-26</p><p>asked_price: 2290000.0</p><p>price: 2650000.0</p><p>rooms: 2.0</p><p>area: 67.0</p><p>rent: 2625.0</p><p>latitude: 59.86334206</p><p>longitude: 17.63994315</p></section>" });
+google.maps.event.addListener(marker_1404, 'click', function() { infowindow_1404.open(map,marker_1404); });
+
+var marker_1406 = new google.maps.Marker({
+ position: { lat: 59.869615, lng: 17.660644 },
+ map: map,
+ title: "id: 1406",
+ icon: circleIcon
+});
+var infowindow_1406 = new google.maps.InfoWindow({ content: "<section><p>id: 1406</p><p>type: Lägenhet</p><p>location: Gränby</p><p>address: Blixtgatan 3</p><p>date: 2015-08-26</p><p>asked_price: 1495000.0</p><p>price: 1740000.0</p><p>rooms: 2.0</p><p>area: 67.0</p><p>rent: 2844.0</p><p>latitude: 59.869615</p><p>longitude: 17.660644</p></section>" });
+google.maps.event.addListener(marker_1406, 'click', function() { infowindow_1406.open(map,marker_1406); });
+
+var marker_1440 = new google.maps.Marker({
+ position: { lat: 59.8640943, lng: 17.625923 },
+ map: map,
+ title: "id: 1440",
+ icon: circleIcon
+});
+var infowindow_1440 = new google.maps.InfoWindow({ content: "<section><p>id: 1440</p><p>type: Lägenhet</p><p>location: Luthagen</p><p>address: Luthagsesplanaden 6A</p><p>date: 2015-08-21</p><p>asked_price: 2390000.0</p><p>price: 2640000.0</p><p>rooms: 2.0</p><p>area: 64.0</p><p>rent: 2292.0</p><p>latitude: 59.8640943</p><p>longitude: 17.625923</p></section>" });
+google.maps.event.addListener(marker_1440, 'click', function() { infowindow_1440.open(map,marker_1440); });
+
+var marker_1471 = new google.maps.Marker({
+ position: { lat: 59.86628066, lng: 17.67866892 },
+ map: map,
+ title: "id: 1471",
+ icon: circleIcon
+});
+var infowindow_1471 = new google.maps.InfoWindow({ content: "<section><p>id: 1471</p><p>type: Lägenhet</p><p>location: Salabacke</p><p>address: Johannesbäcksgatan 34C</p><p>date: 2015-08-20</p><p>asked_price: 1695000.0</p><p>price: 2010000.0</p><p>rooms: 2.0</p><p>area: 63.0</p><p>rent: 2964.0</p><p>latitude: 59.86628066</p><p>longitude: 17.67866892</p></section>" });
+google.maps.event.addListener(marker_1471, 'click', function() { infowindow_1471.open(map,marker_1471); });
+
+var marker_1498 = new google.maps.Marker({
+ position: { lat: 59.85158699, lng: 17.64978956 },
+ map: map,
+ title: "id: 1498",
+ icon: circleIcon
+});
+var infowindow_1498 = new google.maps.InfoWindow({ content: "<section><p>id: 1498</p><p>type: Lägenhet</p><p>location: Kungsängen</p><p>address: Hugingatan 11</p><p>date: 2015-08-17</p><p>asked_price: 2295000.0</p><p>price: 2620000.0</p><p>rooms: 2.0</p><p>area: 60.0</p><p>rent: 2785.0</p><p>latitude: 59.85158699</p><p>longitude: 17.64978956</p></section>" });
+google.maps.event.addListener(marker_1498, 'click', function() { infowindow_1498.open(map,marker_1498); });
+
+var marker_1506 = new google.maps.Marker({
+ position: { lat: 59.86194957, lng: 17.67449813 },
+ map: map,
+ title: "id: 1506",
+ icon: circleIcon
+});
+var infowindow_1506 = new google.maps.InfoWindow({ content: "<section><p>id: 1506</p><p>type: Lägenhet</p><p>location: Salabacke</p><p>address: Murargatan 5</p><p>date: 2015-08-16</p><p>asked_price: 1695000.0</p><p>price: 1950000.0</p><p>rooms: 2.0</p><p>area: 62.5</p><p>rent: 2584.0</p><p>latitude: 59.86194957</p><p>longitude: 17.67449813</p></section>" });
+google.maps.event.addListener(marker_1506, 'click', function() { infowindow_1506.open(map,marker_1506); });
+
+var marker_1524 = new google.maps.Marker({
+ position: { lat: 59.86592689, lng: 17.64579856 },
+ map: map,
+ title: "id: 1524",
+ icon: circleIcon
+});
+var infowindow_1524 = new google.maps.InfoWindow({ content: "<section><p>id: 1524</p><p>type: Lägenhet</p><p>location: Höganäs</p><p>address: Sankt Olofsgatan 62</p><p>date: 2015-08-13</p><p>asked_price: 1995000.0</p><p>price: 2350000.0</p><p>rooms: 2.0</p><p>area: 60.0</p><p>rent: 2814.0</p><p>latitude: 59.86592689</p><p>longitude: 17.64579856</p></section>" });
+google.maps.event.addListener(marker_1524, 'click', function() { infowindow_1524.open(map,marker_1524); });
+
+var marker_1563 = new google.maps.Marker({
+ position: { lat: 59.8609459, lng: 17.62172849 },
+ map: map,
+ title: "id: 1563",
+ icon: circleIcon
+});
+var infowindow_1563 = new google.maps.InfoWindow({ content: "<section><p>id: 1563</p><p>type: Lägenhet</p><p>location: Främre Luthagen</p><p>address: Gluntens gränd 4B</p><p>date: 2015-08-08</p><p>asked_price: 1995000.0</p><p>price: 2460000.0</p><p>rooms: 2.5</p><p>area: 61.0</p><p>rent: 2969.0</p><p>latitude: 59.8609459</p><p>longitude: 17.62172849</p></section>" });
+google.maps.event.addListener(marker_1563, 'click', function() { infowindow_1563.open(map,marker_1563); });
+
+var marker_1570 = new google.maps.Marker({
+ position: { lat: 59.86167653, lng: 17.67412579 },
+ map: map,
+ title: "id: 1570",
+ icon: circleIcon
+});
+var infowindow_1570 = new google.maps.InfoWindow({ content: "<section><p>id: 1570</p><p>type: Lägenhet</p><p>location: Salabacke</p><p>address: Murargatan 7</p><p>date: 2015-08-07</p><p>asked_price: 1725000.0</p><p>price: 2000000.0</p><p>rooms: 2.0</p><p>area: 62.5</p><p>rent: 2584.0</p><p>latitude: 59.86167653</p><p>longitude: 17.67412579</p></section>" });
+google.maps.event.addListener(marker_1570, 'click', function() { infowindow_1570.open(map,marker_1570); });
+
+var marker_1582 = new google.maps.Marker({
+ position: { lat: 59.86610531, lng: 17.64716528 },
+ map: map,
+ title: "id: 1582",
+ icon: circleIcon
+});
+var infowindow_1582 = new google.maps.InfoWindow({ content: "<section><p>id: 1582</p><p>type: Lägenhet</p><p>location: Höganäs</p><p>address: Sankt Olofsgatan 43A</p><p>date: 2015-08-06</p><p>asked_price: 2100000.0</p><p>price: 2100000.0</p><p>rooms: 2.5</p><p>area: 61.0</p><p>rent: 2892.0</p><p>latitude: 59.86610531</p><p>longitude: 17.64716528</p></section>" });
+google.maps.event.addListener(marker_1582, 'click', function() { infowindow_1582.open(map,marker_1582); });
+
+var marker_1655 = new google.maps.Marker({
+ position: { lat: 59.8633918, lng: 17.6551181 },
+ map: map,
+ title: "id: 1655",
+ icon: circleIcon
+});
+var infowindow_1655 = new google.maps.InfoWindow({ content: "<section><p>id: 1655</p><p>type: Lägenhet</p><p>location: Fålhagen</p><p>address: Petterslundsgatan 9B</p><p>date: 2015-07-17</p><p>asked_price: 2150000.0</p><p>price: 2365000.0</p><p>rooms: 2.0</p><p>area: 62.7</p><p>rent: 2599.0</p><p>latitude: 59.8633918</p><p>longitude: 17.6551181</p></section>" });
+google.maps.event.addListener(marker_1655, 'click', function() { infowindow_1655.open(map,marker_1655); });
+
+var marker_1781 = new google.maps.Marker({
+ position: { lat: 59.8666676, lng: 17.6457971 },
+ map: map,
+ title: "id: 1781",
+ icon: circleIcon
+});
+var infowindow_1781 = new google.maps.InfoWindow({ content: "<section><p>id: 1781</p><p>type: Lägenhet</p><p>location: Höganäs</p><p>address: Torkelsgatan 38C</p><p>date: 2015-06-25</p><p>asked_price: 1995000.0</p><p>price: 2360000.0</p><p>rooms: 2.5</p><p>area: 59.0</p><p>rent: 2601.0</p><p>latitude: 59.8666676</p><p>longitude: 17.6457971</p></section>" });
+google.maps.event.addListener(marker_1781, 'click', function() { infowindow_1781.open(map,marker_1781); });
+
+var marker_1787 = new google.maps.Marker({
+ position: { lat: 59.8593197, lng: 17.6508079 },
+ map: map,
+ title: "id: 1787",
+ icon: circleIcon
+});
+var infowindow_1787 = new google.maps.InfoWindow({ content: "<section><p>id: 1787</p><p>type: Lägenhet</p><p>location: Fålhagen</p><p>address: Frodegatan 5F</p><p>date: 2015-06-24</p><p>asked_price: 2695000.0</p><p>price: 2920000.0</p><p>rooms: 2.0</p><p>area: 65.0</p><p>rent: 2885.0</p><p>latitude: 59.8593197</p><p>longitude: 17.6508079</p></section>" });
+google.maps.event.addListener(marker_1787, 'click', function() { infowindow_1787.open(map,marker_1787); });
+
+var marker_1791 = new google.maps.Marker({
+ position: { lat: 59.8643437, lng: 17.6234837 },
+ map: map,
+ title: "id: 1791",
+ icon: circleIcon
+});
+var infowindow_1791 = new google.maps.InfoWindow({ content: "<section><p>id: 1791</p><p>type: Lägenhet</p><p>location: Luthagen</p><p>address: Geijersgatan 14A</p><p>date: 2015-06-24</p><p>asked_price: 2495000.0</p><p>price: 2500000.0</p><p>rooms: 2.0</p><p>area: 64.5</p><p>rent: 2662.0</p><p>latitude: 59.8643437</p><p>longitude: 17.6234837</p></section>" });
+google.maps.event.addListener(marker_1791, 'click', function() { infowindow_1791.open(map,marker_1791); });
+
+var marker_1793 = new google.maps.Marker({
+ position: { lat: 59.86992425, lng: 17.66187357 },
+ map: map,
+ title: "id: 1793",
+ icon: circleIcon
+});
+var infowindow_1793 = new google.maps.InfoWindow({ content: "<section><p>id: 1793</p><p>type: Lägenhet</p><p>location: Gränby</p><p>address: Blixtgatan 25</p><p>date: 2015-06-24</p><p>asked_price: 1695000.0</p><p>price: 1695000.0</p><p>rooms: 2.0</p><p>area: 61.5</p><p>rent: 2811.0</p><p>latitude: 59.86992425</p><p>longitude: 17.66187357</p></section>" });
+google.maps.event.addListener(marker_1793, 'click', function() { infowindow_1793.open(map,marker_1793); });
+
+var marker_1847 = new google.maps.Marker({
+ position: { lat: 59.86167653, lng: 17.67412579 },
+ map: map,
+ title: "id: 1847",
+ icon: circleIcon
+});
+var infowindow_1847 = new google.maps.InfoWindow({ content: "<section><p>id: 1847</p><p>type: Lägenhet</p><p>location: Salabacke</p><p>address: Murargatan 1</p><p>date: 2015-06-14</p><p>asked_price: 1650000.0</p><p>price: 1750000.0</p><p>rooms: 2.0</p><p>area: 62.5</p><p>rent: 2584.0</p><p>latitude: 59.86167653</p><p>longitude: 17.67412579</p></section>" });
+google.maps.event.addListener(marker_1847, 'click', function() { infowindow_1847.open(map,marker_1847); });
+
+var marker_1902 = new google.maps.Marker({
+ position: { lat: 59.8648722, lng: 17.66782437 },
+ map: map,
+ title: "id: 1902",
+ icon: circleIcon
+});
+var infowindow_1902 = new google.maps.InfoWindow({ content: "<section><p>id: 1902</p><p>type: Lägenhet</p><p>location: Salabacke</p><p>address: Byggmästargatan 3A</p><p>date: 2015-06-10</p><p>asked_price: 1550000.0</p><p>price: 1925000.0</p><p>rooms: 2.0</p><p>area: 60.0</p><p>rent: 2642.0</p><p>latitude: 59.8648722</p><p>longitude: 17.66782437</p></section>" });
+google.maps.event.addListener(marker_1902, 'click', function() { infowindow_1902.open(map,marker_1902); });
+
+var marker_1915 = new google.maps.Marker({
+ position: { lat: 59.870083, lng: 17.657828 },
+ map: map,
+ title: "id: 1915",
+ icon: circleIcon
+});
+var infowindow_1915 = new google.maps.InfoWindow({ content: "<section><p>id: 1915</p><p>type: Lägenhet</p><p>location: Gränby</p><p>address: Blixtgatan 23</p><p>date: 2015-06-07</p><p>asked_price: 1695000.0</p><p>price: 1750000.0</p><p>rooms: 2.0</p><p>area: 61.5</p><p>rent: 2811.0</p><p>latitude: 59.870083</p><p>longitude: 17.657828</p></section>" });
+google.maps.event.addListener(marker_1915, 'click', function() { infowindow_1915.open(map,marker_1915); });
+
+var marker_1925 = new google.maps.Marker({
+ position: { lat: 59.8648535, lng: 17.6571545 },
+ map: map,
+ title: "id: 1925",
+ icon: circleIcon
+});
+var infowindow_1925 = new google.maps.InfoWindow({ content: "<section><p>id: 1925</p><p>type: Lägenhet</p><p>location: Fålhagen</p><p>address: Petterslundsgatan 33</p><p>date: 2015-06-05</p><p>asked_price: 2200000.0</p><p>price: 1995000.0</p><p>rooms: 2.0</p><p>area: 60.3</p><p>rent: 2703.0</p><p>latitude: 59.8648535</p><p>longitude: 17.6571545</p></section>" });
+google.maps.event.addListener(marker_1925, 'click', function() { infowindow_1925.open(map,marker_1925); });
+
+var marker_1982 = new google.maps.Marker({
+ position: { lat: 59.86181412, lng: 17.67436219 },
+ map: map,
+ title: "id: 1982",
+ icon: circleIcon
+});
+var infowindow_1982 = new google.maps.InfoWindow({ content: "<section><p>id: 1982</p><p>type: Lägenhet</p><p>location: Salabacke</p><p>address: Murargatan 3</p><p>date: 2015-06-01</p><p>asked_price: 1690000.0</p><p>price: 1900000.0</p><p>rooms: 2.0</p><p>area: 62.5</p><p>rent: 2584.0</p><p>latitude: 59.86181412</p><p>longitude: 17.67436219</p></section>" });
+google.maps.event.addListener(marker_1982, 'click', function() { infowindow_1982.open(map,marker_1982); });
+
+var marker_1985 = new google.maps.Marker({
+ position: { lat: 59.86167653, lng: 17.67412579 },
+ map: map,
+ title: "id: 1985",
+ icon: circleIcon
+});
+var infowindow_1985 = new google.maps.InfoWindow({ content: "<section><p>id: 1985</p><p>type: Lägenhet</p><p>location: Salabacke</p><p>address: Murargatan 7</p><p>date: 2015-06-01</p><p>asked_price: 1695000.0</p><p>price: 1925000.0</p><p>rooms: 2.0</p><p>area: 62.5</p><p>rent: 2584.0</p><p>latitude: 59.86167653</p><p>longitude: 17.67412579</p></section>" });
+google.maps.event.addListener(marker_1985, 'click', function() { infowindow_1985.open(map,marker_1985); });
+
+var marker_2186 = new google.maps.Marker({
+ position: { lat: 59.8648722, lng: 17.66782437 },
+ map: map,
+ title: "id: 2186",
+ icon: circleIcon
+});
+var infowindow_2186 = new google.maps.InfoWindow({ content: "<section><p>id: 2186</p><p>type: Lägenhet</p><p>location: Sala Backe</p><p>address: Byggmästargatan 3A</p><p>date: 2015-05-07</p><p>asked_price: 1795000.0</p><p>price: 2150000.0</p><p>rooms: 2.0</p><p>area: 60.0</p><p>rent: 2642.0</p><p>latitude: 59.8648722</p><p>longitude: 17.66782437</p></section>" });
+google.maps.event.addListener(marker_2186, 'click', function() { infowindow_2186.open(map,marker_2186); });
+
+var marker_2279 = new google.maps.Marker({
+ position: { lat: 59.8642467, lng: 17.6237132 },
+ map: map,
+ title: "id: 2279",
+ icon: circleIcon
+});
+var infowindow_2279 = new google.maps.InfoWindow({ content: "<section><p>id: 2279</p><p>type: Lägenhet</p><p>location: Luthagen</p><p>address: Geijersgatan 13A</p><p>date: 2015-04-29</p><p>asked_price: 1895000.0</p><p>price: 2080000.0</p><p>rooms: 2.0</p><p>area: 62.0</p><p>rent: 2111.0</p><p>latitude: 59.8642467</p><p>longitude: 17.6237132</p></section>" });
+google.maps.event.addListener(marker_2279, 'click', function() { infowindow_2279.open(map,marker_2279); });
+
+var marker_2294 = new google.maps.Marker({
+ position: { lat: 59.8591086, lng: 17.6534115 },
+ map: map,
+ title: "id: 2294",
+ icon: circleIcon
+});
+var infowindow_2294 = new google.maps.InfoWindow({ content: "<section><p>id: 2294</p><p>type: Lägenhet</p><p>location: Fålhagen</p><p>address: Väderkvarnsgatan 48A</p><p>date: 2015-04-25</p><p>asked_price: 2695000.0</p><p>price: 2930000.0</p><p>rooms: 2.5</p><p>area: 78.0</p><p>rent: 0.0</p><p>latitude: 59.8591086</p><p>longitude: 17.6534115</p></section>" });
+google.maps.event.addListener(marker_2294, 'click', function() { infowindow_2294.open(map,marker_2294); });
+
+var marker_2500 = new google.maps.Marker({
+ position: { lat: 59.86327259, lng: 17.63267357 },
+ map: map,
+ title: "id: 2500",
+ icon: circleIcon
+});
+var infowindow_2500 = new google.maps.InfoWindow({ content: "<section><p>id: 2500</p><p>type: Lägenhet</p><p>location: Innerstaden</p><p>address: Eddagatan 4A</p><p>date: 2015-03-26</p><p>asked_price: 1995000.0</p><p>price: 2210000.0</p><p>rooms: 2.0</p><p>area: 61.5</p><p>rent: 2917.0</p><p>latitude: 59.86327259</p><p>longitude: 17.63267357</p></section>" });
+google.maps.event.addListener(marker_2500, 'click', function() { infowindow_2500.open(map,marker_2500); });
+
+var marker_2552 = new google.maps.Marker({
+ position: { lat: 59.87388618, lng: 17.673239 },
+ map: map,
+ title: "id: 2552",
+ icon: circleIcon
+});
+var infowindow_2552 = new google.maps.InfoWindow({ content: "<section><p>id: 2552</p><p>type: Lägenhet</p><p>location: Salabacke</p><p>address: Ritargatan 1F</p><p>date: 2015-03-20</p><p>asked_price: 1595000.0</p><p>price: 1720000.0</p><p>rooms: 2.0</p><p>area: 59.4</p><p>rent: 2599.0</p><p>latitude: 59.87388618</p><p>longitude: 17.673239</p></section>" });
+google.maps.event.addListener(marker_2552, 'click', function() { infowindow_2552.open(map,marker_2552); });
+
+var marker_2562 = new google.maps.Marker({
+ position: { lat: 59.86550994, lng: 17.64286545 },
+ map: map,
+ title: "id: 2562",
+ icon: circleIcon
+});
+var infowindow_2562 = new google.maps.InfoWindow({ content: "<section><p>id: 2562</p><p>type: Lägenhet</p><p>location: Höganäs</p><p>address: Höganäsgatan 11C</p><p>date: 2015-03-19</p><p>asked_price: 2300000.0</p><p>price: 2300000.0</p><p>rooms: 2.0</p><p>area: 64.0</p><p>rent: 2412.0</p><p>latitude: 59.86550994</p><p>longitude: 17.64286545</p></section>" });
+google.maps.event.addListener(marker_2562, 'click', function() { infowindow_2562.open(map,marker_2562); });
+
+var marker_2574 = new google.maps.Marker({
+ position: { lat: 59.86589, lng: 17.6674 },
+ map: map,
+ title: "id: 2574",
+ icon: circleIcon
+});
+var infowindow_2574 = new google.maps.InfoWindow({ content: "<section><p>id: 2574</p><p>type: Lägenhet</p><p>location: Salabacke</p><p>address: Byggmästargatan 3B</p><p>date: 2015-03-18</p><p>asked_price: 1775000.0</p><p>price: 2100000.0</p><p>rooms: 2.0</p><p>area: 60.0</p><p>rent: 2642.0</p><p>latitude: 59.86589</p><p>longitude: 17.6674</p></section>" });
+google.maps.event.addListener(marker_2574, 'click', function() { infowindow_2574.open(map,marker_2574); });
+
+var marker_2637 = new google.maps.Marker({
+ position: { lat: 59.87581, lng: 17.645898 },
+ map: map,
+ title: "id: 2637",
+ icon: circleIcon
+});
+var infowindow_2637 = new google.maps.InfoWindow({ content: "<section><p>id: 2637</p><p>type: Lägenhet</p><p>location: Löten</p><p>address: Heidenstamsgatan 3</p><p>date: 2015-03-11</p><p>asked_price: 1595000.0</p><p>price: 2050000.0</p><p>rooms: 2.0</p><p>area: 66.0</p><p>rent: 0.0</p><p>latitude: 59.87581</p><p>longitude: 17.645898</p></section>" });
+google.maps.event.addListener(marker_2637, 'click', function() { infowindow_2637.open(map,marker_2637); });
+
+var marker_2679 = new google.maps.Marker({
+ position: { lat: 59.8717, lng: 17.672354 },
+ map: map,
+ title: "id: 2679",
+ icon: circleIcon
+});
+var infowindow_2679 = new google.maps.InfoWindow({ content: "<section><p>id: 2679</p><p>type: Lägenhet</p><p>location: Salabacke</p><p>address: Källparksgatan 8D</p><p>date: 2015-03-04</p><p>asked_price: 1590000.0</p><p>price: 1950000.0</p><p>rooms: 2.0</p><p>area: 60.8</p><p>rent: 2655.0</p><p>latitude: 59.8717</p><p>longitude: 17.672354</p></section>" });
+google.maps.event.addListener(marker_2679, 'click', function() { infowindow_2679.open(map,marker_2679); });
+
+var marker_2714 = new google.maps.Marker({
+ position: { lat: 59.86373597, lng: 17.63227053 },
+ map: map,
+ title: "id: 2714",
+ icon: circleIcon
+});
+var infowindow_2714 = new google.maps.InfoWindow({ content: "<section><p>id: 2714</p><p>type: Lägenhet</p><p>location: Centrum</p><p>address: Eddagatan 12A</p><p>date: 2015-02-27</p><p>asked_price: 2500000.0</p><p>price: 3200000.0</p><p>rooms: 2.0</p><p>area: 62.7</p><p>rent: 2442.0</p><p>latitude: 59.86373597</p><p>longitude: 17.63227053</p></section>" });
+google.maps.event.addListener(marker_2714, 'click', function() { infowindow_2714.open(map,marker_2714); });
+
+var marker_2806 = new google.maps.Marker({
+ position: { lat: 59.87093911, lng: 17.65907474 },
+ map: map,
+ title: "id: 2806",
+ icon: circleIcon
+});
+var infowindow_2806 = new google.maps.InfoWindow({ content: "<section><p>id: 2806</p><p>type: Lägenhet</p><p>location: Gränby</p><p>address: Molngatan 27</p><p>date: 2015-02-12</p><p>asked_price: 1595000.0</p><p>price: 1920000.0</p><p>rooms: 2.0</p><p>area: 62.5</p><p>rent: 2742.0</p><p>latitude: 59.87093911</p><p>longitude: 17.65907474</p></section>" });
+google.maps.event.addListener(marker_2806, 'click', function() { infowindow_2806.open(map,marker_2806); });
+
+var marker_2815 = new google.maps.Marker({
+ position: { lat: 59.856117, lng: 17.628801 },
+ map: map,
+ title: "id: 2815",
+ icon: circleIcon
+});
+var infowindow_2815 = new google.maps.InfoWindow({ content: "<section><p>id: 2815</p><p>type: Lägenhet</p><p>location: Centrum</p><p>address: Åsgränd 2A</p><p>date: 2015-02-11</p><p>asked_price: 2500000.0</p><p>price: 2730000.0</p><p>rooms: 2.5</p><p>area: 65.0</p><p>rent: 2780.0</p><p>latitude: 59.856117</p><p>longitude: 17.628801</p></section>" });
+google.maps.event.addListener(marker_2815, 'click', function() { infowindow_2815.open(map,marker_2815); });
+
+var marker_3015 = new google.maps.Marker({
+ position: { lat: 59.86167653, lng: 17.67412579 },
+ map: map,
+ title: "id: 3015",
+ icon: circleIcon
+});
+var infowindow_3015 = new google.maps.InfoWindow({ content: "<section><p>id: 3015</p><p>type: Lägenhet</p><p>location: Salabacke</p><p>address: Murargatan 1</p><p>date: 2015-01-14</p><p>asked_price: 1675000.0</p><p>price: 2025000.0</p><p>rooms: 2.0</p><p>area: 62.5</p><p>rent: 2584.0</p><p>latitude: 59.86167653</p><p>longitude: 17.67412579</p></section>" });
+google.maps.event.addListener(marker_3015, 'click', function() { infowindow_3015.open(map,marker_3015); });
+
+var marker_3055 = new google.maps.Marker({
+ position: { lat: 59.86439, lng: 17.6241458 },
+ map: map,
+ title: "id: 3055",
+ icon: circleIcon
+});
+var infowindow_3055 = new google.maps.InfoWindow({ content: "<section><p>id: 3055</p><p>type: Lägenhet</p><p>location: Luthagen</p><p>address: Sturegatan 17A</p><p>date: 2014-12-24</p><p>asked_price: 2250000.0</p><p>price: 2350000.0</p><p>rooms: 2.0</p><p>area: 63.7</p><p>rent: 2655.0</p><p>latitude: 59.86439</p><p>longitude: 17.6241458</p></section>" });
+google.maps.event.addListener(marker_3055, 'click', function() { infowindow_3055.open(map,marker_3055); });
+
+var marker_3059 = new google.maps.Marker({
+ position: { lat: 59.87418256, lng: 17.62346812 },
+ map: map,
+ title: "id: 3059",
+ icon: circleIcon
+});
+var infowindow_3059 = new google.maps.InfoWindow({ content: "<section><p>id: 3059</p><p>type: Lägenhet</p><p>location: Svartbäcken</p><p>address: Torbjörnsgatan 12</p><p>date: 2014-12-21</p><p>asked_price: 1975000.0</p><p>price: 2150000.0</p><p>rooms: 2.5</p><p>area: 74.5</p><p>rent: 2893.0</p><p>latitude: 59.87418256</p><p>longitude: 17.62346812</p></section>" });
+google.maps.event.addListener(marker_3059, 'click', function() { infowindow_3059.open(map,marker_3059); });
+
+var marker_3153 = new google.maps.Marker({
+ position: { lat: 59.8612498, lng: 17.650065 },
+ map: map,
+ title: "id: 3153",
+ icon: circleIcon
+});
+var infowindow_3153 = new google.maps.InfoWindow({ content: "<section><p>id: 3153</p><p>type: Lägenhet</p><p>location: Fålhagen</p><p>address: Väderkvarnsgatan 34B</p><p>date: 2014-12-05</p><p>asked_price: 2295000.0</p><p>price: 2870000.0</p><p>rooms: 2.0</p><p>area: 68.1</p><p>rent: 2748.0</p><p>latitude: 59.8612498</p><p>longitude: 17.650065</p></section>" });
+google.maps.event.addListener(marker_3153, 'click', function() { infowindow_3153.open(map,marker_3153); });
+
+var marker_3160 = new google.maps.Marker({
+ position: { lat: 59.86412309, lng: 17.64657718 },
+ map: map,
+ title: "id: 3160",
+ icon: circleIcon
+});
+var infowindow_3160 = new google.maps.InfoWindow({ content: "<section><p>id: 3160</p><p>type: Lägenhet</p><p>location: Höganäs</p><p>address: Botvidsgatan 7</p><p>date: 2014-12-05</p><p>asked_price: 2095000.0</p><p>price: 2420000.0</p><p>rooms: 2.5</p><p>area: 67.0</p><p>rent: 2568.0</p><p>latitude: 59.86412309</p><p>longitude: 17.64657718</p></section>" });
+google.maps.event.addListener(marker_3160, 'click', function() { infowindow_3160.open(map,marker_3160); });
+
+var marker_3166 = new google.maps.Marker({
+ position: { lat: 59.86167653, lng: 17.67412579 },
+ map: map,
+ title: "id: 3166",
+ icon: circleIcon
+});
+var infowindow_3166 = new google.maps.InfoWindow({ content: "<section><p>id: 3166</p><p>type: Lägenhet</p><p>location: Sala Backe</p><p>address: Murargatan 1</p><p>date: 2014-12-04</p><p>asked_price: 1595000.0</p><p>price: 1855000.0</p><p>rooms: 2.0</p><p>area: 62.5</p><p>rent: 2584.0</p><p>latitude: 59.86167653</p><p>longitude: 17.67412579</p></section>" });
+google.maps.event.addListener(marker_3166, 'click', function() { infowindow_3166.open(map,marker_3166); });
+
+var marker_3188 = new google.maps.Marker({
+ position: { lat: 59.86494151, lng: 17.64242349 },
+ map: map,
+ title: "id: 3188",
+ icon: circleIcon
+});
+var infowindow_3188 = new google.maps.InfoWindow({ content: "<section><p>id: 3188</p><p>type: Lägenhet</p><p>location: Höganäs</p><p>address: Väderkvarnsgatan 15C</p><p>date: 2014-11-30</p><p>asked_price: 2150000.0</p><p>price: 2000000.0</p><p>rooms: 2.0</p><p>area: 66.0</p><p>rent: 2801.0</p><p>latitude: 59.86494151</p><p>longitude: 17.64242349</p></section>" });
+google.maps.event.addListener(marker_3188, 'click', function() { infowindow_3188.open(map,marker_3188); });
+
+var marker_3190 = new google.maps.Marker({
+ position: { lat: 59.87388618, lng: 17.673239 },
+ map: map,
+ title: "id: 3190",
+ icon: circleIcon
+});
+var infowindow_3190 = new google.maps.InfoWindow({ content: "<section><p>id: 3190</p><p>type: Lägenhet</p><p>location: Sala Backe</p><p>address: Ritargatan 1F</p><p>date: 2014-11-28</p><p>asked_price: 1475000.0</p><p>price: 1360000.0</p><p>rooms: 2.0</p><p>area: 59.4</p><p>rent: 2572.0</p><p>latitude: 59.87388618</p><p>longitude: 17.673239</p></section>" });
+google.maps.event.addListener(marker_3190, 'click', function() { infowindow_3190.open(map,marker_3190); });
+
+var marker_3271 = new google.maps.Marker({
+ position: { lat: 59.87635645, lng: 17.61685398 },
+ map: map,
+ title: "id: 3271",
+ icon: circleIcon
+});
+var infowindow_3271 = new google.maps.InfoWindow({ content: "<section><p>id: 3271</p><p>type: Lägenhet</p><p>location: Tunabackar</p><p>address: Väpnargatan 13A</p><p>date: 2014-11-20</p><p>asked_price: 1595000.0</p><p>price: 1690000.0</p><p>rooms: 2.0</p><p>area: 64.5</p><p>rent: 2688.0</p><p>latitude: 59.87635645</p><p>longitude: 17.61685398</p></section>" });
+google.maps.event.addListener(marker_3271, 'click', function() { infowindow_3271.open(map,marker_3271); });
+
+var marker_3343 = new google.maps.Marker({
+ position: { lat: 59.8756763, lng: 17.64714088 },
+ map: map,
+ title: "id: 3343",
+ icon: circleIcon
+});
+var infowindow_3343 = new google.maps.InfoWindow({ content: "<section><p>id: 3343</p><p>type: Lägenhet</p><p>location: Löten</p><p>address: Heidenstamsgatan 19</p><p>date: 2014-11-07</p><p>asked_price: 1545000.0</p><p>price: 1760000.0</p><p>rooms: 2.0</p><p>area: 66.5</p><p>rent: 2701.0</p><p>latitude: 59.8756763</p><p>longitude: 17.64714088</p></section>" });
+google.maps.event.addListener(marker_3343, 'click', function() { infowindow_3343.open(map,marker_3343); });
+
+var marker_3489 = new google.maps.Marker({
+ position: { lat: 59.86601306, lng: 17.6338058 },
+ map: map,
+ title: "id: 3489",
+ icon: circleIcon
+});
+var infowindow_3489 = new google.maps.InfoWindow({ content: "<section><p>id: 3489</p><p>type: Lägenhet</p><p>location: Främre Svartbäcken</p><p>address: Timmermansgatan 3E</p><p>date: 2014-10-22</p><p>asked_price: 2090000.0</p><p>price: 2090000.0</p><p>rooms: 2.0</p><p>area: 66.7</p><p>rent: 2724.0</p><p>latitude: 59.86601306</p><p>longitude: 17.6338058</p></section>" });
+google.maps.event.addListener(marker_3489, 'click', function() { infowindow_3489.open(map,marker_3489); });
+
+var marker_3563 = new google.maps.Marker({
+ position: { lat: 59.8657075, lng: 17.6450664 },
+ map: map,
+ title: "id: 3563",
+ icon: circleIcon
+});
+var infowindow_3563 = new google.maps.InfoWindow({ content: "<section><p>id: 3563</p><p>type: Lägenhet</p><p>location: Höganäs</p><p>address: Sankt Olofsgatan 60C</p><p>date: 2014-10-10</p><p>asked_price: 2475000.0</p><p>price: 2740000.0</p><p>rooms: 2.5</p><p>area: 65.0</p><p>rent: 2558.0</p><p>latitude: 59.8657075</p><p>longitude: 17.6450664</p></section>" });
+google.maps.event.addListener(marker_3563, 'click', function() { infowindow_3563.open(map,marker_3563); });
+
+var marker_3622 = new google.maps.Marker({
+ position: { lat: 59.86399, lng: 17.6256924 },
+ map: map,
+ title: "id: 3622",
+ icon: circleIcon
+});
+var infowindow_3622 = new google.maps.InfoWindow({ content: "<section><p>id: 3622</p><p>type: Lägenhet</p><p>location: Luthagen</p><p>address: Luthagsesplanaden 6B</p><p>date: 2014-10-02</p><p>asked_price: 2195000.0</p><p>price: 2450000.0</p><p>rooms: 2.0</p><p>area: 63.5</p><p>rent: 2240.0</p><p>latitude: 59.86399</p><p>longitude: 17.6256924</p></section>" });
+google.maps.event.addListener(marker_3622, 'click', function() { infowindow_3622.open(map,marker_3622); });
+
+var marker_3703 = new google.maps.Marker({
+ position: { lat: 59.87531221, lng: 17.64813868 },
+ map: map,
+ title: "id: 3703",
+ icon: circleIcon
+});
+var infowindow_3703 = new google.maps.InfoWindow({ content: "<section><p>id: 3703</p><p>type: Lägenhet</p><p>location: Löten</p><p>address: Heidenstamsgatan 17</p><p>date: 2014-09-23</p><p>asked_price: 1680000.0</p><p>price: 1680000.0</p><p>rooms: 2.0</p><p>area: 65.5</p><p>rent: 2686.0</p><p>latitude: 59.87531221</p><p>longitude: 17.64813868</p></section>" });
+google.maps.event.addListener(marker_3703, 'click', function() { infowindow_3703.open(map,marker_3703); });
+
+var marker_3718 = new google.maps.Marker({
+ position: { lat: 59.8666676, lng: 17.6457971 },
+ map: map,
+ title: "id: 3718",
+ icon: circleIcon
+});
+var infowindow_3718 = new google.maps.InfoWindow({ content: "<section><p>id: 3718</p><p>type: Lägenhet</p><p>location: Höganäs</p><p>address: Torkelsgatan 38C</p><p>date: 2014-09-22</p><p>asked_price: 1895000.0</p><p>price: 2120000.0</p><p>rooms: 2.0</p><p>area: 59.0</p><p>rent: 2601.0</p><p>latitude: 59.8666676</p><p>longitude: 17.6457971</p></section>" });
+google.maps.event.addListener(marker_3718, 'click', function() { infowindow_3718.open(map,marker_3718); });
+
+var marker_3726 = new google.maps.Marker({
+ position: { lat: 59.87615283, lng: 17.64902456 },
+ map: map,
+ title: "id: 3726",
+ icon: circleIcon
+});
+var infowindow_3726 = new google.maps.InfoWindow({ content: "<section><p>id: 3726</p><p>type: Lägenhet</p><p>location: Löten</p><p>address: Heidenstamsgatan 49</p><p>date: 2014-09-21</p><p>asked_price: 1395000.0</p><p>price: 1700000.0</p><p>rooms: 2.0</p><p>area: 59.0</p><p>rent: 2353.0</p><p>latitude: 59.87615283</p><p>longitude: 17.64902456</p></section>" });
+google.maps.event.addListener(marker_3726, 'click', function() { infowindow_3726.open(map,marker_3726); });
+
+var marker_3739 = new google.maps.Marker({
+ position: { lat: 59.87085292, lng: 17.65881995 },
+ map: map,
+ title: "id: 3739",
+ icon: circleIcon
+});
+var infowindow_3739 = new google.maps.InfoWindow({ content: "<section><p>id: 3739</p><p>type: Lägenhet</p><p>location: Gränby</p><p>address: Molngatan 29</p><p>date: 2014-09-19</p><p>asked_price: 1450000.0</p><p>price: 1680000.0</p><p>rooms: 2.0</p><p>area: 61.5</p><p>rent: 2811.0</p><p>latitude: 59.87085292</p><p>longitude: 17.65881995</p></section>" });
+google.maps.event.addListener(marker_3739, 'click', function() { infowindow_3739.open(map,marker_3739); });
+
+var marker_3800 = new google.maps.Marker({
+ position: { lat: 59.86592826, lng: 17.67882764 },
+ map: map,
+ title: "id: 3800",
+ icon: circleIcon
+});
+var infowindow_3800 = new google.maps.InfoWindow({ content: "<section><p>id: 3800</p><p>type: Lägenhet</p><p>location: Salabacke</p><p>address: Johannesbäcksgatan 34A</p><p>date: 2014-09-12</p><p>asked_price: 1495000.0</p><p>price: 1670000.0</p><p>rooms: 2.0</p><p>area: 63.0</p><p>rent: 2964.0</p><p>latitude: 59.86592826</p><p>longitude: 17.67882764</p></section>" });
+google.maps.event.addListener(marker_3800, 'click', function() { infowindow_3800.open(map,marker_3800); });
+
+var marker_3825 = new google.maps.Marker({
+ position: { lat: 59.86296641, lng: 17.67623325 },
+ map: map,
+ title: "id: 3825",
+ icon: circleIcon
+});
+var infowindow_3825 = new google.maps.InfoWindow({ content: "<section><p>id: 3825</p><p>type: Lägenhet</p><p>location: Sala Backe</p><p>address: Murargatan 21</p><p>date: 2014-09-10</p><p>asked_price: 1595000.0</p><p>price: 1770000.0</p><p>rooms: 2.0</p><p>area: 62.5</p><p>rent: 2584.0</p><p>latitude: 59.86296641</p><p>longitude: 17.67623325</p></section>" });
+google.maps.event.addListener(marker_3825, 'click', function() { infowindow_3825.open(map,marker_3825); });
+
+var marker_3840 = new google.maps.Marker({
+ position: { lat: 59.8631893, lng: 17.6298221 },
+ map: map,
+ title: "id: 3840",
+ icon: circleIcon
+});
+var infowindow_3840 = new google.maps.InfoWindow({ content: "<section><p>id: 3840</p><p>type: Lägenhet</p><p>location: Främre Luthagen</p><p>address: Odensgatan 1</p><p>date: 2014-09-08</p><p>asked_price: 2520000.0</p><p>price: 2520000.0</p><p>rooms: 2.0</p><p>area: 65.2</p><p>rent: 2380.0</p><p>latitude: 59.8631893</p><p>longitude: 17.6298221</p></section>" });
+google.maps.event.addListener(marker_3840, 'click', function() { infowindow_3840.open(map,marker_3840); });
+
+var marker_3842 = new google.maps.Marker({
+ position: { lat: 59.85211288, lng: 17.65197803 },
+ map: map,
+ title: "id: 3842",
+ icon: circleIcon
+});
+var infowindow_3842 = new google.maps.InfoWindow({ content: "<section><p>id: 3842</p><p>type: Lägenhet</p><p>location: Centrum</p><p>address: Kungsängsgatan 53B</p><p>date: 2014-09-06</p><p>asked_price: 2095000.0</p><p>price: 2560000.0</p><p>rooms: 2.0</p><p>area: 61.0</p><p>rent: 2473.0</p><p>latitude: 59.85211288</p><p>longitude: 17.65197803</p></section>" });
+google.maps.event.addListener(marker_3842, 'click', function() { infowindow_3842.open(map,marker_3842); });
+
+var marker_3855 = new google.maps.Marker({
+ position: { lat: 59.876186, lng: 17.619125 },
+ map: map,
+ title: "id: 3855",
+ icon: circleIcon
+});
+var infowindow_3855 = new google.maps.InfoWindow({ content: "<section><p>id: 3855</p><p>type: Lägenhet</p><p>location: Tunabackar</p><p>address: Väpnargatan 9B</p><p>date: 2014-09-04</p><p>asked_price: 1495000.0</p><p>price: 1750000.0</p><p>rooms: 2.0</p><p>area: 63.5</p><p>rent: 2795.0</p><p>latitude: 59.876186</p><p>longitude: 17.619125</p></section>" });
+google.maps.event.addListener(marker_3855, 'click', function() { infowindow_3855.open(map,marker_3855); });
+
+var marker_3926 = new google.maps.Marker({
+ position: { lat: 59.87474428, lng: 17.6483037 },
+ map: map,
+ title: "id: 3926",
+ icon: circleIcon
+});
+var infowindow_3926 = new google.maps.InfoWindow({ content: "<section><p>id: 3926</p><p>type: Lägenhet</p><p>location: Heidenstam</p><p>address: Stagneliusgatan 13</p><p>date: 2014-08-28</p><p>asked_price: 1495000.0</p><p>price: 1810000.0</p><p>rooms: 2.0</p><p>area: 59.0</p><p>rent: 2353.0</p><p>latitude: 59.87474428</p><p>longitude: 17.6483037</p></section>" });
+google.maps.event.addListener(marker_3926, 'click', function() { infowindow_3926.open(map,marker_3926); });
+
+var marker_3945 = new google.maps.Marker({
+ position: { lat: 59.8667672, lng: 17.6460171 },
+ map: map,
+ title: "id: 3945",
+ icon: circleIcon
+});
+var infowindow_3945 = new google.maps.InfoWindow({ content: "<section><p>id: 3945</p><p>type: Lägenhet</p><p>location: Höganäs</p><p>address: Torkelsgatan 38B</p><p>date: 2014-08-27</p><p>asked_price: 1650000.0</p><p>price: 1900000.0</p><p>rooms: 2.0</p><p>area: 59.0</p><p>rent: 2601.0</p><p>latitude: 59.8667672</p><p>longitude: 17.6460171</p></section>" });
+google.maps.event.addListener(marker_3945, 'click', function() { infowindow_3945.open(map,marker_3945); });
+
+var marker_3981 = new google.maps.Marker({
+ position: { lat: 59.87700047, lng: 17.61963933 },
+ map: map,
+ title: "id: 3981",
+ icon: circleIcon
+});
+var infowindow_3981 = new google.maps.InfoWindow({ content: "<section><p>id: 3981</p><p>type: Lägenhet</p><p>location: Svartbäcken</p><p>address: Väpnargatan 1A</p><p>date: 2014-08-22</p><p>asked_price: 1595000.0</p><p>price: 1785000.0</p><p>rooms: 2.0</p><p>area: 64.5</p><p>rent: 2731.0</p><p>latitude: 59.87700047</p><p>longitude: 17.61963933</p></section>" });
+google.maps.event.addListener(marker_3981, 'click', function() { infowindow_3981.open(map,marker_3981); });
+
+var marker_3983 = new google.maps.Marker({
+ position: { lat: 59.86409557, lng: 17.67131577 },
+ map: map,
+ title: "id: 3983",
+ icon: circleIcon
+});
+var infowindow_3983 = new google.maps.InfoWindow({ content: "<section><p>id: 3983</p><p>type: Lägenhet</p><p>location: Salabacke</p><p>address: Apelgatan 5C</p><p>date: 2014-08-22</p><p>asked_price: 1595000.0</p><p>price: 1870000.0</p><p>rooms: 2.0</p><p>area: 59.5</p><p>rent: 2998.0</p><p>latitude: 59.86409557</p><p>longitude: 17.67131577</p></section>" });
+google.maps.event.addListener(marker_3983, 'click', function() { infowindow_3983.open(map,marker_3983); });
+
+var marker_4011 = new google.maps.Marker({
+ position: { lat: 59.871557, lng: 17.672756 },
+ map: map,
+ title: "id: 4011",
+ icon: circleIcon
+});
+var infowindow_4011 = new google.maps.InfoWindow({ content: "<section><p>id: 4011</p><p>type: Lägenhet</p><p>location: Sala Backe</p><p>address: Källparksgatan 10D</p><p>date: 2014-08-20</p><p>asked_price: 1550000.0</p><p>price: 1800000.0</p><p>rooms: 2.0</p><p>area: 60.8</p><p>rent: 2733.0</p><p>latitude: 59.871557</p><p>longitude: 17.672756</p></section>" });
+google.maps.event.addListener(marker_4011, 'click', function() { infowindow_4011.open(map,marker_4011); });
+
+var marker_4069 = new google.maps.Marker({
+ position: { lat: 59.87210494, lng: 17.67315724 },
+ map: map,
+ title: "id: 4069",
+ icon: circleIcon
+});
+var infowindow_4069 = new google.maps.InfoWindow({ content: "<section><p>id: 4069</p><p>type: Lägenhet</p><p>location: Salabacke</p><p>address: Källparksgatan 10A</p><p>date: 2014-08-14</p><p>asked_price: 1495000.0</p><p>price: 1780000.0</p><p>rooms: 2.0</p><p>area: 60.8</p><p>rent: 2733.0</p><p>latitude: 59.87210494</p><p>longitude: 17.67315724</p></section>" });
+google.maps.event.addListener(marker_4069, 'click', function() { infowindow_4069.open(map,marker_4069); });
+
+var marker_4070 = new google.maps.Marker({
+ position: { lat: 59.87126915, lng: 17.66050375 },
+ map: map,
+ title: "id: 4070",
+ icon: circleIcon
+});
+var infowindow_4070 = new google.maps.InfoWindow({ content: "<section><p>id: 4070</p><p>type: Lägenhet</p><p>location: Gränby</p><p>address: Molngatan 19</p><p>date: 2014-08-14</p><p>asked_price: 1395000.0</p><p>price: 1710000.0</p><p>rooms: 2.0</p><p>area: 61.5</p><p>rent: 2811.0</p><p>latitude: 59.87126915</p><p>longitude: 17.66050375</p></section>" });
+google.maps.event.addListener(marker_4070, 'click', function() { infowindow_4070.open(map,marker_4070); });
+
+var marker_4195 = new google.maps.Marker({
+ position: { lat: 59.87040831, lng: 17.65915234 },
+ map: map,
+ title: "id: 4195",
+ icon: circleIcon
+});
+var infowindow_4195 = new google.maps.InfoWindow({ content: "<section><p>id: 4195</p><p>type: Lägenhet</p><p>location: Gränby</p><p>address: Blixtgatan 15</p><p>date: 2014-07-24</p><p>asked_price: 1895000.0</p><p>price: 1715000.0</p><p>rooms: 2.0</p><p>area: 61.5</p><p>rent: 2811.0</p><p>latitude: 59.87040831</p><p>longitude: 17.65915234</p></section>" });
+google.maps.event.addListener(marker_4195, 'click', function() { infowindow_4195.open(map,marker_4195); });
+
+var marker_4198 = new google.maps.Marker({
+ position: { lat: 59.87462152, lng: 17.64810047 },
+ map: map,
+ title: "id: 4198",
+ icon: circleIcon
+});
+var infowindow_4198 = new google.maps.InfoWindow({ content: "<section><p>id: 4198</p><p>type: Lägenhet</p><p>location: Löten</p><p>address: Stagneliusgatan 11</p><p>date: 2014-07-23</p><p>asked_price: 1395000.0</p><p>price: 1980000.0</p><p>rooms: 2.0</p><p>area: 65.5</p><p>rent: 2708.0</p><p>latitude: 59.87462152</p><p>longitude: 17.64810047</p></section>" });
+google.maps.event.addListener(marker_4198, 'click', function() { infowindow_4198.open(map,marker_4198); });
+
+var marker_4248 = new google.maps.Marker({
+ position: { lat: 59.8631893, lng: 17.6298221 },
+ map: map,
+ title: "id: 4248",
+ icon: circleIcon
+});
+var infowindow_4248 = new google.maps.InfoWindow({ content: "<section><p>id: 4248</p><p>type: Lägenhet</p><p>location: Främre Luthagen</p><p>address: Odensgatan 1</p><p>date: 2014-07-07</p><p>asked_price: 2175000.0</p><p>price: 2670000.0</p><p>rooms: 2.0</p><p>area: 65.2</p><p>rent: 2219.0</p><p>latitude: 59.8631893</p><p>longitude: 17.6298221</p></section>" });
+google.maps.event.addListener(marker_4248, 'click', function() { infowindow_4248.open(map,marker_4248); });
+
+var marker_4368 = new google.maps.Marker({
+ position: { lat: 59.86115351, lng: 17.63850171 },
+ map: map,
+ title: "id: 4368",
+ icon: circleIcon
+});
+var infowindow_4368 = new google.maps.InfoWindow({ content: "<section><p>id: 4368</p><p>type: Lägenhet</p><p>location: Centrum</p><p>address: Kungsgatan 37C</p><p>date: 2014-06-18</p><p>asked_price: 2595000.0</p><p>price: 2740000.0</p><p>rooms: 2.0</p><p>area: 64.0</p><p>rent: 2976.0</p><p>latitude: 59.86115351</p><p>longitude: 17.63850171</p></section>" });
+google.maps.event.addListener(marker_4368, 'click', function() { infowindow_4368.open(map,marker_4368); });
+
+var marker_4378 = new google.maps.Marker({
+ position: { lat: 59.87703977, lng: 17.61808771 },
+ map: map,
+ title: "id: 4378",
+ icon: circleIcon
+});
+var infowindow_4378 = new google.maps.InfoWindow({ content: "<section><p>id: 4378</p><p>type: Lägenhet</p><p>location: Tunabackar</p><p>address: Väpnargatan 5A</p><p>date: 2014-06-17</p><p>asked_price: 1675000.0</p><p>price: 1870000.0</p><p>rooms: 2.0</p><p>area: 64.5</p><p>rent: 2645.0</p><p>latitude: 59.87703977</p><p>longitude: 17.61808771</p></section>" });
+google.maps.event.addListener(marker_4378, 'click', function() { infowindow_4378.open(map,marker_4378); });
+
+var marker_4391 = new google.maps.Marker({
+ position: { lat: 59.86589, lng: 17.6674 },
+ map: map,
+ title: "id: 4391",
+ icon: circleIcon
+});
+var infowindow_4391 = new google.maps.InfoWindow({ content: "<section><p>id: 4391</p><p>type: Lägenhet</p><p>location: Salabacke</p><p>address: Byggmästargatan 7A</p><p>date: 2014-06-13</p><p>asked_price: 1475000.0</p><p>price: 1860000.0</p><p>rooms: 2.0</p><p>area: 63.0</p><p>rent: 2711.0</p><p>latitude: 59.86589</p><p>longitude: 17.6674</p></section>" });
+google.maps.event.addListener(marker_4391, 'click', function() { infowindow_4391.open(map,marker_4391); });
+
+var marker_4408 = new google.maps.Marker({
+ position: { lat: 59.86071225, lng: 17.62894843 },
+ map: map,
+ title: "id: 4408",
+ icon: circleIcon
+});
+var infowindow_4408 = new google.maps.InfoWindow({ content: "<section><p>id: 4408</p><p>type: Lägenhet</p><p>location: Innerstaden</p><p>address: Skolgatan 31</p><p>date: 2014-06-12</p><p>asked_price: 2600000.0</p><p>price: 2980000.0</p><p>rooms: 2.0</p><p>area: 67.5</p><p>rent: 1254.0</p><p>latitude: 59.86071225</p><p>longitude: 17.62894843</p></section>" });
+google.maps.event.addListener(marker_4408, 'click', function() { infowindow_4408.open(map,marker_4408); });
+
+var marker_4471 = new google.maps.Marker({
+ position: { lat: 59.87324389, lng: 17.6202559 },
+ map: map,
+ title: "id: 4471",
+ icon: circleIcon
+});
+var infowindow_4471 = new google.maps.InfoWindow({ content: "<section><p>id: 4471</p><p>type: Lägenhet</p><p>location: Svartbäcken</p><p>address: Folkungagatan 22B</p><p>date: 2014-06-04</p><p>asked_price: 1495000.0</p><p>price: 1750000.0</p><p>rooms: 2.0</p><p>area: 65.6</p><p>rent: 2678.0</p><p>latitude: 59.87324389</p><p>longitude: 17.6202559</p></section>" });
+google.maps.event.addListener(marker_4471, 'click', function() { infowindow_4471.open(map,marker_4471); });
+
+var marker_4543 = new google.maps.Marker({
+ position: { lat: 59.864791, lng: 17.667838 },
+ map: map,
+ title: "id: 4543",
+ icon: circleIcon
+});
+var infowindow_4543 = new google.maps.InfoWindow({ content: "<section><p>id: 4543</p><p>type: Lägenhet</p><p>location: Sala Backe</p><p>address: Byggmästargatan 7B</p><p>date: 2014-05-26</p><p>asked_price: 1495000.0</p><p>price: 1780000.0</p><p>rooms: 2.0</p><p>area: 62.0</p><p>rent: 2713.0</p><p>latitude: 59.864791</p><p>longitude: 17.667838</p></section>" });
+google.maps.event.addListener(marker_4543, 'click', function() { infowindow_4543.open(map,marker_4543); });
+
+var marker_4566 = new google.maps.Marker({
+ position: { lat: 59.856397, lng: 17.645419 },
+ map: map,
+ title: "id: 4566",
+ icon: circleIcon
+});
+var infowindow_4566 = new google.maps.InfoWindow({ content: "<section><p>id: 4566</p><p>type: Lägenhet</p><p>location: Centrum</p><p>address: Dragarbrunnsgatan 64</p><p>date: 2014-05-22</p><p>asked_price: 1895000.0</p><p>price: 2220000.0</p><p>rooms: 2.0</p><p>area: 58.5</p><p>rent: 2547.0</p><p>latitude: 59.856397</p><p>longitude: 17.645419</p></section>" });
+google.maps.event.addListener(marker_4566, 'click', function() { infowindow_4566.open(map,marker_4566); });
+
+var marker_4592 = new google.maps.Marker({
+ position: { lat: 59.86192233, lng: 17.62356162 },
+ map: map,
+ title: "id: 4592",
+ icon: circleIcon
+});
+var infowindow_4592 = new google.maps.InfoWindow({ content: "<section><p>id: 4592</p><p>type: Lägenhet</p><p>location: Främre Luthagen</p><p>address: Fredsgatan 4B</p><p>date: 2014-05-21</p><p>asked_price: 1675000.0</p><p>price: 2100000.0</p><p>rooms: 2.0</p><p>area: 66.0</p><p>rent: 2800.0</p><p>latitude: 59.86192233</p><p>longitude: 17.62356162</p></section>" });
+google.maps.event.addListener(marker_4592, 'click', function() { infowindow_4592.open(map,marker_4592); });
+
+var marker_4631 = new google.maps.Marker({
+ position: { lat: 59.86194957, lng: 17.67449813 },
+ map: map,
+ title: "id: 4631",
+ icon: circleIcon
+});
+var infowindow_4631 = new google.maps.InfoWindow({ content: "<section><p>id: 4631</p><p>type: Lägenhet</p><p>location: Salabacke</p><p>address: Murargatan 5</p><p>date: 2014-05-15</p><p>asked_price: 1495000.0</p><p>price: 1710000.0</p><p>rooms: 2.0</p><p>area: 62.5</p><p>rent: 2584.0</p><p>latitude: 59.86194957</p><p>longitude: 17.67449813</p></section>" });
+google.maps.event.addListener(marker_4631, 'click', function() { infowindow_4631.open(map,marker_4631); });
+
+var marker_4636 = new google.maps.Marker({
+ position: { lat: 59.86518185, lng: 17.66752032 },
+ map: map,
+ title: "id: 4636",
+ icon: circleIcon
+});
+var infowindow_4636 = new google.maps.InfoWindow({ content: "<section><p>id: 4636</p><p>type: Lägenhet</p><p>location: Salabacke</p><p>address: Byggmästargatan 5A</p><p>date: 2014-05-15</p><p>asked_price: 1475000.0</p><p>price: 1650000.0</p><p>rooms: 2.0</p><p>area: 61.0</p><p>rent: 2704.0</p><p>latitude: 59.86518185</p><p>longitude: 17.66752032</p></section>" });
+google.maps.event.addListener(marker_4636, 'click', function() { infowindow_4636.open(map,marker_4636); });
+
+var marker_4665 = new google.maps.Marker({
+ position: { lat: 59.864585, lng: 17.669076 },
+ map: map,
+ title: "id: 4665",
+ icon: circleIcon
+});
+var infowindow_4665 = new google.maps.InfoWindow({ content: "<section><p>id: 4665</p><p>type: Lägenhet</p><p>location: Sala Backe</p><p>address: Byggmästargatan 9C</p><p>date: 2014-05-09</p><p>asked_price: 1495000.0</p><p>price: 1670000.0</p><p>rooms: 2.5</p><p>area: 66.0</p><p>rent: 2846.0</p><p>latitude: 59.864585</p><p>longitude: 17.669076</p></section>" });
+google.maps.event.addListener(marker_4665, 'click', function() { infowindow_4665.open(map,marker_4665); });
+
+var marker_4667 = new google.maps.Marker({
+ position: { lat: 59.86550994, lng: 17.64286545 },
+ map: map,
+ title: "id: 4667",
+ icon: circleIcon
+});
+var infowindow_4667 = new google.maps.InfoWindow({ content: "<section><p>id: 4667</p><p>type: Lägenhet</p><p>location: Höganäs</p><p>address: Höganäsgatan 11A</p><p>date: 2014-05-09</p><p>asked_price: 1875000.0</p><p>price: 2100000.0</p><p>rooms: 2.5</p><p>area: 66.5</p><p>rent: 2413.0</p><p>latitude: 59.86550994</p><p>longitude: 17.64286545</p></section>" });
+google.maps.event.addListener(marker_4667, 'click', function() { infowindow_4667.open(map,marker_4667); });
+
+var marker_4750 = new google.maps.Marker({
+ position: { lat: 59.86382631, lng: 17.67763832 },
+ map: map,
+ title: "id: 4750",
+ icon: circleIcon
+});
+var infowindow_4750 = new google.maps.InfoWindow({ content: "<section><p>id: 4750</p><p>type: Lägenhet</p><p>location: Salabacke</p><p>address: Murargatan 31</p><p>date: 2014-04-27</p><p>asked_price: 1595000.0</p><p>price: 1825000.0</p><p>rooms: 2.0</p><p>area: 64.0</p><p>rent: 2132.0</p><p>latitude: 59.86382631</p><p>longitude: 17.67763832</p></section>" });
+google.maps.event.addListener(marker_4750, 'click', function() { infowindow_4750.open(map,marker_4750); });
+
+var marker_4788 = new google.maps.Marker({
+ position: { lat: 59.86592689, lng: 17.64579856 },
+ map: map,
+ title: "id: 4788",
+ icon: circleIcon
+});
+var infowindow_4788 = new google.maps.InfoWindow({ content: "<section><p>id: 4788</p><p>type: Lägenhet</p><p>location: Höganäs</p><p>address: Sankt Olofsgatan 62</p><p>date: 2014-04-16</p><p>asked_price: 1795000.0</p><p>price: 2220000.0</p><p>rooms: 2.0</p><p>area: 60.0</p><p>rent: 2472.0</p><p>latitude: 59.86592689</p><p>longitude: 17.64579856</p></section>" });
+google.maps.event.addListener(marker_4788, 'click', function() { infowindow_4788.open(map,marker_4788); });
+
+var marker_4821 = new google.maps.Marker({
+ position: { lat: 59.8657075, lng: 17.6450664 },
+ map: map,
+ title: "id: 4821",
+ icon: circleIcon
+});
+var infowindow_4821 = new google.maps.InfoWindow({ content: "<section><p>id: 4821</p><p>type: Lägenhet</p><p>location: Höganäs</p><p>address: Sankt Olofsgatan 60C</p><p>date: 2014-04-11</p><p>asked_price: 1750000.0</p><p>price: 2400000.0</p><p>rooms: 2.5</p><p>area: 65.0</p><p>rent: 2429.0</p><p>latitude: 59.8657075</p><p>longitude: 17.6450664</p></section>" });
+google.maps.event.addListener(marker_4821, 'click', function() { infowindow_4821.open(map,marker_4821); });
+
+var marker_4841 = new google.maps.Marker({
+ position: { lat: 59.8609459, lng: 17.62172849 },
+ map: map,
+ title: "id: 4841",
+ icon: circleIcon
+});
+var infowindow_4841 = new google.maps.InfoWindow({ content: "<section><p>id: 4841</p><p>type: Lägenhet</p><p>location: Luthagen</p><p>address: Gluntens gränd 4B</p><p>date: 2014-04-08</p><p>asked_price: 1850000.0</p><p>price: 2025000.0</p><p>rooms: 2.0</p><p>area: 60.0</p><p>rent: 2676.0</p><p>latitude: 59.8609459</p><p>longitude: 17.62172849</p></section>" });
+google.maps.event.addListener(marker_4841, 'click', function() { infowindow_4841.open(map,marker_4841); });
+
+var marker_4852 = new google.maps.Marker({
+ position: { lat: 59.86417074, lng: 17.67044521 },
+ map: map,
+ title: "id: 4852",
+ icon: circleIcon
+});
+var infowindow_4852 = new google.maps.InfoWindow({ content: "<section><p>id: 4852</p><p>type: Lägenhet</p><p>location: Salabacke</p><p>address: Apelgatan 5D</p><p>date: 2014-04-05</p><p>asked_price: 1550000.0</p><p>price: 1700000.0</p><p>rooms: 2.0</p><p>area: 59.5</p><p>rent: 2998.0</p><p>latitude: 59.86417074</p><p>longitude: 17.67044521</p></section>" });
+google.maps.event.addListener(marker_4852, 'click', function() { infowindow_4852.open(map,marker_4852); });
+
+var marker_4881 = new google.maps.Marker({
+ position: { lat: 59.8598554, lng: 17.6482484 },
+ map: map,
+ title: "id: 4881",
+ icon: circleIcon
+});
+var infowindow_4881 = new google.maps.InfoWindow({ content: "<section><p>id: 4881</p><p>type: Lägenhet</p><p>location: Fålhagen</p><p>address: Norrtäljegatan 3A</p><p>date: 2014-04-02</p><p>asked_price: 1875000.0</p><p>price: 2080000.0</p><p>rooms: 2.0</p><p>area: 66.0</p><p>rent: 2906.0</p><p>latitude: 59.8598554</p><p>longitude: 17.6482484</p></section>" });
+google.maps.event.addListener(marker_4881, 'click', function() { infowindow_4881.open(map,marker_4881); });
+
+var marker_4883 = new google.maps.Marker({
+ position: { lat: 59.86589, lng: 17.6674 },
+ map: map,
+ title: "id: 4883",
+ icon: circleIcon
+});
+var infowindow_4883 = new google.maps.InfoWindow({ content: "<section><p>id: 4883</p><p>type: Lägenhet</p><p>location: Salabacke</p><p>address: Byggmästargatan 3B</p><p>date: 2014-04-02</p><p>asked_price: 1495000.0</p><p>price: 1675000.0</p><p>rooms: 2.0</p><p>area: 60.0</p><p>rent: 2642.0</p><p>latitude: 59.86589</p><p>longitude: 17.6674</p></section>" });
+google.maps.event.addListener(marker_4883, 'click', function() { infowindow_4883.open(map,marker_4883); });
+
+var marker_4945 = new google.maps.Marker({
+ position: { lat: 59.85654697, lng: 17.64242489 },
+ map: map,
+ title: "id: 4945",
+ icon: circleIcon
+});
+var infowindow_4945 = new google.maps.InfoWindow({ content: "<section><p>id: 4945</p><p>type: Lägenhet</p><p>location: Centrum</p><p>address: Kungsängsgatan 21B</p><p>date: 2014-03-21</p><p>asked_price: 2195000.0</p><p>price: 2325000.0</p><p>rooms: 2.0</p><p>area: 61.5</p><p>rent: 2098.0</p><p>latitude: 59.85654697</p><p>longitude: 17.64242489</p></section>" });
+google.maps.event.addListener(marker_4945, 'click', function() { infowindow_4945.open(map,marker_4945); });
+
+var marker_4964 = new google.maps.Marker({
+ position: { lat: 59.86548181, lng: 17.6442386 },
+ map: map,
+ title: "id: 4964",
+ icon: circleIcon
+});
+var infowindow_4964 = new google.maps.InfoWindow({ content: "<section><p>id: 4964</p><p>type: Lägenhet</p><p>location: Centrum</p><p>address: Sankt Olofsgatan 58B</p><p>date: 2014-03-19</p><p>asked_price: 1795000.0</p><p>price: 1900000.0</p><p>rooms: 2.5</p><p>area: 63.2</p><p>rent: 2779.0</p><p>latitude: 59.86548181</p><p>longitude: 17.6442386</p></section>" });
+google.maps.event.addListener(marker_4964, 'click', function() { infowindow_4964.open(map,marker_4964); });
+
+var marker_4988 = new google.maps.Marker({
+ position: { lat: 59.86467413, lng: 17.64292648 },
+ map: map,
+ title: "id: 4988",
+ icon: circleIcon
+});
+var infowindow_4988 = new google.maps.InfoWindow({ content: "<section><p>id: 4988</p><p>type: Lägenhet</p><p>location: Höganäs</p><p>address: Väderkvarnsgatan 15E</p><p>date: 2014-03-17</p><p>asked_price: 1925000.0</p><p>price: 2000000.0</p><p>rooms: 2.5</p><p>area: 66.0</p><p>rent: 2801.0</p><p>latitude: 59.86467413</p><p>longitude: 17.64292648</p></section>" });
+google.maps.event.addListener(marker_4988, 'click', function() { infowindow_4988.open(map,marker_4988); });
+
+var marker_4992 = new google.maps.Marker({
+ position: { lat: 59.86565661, lng: 17.66822529 },
+ map: map,
+ title: "id: 4992",
+ icon: circleIcon
+});
+var infowindow_4992 = new google.maps.InfoWindow({ content: "<section><p>id: 4992</p><p>type: Lägenhet</p><p>location: Salabacke</p><p>address: Byggmästargatan 7C</p><p>date: 2014-03-14</p><p>asked_price: 1590000.0</p><p>price: 1850000.0</p><p>rooms: 2.5</p><p>area: 65.0</p><p>rent: 2810.0</p><p>latitude: 59.86565661</p><p>longitude: 17.66822529</p></section>" });
+google.maps.event.addListener(marker_4992, 'click', function() { infowindow_4992.open(map,marker_4992); });
+
+var marker_5018 = new google.maps.Marker({
+ position: { lat: 59.86992425, lng: 17.66187357 },
+ map: map,
+ title: "id: 5018",
+ icon: circleIcon
+});
+var infowindow_5018 = new google.maps.InfoWindow({ content: "<section><p>id: 5018</p><p>type: Lägenhet</p><p>location: Gränby</p><p>address: Blixtgatan 25</p><p>date: 2014-03-11</p><p>asked_price: 1395000.0</p><p>price: 1650000.0</p><p>rooms: 2.0</p><p>area: 61.5</p><p>rent: 2811.0</p><p>latitude: 59.86992425</p><p>longitude: 17.66187357</p></section>" });
+google.maps.event.addListener(marker_5018, 'click', function() { infowindow_5018.open(map,marker_5018); });
+
+var marker_5025 = new google.maps.Marker({
+ position: { lat: 59.8641485, lng: 17.6722524 },
+ map: map,
+ title: "id: 5025",
+ icon: circleIcon
+});
+var infowindow_5025 = new google.maps.InfoWindow({ content: "<section><p>id: 5025</p><p>type: Lägenhet</p><p>location: Sala Backe</p><p>address: Apelgatan 7D</p><p>date: 2014-03-07</p><p>asked_price: 1495000.0</p><p>price: 1580000.0</p><p>rooms: 2.0</p><p>area: 59.5</p><p>rent: 2998.0</p><p>latitude: 59.8641485</p><p>longitude: 17.6722524</p></section>" });
+google.maps.event.addListener(marker_5025, 'click', function() { infowindow_5025.open(map,marker_5025); });
+
+var marker_5056 = new google.maps.Marker({
+ position: { lat: 59.8628421, lng: 17.6301513 },
+ map: map,
+ title: "id: 5056",
+ icon: circleIcon
+});
+var infowindow_5056 = new google.maps.InfoWindow({ content: "<section><p>id: 5056</p><p>type: Lägenhet</p><p>location: Luthagen</p><p>address: Torsgatan 2</p><p>date: 2014-03-04</p><p>asked_price: 2095000.0</p><p>price: 2550000.0</p><p>rooms: 2.0</p><p>area: 65.2</p><p>rent: 2446.0</p><p>latitude: 59.8628421</p><p>longitude: 17.6301513</p></section>" });
+google.maps.event.addListener(marker_5056, 'click', function() { infowindow_5056.open(map,marker_5056); });
+
+var marker_5111 = new google.maps.Marker({
+ position: { lat: 59.8618822, lng: 17.6519316 },
+ map: map,
+ title: "id: 5111",
+ icon: circleIcon
+});
+var infowindow_5111 = new google.maps.InfoWindow({ content: "<section><p>id: 5111</p><p>type: Lägenhet</p><p>location: Fålhagen</p><p>address: Norrtäljegatan 16B</p><p>date: 2014-02-21</p><p>asked_price: 1975000.0</p><p>price: 2375000.0</p><p>rooms: 2.0</p><p>area: 58.7</p><p>rent: 2817.0</p><p>latitude: 59.8618822</p><p>longitude: 17.6519316</p></section>" });
+google.maps.event.addListener(marker_5111, 'click', function() { infowindow_5111.open(map,marker_5111); });
+
+var marker_5137 = new google.maps.Marker({
+ position: { lat: 59.86992425, lng: 17.66187357 },
+ map: map,
+ title: "id: 5137",
+ icon: circleIcon
+});
+var infowindow_5137 = new google.maps.InfoWindow({ content: "<section><p>id: 5137</p><p>type: Lägenhet</p><p>location: Gränby</p><p>address: Blixtgatan 25</p><p>date: 2014-02-17</p><p>asked_price: 1450000.0</p><p>price: 1705000.0</p><p>rooms: 2.0</p><p>area: 61.5</p><p>rent: 2811.0</p><p>latitude: 59.86992425</p><p>longitude: 17.66187357</p></section>" });
+google.maps.event.addListener(marker_5137, 'click', function() { infowindow_5137.open(map,marker_5137); });
+
+var marker_5152 = new google.maps.Marker({
+ position: { lat: 59.86575045, lng: 17.64750273 },
+ map: map,
+ title: "id: 5152",
+ icon: circleIcon
+});
+var infowindow_5152 = new google.maps.InfoWindow({ content: "<section><p>id: 5152</p><p>type: Lägenhet</p><p>location: Höganäs</p><p>address: Sankt Olofsgatan 43B</p><p>date: 2014-02-14</p><p>asked_price: 1725000.0</p><p>price: 1860000.0</p><p>rooms: 2.0</p><p>area: 61.0</p><p>rent: 2817.0</p><p>latitude: 59.86575045</p><p>longitude: 17.64750273</p></section>" });
+google.maps.event.addListener(marker_5152, 'click', function() { infowindow_5152.open(map,marker_5152); });
+
+var marker_5173 = new google.maps.Marker({
+ position: { lat: 59.86872717, lng: 17.66377252 },
+ map: map,
+ title: "id: 5173",
+ icon: circleIcon
+});
+var infowindow_5173 = new google.maps.InfoWindow({ content: "<section><p>id: 5173</p><p>type: Lägenhet</p><p>location: Salabacke</p><p>address: Salabacksgatan 5C</p><p>date: 2014-02-13</p><p>asked_price: 1395000.0</p><p>price: 1700000.0</p><p>rooms: 2.0</p><p>area: 60.0</p><p>rent: 70.0</p><p>latitude: 59.86872717</p><p>longitude: 17.66377252</p></section>" });
+google.maps.event.addListener(marker_5173, 'click', function() { infowindow_5173.open(map,marker_5173); });
+
+var marker_5183 = new google.maps.Marker({
+ position: { lat: 59.863873, lng: 17.646256 },
+ map: map,
+ title: "id: 5183",
+ icon: circleIcon
+});
+var infowindow_5183 = new google.maps.InfoWindow({ content: "<section><p>id: 5183</p><p>type: Lägenhet</p><p>location: Höganäs</p><p>address: Sankt Persgatan 34A</p><p>date: 2014-02-09</p><p>asked_price: 1995000.0</p><p>price: 2120000.0</p><p>rooms: 2.0</p><p>area: 62.0</p><p>rent: 2566.0</p><p>latitude: 59.863873</p><p>longitude: 17.646256</p></section>" });
+google.maps.event.addListener(marker_5183, 'click', function() { infowindow_5183.open(map,marker_5183); });
+
+var marker_5235 = new google.maps.Marker({
+ position: { lat: 59.86412423, lng: 17.67815493 },
+ map: map,
+ title: "id: 5235",
+ icon: circleIcon
+});
+var infowindow_5235 = new google.maps.InfoWindow({ content: "<section><p>id: 5235</p><p>type: Lägenhet</p><p>location: Sala Backe</p><p>address: Murargatan 33</p><p>date: 2014-02-01</p><p>asked_price: 1490000.0</p><p>price: 1700000.0</p><p>rooms: 2.0</p><p>area: 64.3</p><p>rent: 2202.0</p><p>latitude: 59.86412423</p><p>longitude: 17.67815493</p></section>" });
+google.maps.event.addListener(marker_5235, 'click', function() { infowindow_5235.open(map,marker_5235); });
+
+var marker_5244 = new google.maps.Marker({
+ position: { lat: 59.85598157, lng: 17.6203871 },
+ map: map,
+ title: "id: 5244",
+ icon: circleIcon
+});
+var infowindow_5244 = new google.maps.InfoWindow({ content: "<section><p>id: 5244</p><p>type: Lägenhet</p><p>location: Luthagen</p><p>address: Sankt Johannesgatan 31B</p><p>date: 2014-01-30</p><p>asked_price: 2290000.0</p><p>price: 2650000.0</p><p>rooms: 2.0</p><p>area: 62.0</p><p>rent: 1880.0</p><p>latitude: 59.85598157</p><p>longitude: 17.6203871</p></section>" });
+google.maps.event.addListener(marker_5244, 'click', function() { infowindow_5244.open(map,marker_5244); });
+
+var marker_5279 = new google.maps.Marker({
+ position: { lat: 59.86439, lng: 17.6241458 },
+ map: map,
+ title: "id: 5279",
+ icon: circleIcon
+});
+var infowindow_5279 = new google.maps.InfoWindow({ content: "<section><p>id: 5279</p><p>type: Lägenhet</p><p>location: Luthagen</p><p>address: Sturegatan 17A</p><p>date: 2014-01-24</p><p>asked_price: 1895000.0</p><p>price: 2100000.0</p><p>rooms: 2.0</p><p>area: 68.1</p><p>rent: 2638.0</p><p>latitude: 59.86439</p><p>longitude: 17.6241458</p></section>" });
+google.maps.event.addListener(marker_5279, 'click', function() { infowindow_5279.open(map,marker_5279); });
+
+var marker_5280 = new google.maps.Marker({
+ position: { lat: 59.8649715, lng: 17.6243922 },
+ map: map,
+ title: "id: 5280",
+ icon: circleIcon
+});
+var infowindow_5280 = new google.maps.InfoWindow({ content: "<section><p>id: 5280</p><p>type: Lägenhet</p><p>location: Luthagen</p><p>address: Götgatan 22A</p><p>date: 2014-01-24</p><p>asked_price: 1850000.0</p><p>price: 2050000.0</p><p>rooms: 2.0</p><p>area: 60.0</p><p>rent: 2504.0</p><p>latitude: 59.8649715</p><p>longitude: 17.6243922</p></section>" });
+google.maps.event.addListener(marker_5280, 'click', function() { infowindow_5280.open(map,marker_5280); });
+
+var marker_5287 = new google.maps.Marker({
+ position: { lat: 59.8627989, lng: 17.648427 },
+ map: map,
+ title: "id: 5287",
+ icon: circleIcon
+});
+var infowindow_5287 = new google.maps.InfoWindow({ content: "<section><p>id: 5287</p><p>type: Lägenhet</p><p>location: Fålhagen</p><p>address: Vaksalagatan 33A</p><p>date: 2014-01-24</p><p>asked_price: 2295000.0</p><p>price: 2855000.0</p><p>rooms: 2.0</p><p>area: 66.0</p><p>rent: 2883.0</p><p>latitude: 59.8627989</p><p>longitude: 17.648427</p></section>" });
+google.maps.event.addListener(marker_5287, 'click', function() { infowindow_5287.open(map,marker_5287); });
+
+var marker_5335 = new google.maps.Marker({
+ position: { lat: 59.86167653, lng: 17.67412579 },
+ map: map,
+ title: "id: 5335",
+ icon: circleIcon
+});
+var infowindow_5335 = new google.maps.InfoWindow({ content: "<section><p>id: 5335</p><p>type: Lägenhet</p><p>location: Salabacke</p><p>address: Murargatan 11</p><p>date: 2014-01-17</p><p>asked_price: 1700000.0</p><p>price: 1700000.0</p><p>rooms: 2.0</p><p>area: 62.5</p><p>rent: 2584.0</p><p>latitude: 59.86167653</p><p>longitude: 17.67412579</p></section>" });
+google.maps.event.addListener(marker_5335, 'click', function() { infowindow_5335.open(map,marker_5335); });
+
+var marker_5369 = new google.maps.Marker({
+ position: { lat: 59.87270739, lng: 17.67119101 },
+ map: map,
+ title: "id: 5369",
+ icon: circleIcon
+});
+var infowindow_5369 = new google.maps.InfoWindow({ content: "<section><p>id: 5369</p><p>type: Lägenhet</p><p>location: Salabacke</p><p>address: Gränby Tvärgata 2</p><p>date: 2014-01-15</p><p>asked_price: 1495000.0</p><p>price: 1670000.0</p><p>rooms: 2.0</p><p>area: 59.2</p><p>rent: 2462.0</p><p>latitude: 59.87270739</p><p>longitude: 17.67119101</p></section>" });
+google.maps.event.addListener(marker_5369, 'click', function() { infowindow_5369.open(map,marker_5369); });
+
+var marker_5431 = new google.maps.Marker({
+ position: { lat: 59.85907402, lng: 17.64019016 },
+ map: map,
+ title: "id: 5431",
+ icon: circleIcon
+});
+var infowindow_5431 = new google.maps.InfoWindow({ content: "<section><p>id: 5431</p><p>type: Lägenhet</p><p>location: Innerstaden</p><p>address: Smedsgränd 4</p><p>date: 2013-12-20</p><p>asked_price: 3975000.0</p><p>price: 4050000.0</p><p>rooms: 2.0</p><p>area: 79.5</p><p>rent: 2387.0</p><p>latitude: 59.85907402</p><p>longitude: 17.64019016</p></section>" });
+google.maps.event.addListener(marker_5431, 'click', function() { infowindow_5431.open(map,marker_5431); });
+
+var marker_5468 = new google.maps.Marker({
+ position: { lat: 59.86149735, lng: 17.61558212 },
+ map: map,
+ title: "id: 5468",
+ icon: circleIcon
+});
+var infowindow_5468 = new google.maps.InfoWindow({ content: "<section><p>id: 5468</p><p>type: Lägenhet</p><p>location: Luthagen</p><p>address: Bredmansgatan 4C</p><p>date: 2013-12-13</p><p>asked_price: 1650000.0</p><p>price: 1900000.0</p><p>rooms: 2.0</p><p>area: 59.0</p><p>rent: 2893.0</p><p>latitude: 59.86149735</p><p>longitude: 17.61558212</p></section>" });
+google.maps.event.addListener(marker_5468, 'click', function() { infowindow_5468.open(map,marker_5468); });
+
+var marker_5539 = new google.maps.Marker({
+ position: { lat: 59.8714289, lng: 17.6734152 },
+ map: map,
+ title: "id: 5539",
+ icon: circleIcon
+});
+var infowindow_5539 = new google.maps.InfoWindow({ content: "<section><p>id: 5539</p><p>type: Lägenhet</p><p>location: Salabacke</p><p>address: Källparksgatan 12A</p><p>date: 2013-12-03</p><p>asked_price: 1450000.0</p><p>price: 1600000.0</p><p>rooms: 2.0</p><p>area: 61.0</p><p>rent: 2733.0</p><p>latitude: 59.8714289</p><p>longitude: 17.6734152</p></section>" });
+google.maps.event.addListener(marker_5539, 'click', function() { infowindow_5539.open(map,marker_5539); });
+
+var marker_5566 = new google.maps.Marker({
+ position: { lat: 59.86628066, lng: 17.67866892 },
+ map: map,
+ title: "id: 5566",
+ icon: circleIcon
+});
+var infowindow_5566 = new google.maps.InfoWindow({ content: "<section><p>id: 5566</p><p>type: Lägenhet</p><p>location: Salabacke</p><p>address: Johannesbäcksgatan 34C</p><p>date: 2013-11-28</p><p>asked_price: 1450000.0</p><p>price: 1600000.0</p><p>rooms: 2.0</p><p>area: 63.0</p><p>rent: 2964.0</p><p>latitude: 59.86628066</p><p>longitude: 17.67866892</p></section>" });
+google.maps.event.addListener(marker_5566, 'click', function() { infowindow_5566.open(map,marker_5566); });
+
+var marker_5654 = new google.maps.Marker({
+ position: { lat: 59.87635645, lng: 17.61685398 },
+ map: map,
+ title: "id: 5654",
+ icon: circleIcon
+});
+var infowindow_5654 = new google.maps.InfoWindow({ content: "<section><p>id: 5654</p><p>type: Lägenhet</p><p>location: Tunabackar</p><p>address: Väpnargatan 13A</p><p>date: 2013-11-18</p><p>asked_price: 1590000.0</p><p>price: 1750000.0</p><p>rooms: 2.0</p><p>area: 63.5</p><p>rent: 2707.0</p><p>latitude: 59.87635645</p><p>longitude: 17.61685398</p></section>" });
+google.maps.event.addListener(marker_5654, 'click', function() { infowindow_5654.open(map,marker_5654); });
+
+var marker_5676 = new google.maps.Marker({
+ position: { lat: 59.87371777, lng: 17.66449739 },
+ map: map,
+ title: "id: 5676",
+ icon: circleIcon
+});
+var infowindow_5676 = new google.maps.InfoWindow({ content: "<section><p>id: 5676</p><p>type: Lägenhet</p><p>location: Gränby</p><p>address: Tövädersgatan 15A</p><p>date: 2013-11-14</p><p>asked_price: 1375000.0</p><p>price: 1700000.0</p><p>rooms: 2.0</p><p>area: 61.0</p><p>rent: 2460.0</p><p>latitude: 59.87371777</p><p>longitude: 17.66449739</p></section>" });
+google.maps.event.addListener(marker_5676, 'click', function() { infowindow_5676.open(map,marker_5676); });
+
+var marker_5679 = new google.maps.Marker({
+ position: { lat: 59.86343305, lng: 17.67877662 },
+ map: map,
+ title: "id: 5679",
+ icon: circleIcon
+});
+var infowindow_5679 = new google.maps.InfoWindow({ content: "<section><p>id: 5679</p><p>type: Lägenhet</p><p>location: Salabacke</p><p>address: Murargatan 27</p><p>date: 2013-11-14</p><p>asked_price: 1395000.0</p><p>price: 1510000.0</p><p>rooms: 2.5</p><p>area: 64.3</p><p>rent: 2157.0</p><p>latitude: 59.86343305</p><p>longitude: 17.67877662</p></section>" });
+google.maps.event.addListener(marker_5679, 'click', function() { infowindow_5679.open(map,marker_5679); });
+
+var marker_5689 = new google.maps.Marker({
+ position: { lat: 59.86382631, lng: 17.67763832 },
+ map: map,
+ title: "id: 5689",
+ icon: circleIcon
+});
+var infowindow_5689 = new google.maps.InfoWindow({ content: "<section><p>id: 5689</p><p>type: Lägenhet</p><p>location: Salabacke</p><p>address: Murargatan 31</p><p>date: 2013-11-14</p><p>asked_price: 1100000.0</p><p>price: 1485000.0</p><p>rooms: 2.0</p><p>area: 64.3</p><p>rent: 2278.0</p><p>latitude: 59.86382631</p><p>longitude: 17.67763832</p></section>" });
+google.maps.event.addListener(marker_5689, 'click', function() { infowindow_5689.open(map,marker_5689); });
+
+var marker_5698 = new google.maps.Marker({
+ position: { lat: 59.8612945, lng: 17.6332185 },
+ map: map,
+ title: "id: 5698",
+ icon: circleIcon
+});
+var infowindow_5698 = new google.maps.InfoWindow({ content: "<section><p>id: 5698</p><p>type: Lägenhet</p><p>location: Innerstaden</p><p>address: Linnégatan 3</p><p>date: 2013-11-13</p><p>asked_price: 2195000.0</p><p>price: 2100000.0</p><p>rooms: 2.0</p><p>area: 61.0</p><p>rent: 2792.0</p><p>latitude: 59.8612945</p><p>longitude: 17.6332185</p></section>" });
+google.maps.event.addListener(marker_5698, 'click', function() { infowindow_5698.open(map,marker_5698); });
+
+var marker_5723 = new google.maps.Marker({
+ position: { lat: 59.87365074, lng: 17.67527943 },
+ map: map,
+ title: "id: 5723",
+ icon: circleIcon
+});
+var infowindow_5723 = new google.maps.InfoWindow({ content: "<section><p>id: 5723</p><p>type: Lägenhet</p><p>location: Sala Backe</p><p>address: Johannesbäcksgatan 86B</p><p>date: 2013-11-08</p><p>asked_price: 1375000.0</p><p>price: 1525000.0</p><p>rooms: 2.0</p><p>area: 58.1</p><p>rent: 2807.0</p><p>latitude: 59.87365074</p><p>longitude: 17.67527943</p></section>" });
+google.maps.event.addListener(marker_5723, 'click', function() { infowindow_5723.open(map,marker_5723); });
+
+var marker_5726 = new google.maps.Marker({
+ position: { lat: 59.8659695, lng: 17.6456352 },
+ map: map,
+ title: "id: 5726",
+ icon: circleIcon
+});
+var infowindow_5726 = new google.maps.InfoWindow({ content: "<section><p>id: 5726</p><p>type: Lägenhet</p><p>location: Höganäs</p><p>address: Sankt Olofsgatan 62B</p><p>date: 2013-11-08</p><p>asked_price: 1745000.0</p><p>price: 1900000.0</p><p>rooms: 2.0</p><p>area: 60.5</p><p>rent: 2424.0</p><p>latitude: 59.8659695</p><p>longitude: 17.6456352</p></section>" });
+google.maps.event.addListener(marker_5726, 'click', function() { infowindow_5726.open(map,marker_5726); });
+
+var marker_5738 = new google.maps.Marker({
+ position: { lat: 59.86320895, lng: 17.61385421 },
+ map: map,
+ title: "id: 5738",
+ icon: circleIcon
+});
+var infowindow_5738 = new google.maps.InfoWindow({ content: "<section><p>id: 5738</p><p>type: Lägenhet</p><p>location: Luthagen</p><p>address: Börjegatan 31A</p><p>date: 2013-11-07</p><p>asked_price: 1850000.0</p><p>price: 1850000.0</p><p>rooms: 2.0</p><p>area: 59.5</p><p>rent: 2453.0</p><p>latitude: 59.86320895</p><p>longitude: 17.61385421</p></section>" });
+google.maps.event.addListener(marker_5738, 'click', function() { infowindow_5738.open(map,marker_5738); });
+
+var marker_5789 = new google.maps.Marker({
+ position: { lat: 59.87040831, lng: 17.65915234 },
+ map: map,
+ title: "id: 5789",
+ icon: circleIcon
+});
+var infowindow_5789 = new google.maps.InfoWindow({ content: "<section><p>id: 5789</p><p>type: Lägenhet</p><p>location: Gränby</p><p>address: Blixtgatan 15</p><p>date: 2013-10-31</p><p>asked_price: 1290000.0</p><p>price: 1450000.0</p><p>rooms: 2.0</p><p>area: 61.5</p><p>rent: 2811.0</p><p>latitude: 59.87040831</p><p>longitude: 17.65915234</p></section>" });
+google.maps.event.addListener(marker_5789, 'click', function() { infowindow_5789.open(map,marker_5789); });
+
+var marker_5842 = new google.maps.Marker({
+ position: { lat: 59.86281076, lng: 17.67581392 },
+ map: map,
+ title: "id: 5842",
+ icon: circleIcon
+});
+var infowindow_5842 = new google.maps.InfoWindow({ content: "<section><p>id: 5842</p><p>type: Lägenhet</p><p>location: Salabacke</p><p>address: Murargatan 17</p><p>date: 2013-10-25</p><p>asked_price: 1495000.0</p><p>price: 1690000.0</p><p>rooms: 2.0</p><p>area: 62.5</p><p>rent: 2584.0</p><p>latitude: 59.86281076</p><p>longitude: 17.67581392</p></section>" });
+google.maps.event.addListener(marker_5842, 'click', function() { infowindow_5842.open(map,marker_5842); });
+
+var marker_5898 = new google.maps.Marker({
+ position: { lat: 59.87371777, lng: 17.66449739 },
+ map: map,
+ title: "id: 5898",
+ icon: circleIcon
+});
+var infowindow_5898 = new google.maps.InfoWindow({ content: "<section><p>id: 5898</p><p>type: Lägenhet</p><p>location: Gränby</p><p>address: Tövädersgatan 15A</p><p>date: 2013-10-16</p><p>asked_price: 1295000.0</p><p>price: 1770000.0</p><p>rooms: 2.0</p><p>area: 61.0</p><p>rent: 2578.0</p><p>latitude: 59.87371777</p><p>longitude: 17.66449739</p></section>" });
+google.maps.event.addListener(marker_5898, 'click', function() { infowindow_5898.open(map,marker_5898); });
+
+var marker_5965 = new google.maps.Marker({
+ position: { lat: 59.86591388, lng: 17.63383606 },
+ map: map,
+ title: "id: 5965",
+ icon: circleIcon
+});
+var infowindow_5965 = new google.maps.InfoWindow({ content: "<section><p>id: 5965</p><p>type: Lägenhet</p><p>location: Svartbäcken</p><p>address: Timmermansgatan 3D</p><p>date: 2013-10-04</p><p>asked_price: 1695000.0</p><p>price: 1820000.0</p><p>rooms: 2.0</p><p>area: 63.8</p><p>rent: 2687.0</p><p>latitude: 59.86591388</p><p>longitude: 17.63383606</p></section>" });
+google.maps.event.addListener(marker_5965, 'click', function() { infowindow_5965.open(map,marker_5965); });
+
+var marker_5977 = new google.maps.Marker({
+ position: { lat: 59.87278476, lng: 17.67649895 },
+ map: map,
+ title: "id: 5977",
+ icon: circleIcon
+});
+var infowindow_5977 = new google.maps.InfoWindow({ content: "<section><p>id: 5977</p><p>type: Lägenhet</p><p>location: Sala Backe</p><p>address: Johannesbäcksgatan 84B</p><p>date: 2013-10-04</p><p>asked_price: 1495000.0</p><p>price: 1525000.0</p><p>rooms: 2.0</p><p>area: 58.1</p><p>rent: 2977.0</p><p>latitude: 59.87278476</p><p>longitude: 17.67649895</p></section>" });
+google.maps.event.addListener(marker_5977, 'click', function() { infowindow_5977.open(map,marker_5977); });
+
+var marker_5987 = new google.maps.Marker({
+ position: { lat: 59.86591388, lng: 17.63383606 },
+ map: map,
+ title: "id: 5987",
+ icon: circleIcon
+});
+var infowindow_5987 = new google.maps.InfoWindow({ content: "<section><p>id: 5987</p><p>type: Lägenhet</p><p>location: Svartbäcken</p><p>address: Timmermansgatan 3D</p><p>date: 2013-10-03</p><p>asked_price: 1595000.0</p><p>price: 1885000.0</p><p>rooms: 2.0</p><p>area: 63.8</p><p>rent: 2687.0</p><p>latitude: 59.86591388</p><p>longitude: 17.63383606</p></section>" });
+google.maps.event.addListener(marker_5987, 'click', function() { infowindow_5987.open(map,marker_5987); });
+
+var marker_5995 = new google.maps.Marker({
+ position: { lat: 59.86628066, lng: 17.67866892 },
+ map: map,
+ title: "id: 5995",
+ icon: circleIcon
+});
+var infowindow_5995 = new google.maps.InfoWindow({ content: "<section><p>id: 5995</p><p>type: Lägenhet</p><p>location: Sala Backe</p><p>address: Johannesbäcksgatan 34C</p><p>date: 2013-10-03</p><p>asked_price: 1395000.0</p><p>price: 1425000.0</p><p>rooms: 2.0</p><p>area: 63.0</p><p>rent: 2964.0</p><p>latitude: 59.86628066</p><p>longitude: 17.67866892</p></section>" });
+google.maps.event.addListener(marker_5995, 'click', function() { infowindow_5995.open(map,marker_5995); });
+
+var marker_6065 = new google.maps.Marker({
+ position: { lat: 59.8612498, lng: 17.650065 },
+ map: map,
+ title: "id: 6065",
+ icon: circleIcon
+});
+var infowindow_6065 = new google.maps.InfoWindow({ content: "<section><p>id: 6065</p><p>type: Lägenhet</p><p>location: Fålhagen</p><p>address: Väderkvarnsgatan 34B</p><p>date: 2013-09-23</p><p>asked_price: 1895000.0</p><p>price: 2110000.0</p><p>rooms: 2.0</p><p>area: 61.2</p><p>rent: 2712.0</p><p>latitude: 59.8612498</p><p>longitude: 17.650065</p></section>" });
+google.maps.event.addListener(marker_6065, 'click', function() { infowindow_6065.open(map,marker_6065); });
+
+var marker_6229 = new google.maps.Marker({
+ position: { lat: 59.8605078, lng: 17.6163754 },
+ map: map,
+ title: "id: 6229",
+ icon: circleIcon
+});
+var infowindow_6229 = new google.maps.InfoWindow({ content: "<section><p>id: 6229</p><p>type: Lägenhet</p><p>location: Luthagen</p><p>address: Bredmansgatan 4B</p><p>date: 2013-08-30</p><p>asked_price: 1690000.0</p><p>price: 1970000.0</p><p>rooms: 2.0</p><p>area: 59.0</p><p>rent: 2893.0</p><p>latitude: 59.8605078</p><p>longitude: 17.6163754</p></section>" });
+google.maps.event.addListener(marker_6229, 'click', function() { infowindow_6229.open(map,marker_6229); });
+
+var marker_6237 = new google.maps.Marker({
+ position: { lat: 59.862782, lng: 17.675079 },
+ map: map,
+ title: "id: 6237",
+ icon: circleIcon
+});
+var infowindow_6237 = new google.maps.InfoWindow({ content: "<section><p>id: 6237</p><p>type: Lägenhet</p><p>location: Salabacke</p><p>address: Murargatan 15</p><p>date: 2013-08-30</p><p>asked_price: 1475000.0</p><p>price: 1710000.0</p><p>rooms: 2.0</p><p>area: 62.5</p><p>rent: 2584.0</p><p>latitude: 59.862782</p><p>longitude: 17.675079</p></section>" });
+google.maps.event.addListener(marker_6237, 'click', function() { infowindow_6237.open(map,marker_6237); });
+
+var marker_6329 = new google.maps.Marker({
+ position: { lat: 59.870083, lng: 17.657828 },
+ map: map,
+ title: "id: 6329",
+ icon: circleIcon
+});
+var infowindow_6329 = new google.maps.InfoWindow({ content: "<section><p>id: 6329</p><p>type: Lägenhet</p><p>location: Gränby</p><p>address: Blixtgatan 23</p><p>date: 2013-08-21</p><p>asked_price: 1375000.0</p><p>price: 1580000.0</p><p>rooms: 2.0</p><p>area: 62.5</p><p>rent: 2600.0</p><p>latitude: 59.870083</p><p>longitude: 17.657828</p></section>" });
+google.maps.event.addListener(marker_6329, 'click', function() { infowindow_6329.open(map,marker_6329); });
+
+var marker_6401 = new google.maps.Marker({
+ position: { lat: 59.87388618, lng: 17.673239 },
+ map: map,
+ title: "id: 6401",
+ icon: circleIcon
+});
+var infowindow_6401 = new google.maps.InfoWindow({ content: "<section><p>id: 6401</p><p>type: Lägenhet</p><p>location: Sala Backe</p><p>address: Ritargatan 1F</p><p>date: 2013-08-10</p><p>asked_price: 1295000.0</p><p>price: 1580000.0</p><p>rooms: 2.0</p><p>area: 59.4</p><p>rent: 2517.0</p><p>latitude: 59.87388618</p><p>longitude: 17.673239</p></section>" });
+google.maps.event.addListener(marker_6401, 'click', function() { infowindow_6401.open(map,marker_6401); });
+
+var marker_6458 = new google.maps.Marker({
+ position: { lat: 59.86423513, lng: 17.62280039 },
+ map: map,
+ title: "id: 6458",
+ icon: circleIcon
+});
+var infowindow_6458 = new google.maps.InfoWindow({ content: "<section><p>id: 6458</p><p>type: Lägenhet</p><p>location: Luthagen</p><p>address: Geijersgatan 12A</p><p>date: 2013-08-02</p><p>asked_price: 1495000.0</p><p>price: 1860000.0</p><p>rooms: 2.0</p><p>area: 72.0</p><p>rent: 2722.0</p><p>latitude: 59.86423513</p><p>longitude: 17.62280039</p></section>" });
+google.maps.event.addListener(marker_6458, 'click', function() { infowindow_6458.open(map,marker_6458); });
+
+var marker_6552 = new google.maps.Marker({
+ position: { lat: 59.8605078, lng: 17.6163754 },
+ map: map,
+ title: "id: 6552",
+ icon: circleIcon
+});
+var infowindow_6552 = new google.maps.InfoWindow({ content: "<section><p>id: 6552</p><p>type: Lägenhet</p><p>location: Luthagen</p><p>address: Bredmansgatan 4B</p><p>date: 2013-07-10</p><p>asked_price: 1795000.0</p><p>price: 2010000.0</p><p>rooms: 2.5</p><p>area: 59.0</p><p>rent: 2893.0</p><p>latitude: 59.8605078</p><p>longitude: 17.6163754</p></section>" });
+google.maps.event.addListener(marker_6552, 'click', function() { infowindow_6552.open(map,marker_6552); });
+
+var marker_6612 = new google.maps.Marker({
+ position: { lat: 59.87271446, lng: 17.67069141 },
+ map: map,
+ title: "id: 6612",
+ icon: circleIcon
+});
+var infowindow_6612 = new google.maps.InfoWindow({ content: "<section><p>id: 6612</p><p>type: Lägenhet</p><p>location: Sala Backe</p><p>address: Källparksgatan 2</p><p>date: 2013-06-21</p><p>asked_price: 1375000.0</p><p>price: 1650000.0</p><p>rooms: 2.0</p><p>area: 59.2</p><p>rent: 2354.0</p><p>latitude: 59.87271446</p><p>longitude: 17.67069141</p></section>" });
+google.maps.event.addListener(marker_6612, 'click', function() { infowindow_6612.open(map,marker_6612); });
+
+var marker_6618 = new google.maps.Marker({
+ position: { lat: 59.87036697, lng: 17.65890005 },
+ map: map,
+ title: "id: 6618",
+ icon: circleIcon
+});
+var infowindow_6618 = new google.maps.InfoWindow({ content: "<section><p>id: 6618</p><p>type: Lägenhet</p><p>location: Gränby</p><p>address: Blixtgatan 19</p><p>date: 2013-06-20</p><p>asked_price: 1150000.0</p><p>price: 1550000.0</p><p>rooms: 2.0</p><p>area: 66.5</p><p>rent: 2844.0</p><p>latitude: 59.87036697</p><p>longitude: 17.65890005</p></section>" });
+google.maps.event.addListener(marker_6618, 'click', function() { infowindow_6618.open(map,marker_6618); });
+
+var marker_6641 = new google.maps.Marker({
+ position: { lat: 59.8717, lng: 17.672354 },
+ map: map,
+ title: "id: 6641",
+ icon: circleIcon
+});
+var infowindow_6641 = new google.maps.InfoWindow({ content: "<section><p>id: 6641</p><p>type: Lägenhet</p><p>location: Sala Backe</p><p>address: Källparksgatan 8D</p><p>date: 2013-06-19</p><p>asked_price: 1425000.0</p><p>price: 1570000.0</p><p>rooms: 2.0</p><p>area: 61.1</p><p>rent: 2777.0</p><p>latitude: 59.8717</p><p>longitude: 17.672354</p></section>" });
+google.maps.event.addListener(marker_6641, 'click', function() { infowindow_6641.open(map,marker_6641); });
+
+var marker_6693 = new google.maps.Marker({
+ position: { lat: 59.86192233, lng: 17.62356162 },
+ map: map,
+ title: "id: 6693",
+ icon: circleIcon
+});
+var infowindow_6693 = new google.maps.InfoWindow({ content: "<section><p>id: 6693</p><p>type: Lägenhet</p><p>location: Främre Luthagen</p><p>address: Fredsgatan 4B</p><p>date: 2013-06-08</p><p>asked_price: 1875000.0</p><p>price: 1960000.0</p><p>rooms: 2.0</p><p>area: 59.0</p><p>rent: 2440.0</p><p>latitude: 59.86192233</p><p>longitude: 17.62356162</p></section>" });
+google.maps.event.addListener(marker_6693, 'click', function() { infowindow_6693.open(map,marker_6693); });
+
+var marker_6717 = new google.maps.Marker({
+ position: { lat: 59.8601286, lng: 17.6506989 },
+ map: map,
+ title: "id: 6717",
+ icon: circleIcon
+});
+var infowindow_6717 = new google.maps.InfoWindow({ content: "<section><p>id: 6717</p><p>type: Lägenhet</p><p>location: Fålhagen</p><p>address: Väderkvarnsgatan 31A</p><p>date: 2013-06-05</p><p>asked_price: 1950000.0</p><p>price: 1950000.0</p><p>rooms: 2.0</p><p>area: 63.5</p><p>rent: 2858.0</p><p>latitude: 59.8601286</p><p>longitude: 17.6506989</p></section>" });
+google.maps.event.addListener(marker_6717, 'click', function() { infowindow_6717.open(map,marker_6717); });
+
+var marker_6773 = new google.maps.Marker({
+ position: { lat: 59.876186, lng: 17.619125 },
+ map: map,
+ title: "id: 6773",
+ icon: circleIcon
+});
+var infowindow_6773 = new google.maps.InfoWindow({ content: "<section><p>id: 6773</p><p>type: Lägenhet</p><p>location: Tuna Backar</p><p>address: Väpnargatan 9B</p><p>date: 2013-05-29</p><p>asked_price: 1450000.0</p><p>price: 1650000.0</p><p>rooms: 2.0</p><p>area: 64.5</p><p>rent: 2601.0</p><p>latitude: 59.876186</p><p>longitude: 17.619125</p></section>" });
+google.maps.event.addListener(marker_6773, 'click', function() { infowindow_6773.open(map,marker_6773); });
+
+var marker_6774 = new google.maps.Marker({
+ position: { lat: 59.8641485, lng: 17.6722524 },
+ map: map,
+ title: "id: 6774",
+ icon: circleIcon
+});
+var infowindow_6774 = new google.maps.InfoWindow({ content: "<section><p>id: 6774</p><p>type: Lägenhet</p><p>location: Salabacke</p><p>address: Apelgatan 7D</p><p>date: 2013-05-28</p><p>asked_price: 1495000.0</p><p>price: 1710000.0</p><p>rooms: 2.0</p><p>area: 59.5</p><p>rent: 2946.0</p><p>latitude: 59.8641485</p><p>longitude: 17.6722524</p></section>" });
+google.maps.event.addListener(marker_6774, 'click', function() { infowindow_6774.open(map,marker_6774); });
+
+var marker_6877 = new google.maps.Marker({
+ position: { lat: 59.861419, lng: 17.6549041 },
+ map: map,
+ title: "id: 6877",
+ icon: circleIcon
+});
+var infowindow_6877 = new google.maps.InfoWindow({ content: "<section><p>id: 6877</p><p>type: Lägenhet</p><p>location: Fålhagen</p><p>address: Frodegatan 19A</p><p>date: 2013-05-14</p><p>asked_price: 1875000.0</p><p>price: 1875000.0</p><p>rooms: 2.5</p><p>area: 61.0</p><p>rent: 2994.0</p><p>latitude: 59.861419</p><p>longitude: 17.6549041</p></section>" });
+google.maps.event.addListener(marker_6877, 'click', function() { infowindow_6877.open(map,marker_6877); });
+
+var marker_6960 = new google.maps.Marker({
+ position: { lat: 59.86255066, lng: 17.67199689 },
+ map: map,
+ title: "id: 6960",
+ icon: circleIcon
+});
+var infowindow_6960 = new google.maps.InfoWindow({ content: "<section><p>id: 6960</p><p>type: Lägenhet</p><p>location: Sala Backe</p><p>address: Byggmästargatan 15B</p><p>date: 2013-04-26</p><p>asked_price: 1295000.0</p><p>price: 1475000.0</p><p>rooms: 2.0</p><p>area: 60.5</p><p>rent: 2744.0</p><p>latitude: 59.86255066</p><p>longitude: 17.67199689</p></section>" });
+google.maps.event.addListener(marker_6960, 'click', function() { infowindow_6960.open(map,marker_6960); });
+
+var marker_6965 = new google.maps.Marker({
+ position: { lat: 59.86167653, lng: 17.67412579 },
+ map: map,
+ title: "id: 6965",
+ icon: circleIcon
+});
+var infowindow_6965 = new google.maps.InfoWindow({ content: "<section><p>id: 6965</p><p>type: Lägenhet</p><p>location: Sala Backe</p><p>address: Murargatan 1</p><p>date: 2013-04-26</p><p>asked_price: 1495000.0</p><p>price: 1640000.0</p><p>rooms: 2.0</p><p>area: 62.5</p><p>rent: 2584.0</p><p>latitude: 59.86167653</p><p>longitude: 17.67412579</p></section>" });
+google.maps.event.addListener(marker_6965, 'click', function() { infowindow_6965.open(map,marker_6965); });
+
+var marker_6972 = new google.maps.Marker({
+ position: { lat: 59.8623197, lng: 17.6524483 },
+ map: map,
+ title: "id: 6972",
+ icon: circleIcon
+});
+var infowindow_6972 = new google.maps.InfoWindow({ content: "<section><p>id: 6972</p><p>type: Lägenhet</p><p>location: Fålhagen</p><p>address: Hjalmar Brantingsgatan 9A</p><p>date: 2013-04-26</p><p>asked_price: 1825000.0</p><p>price: 1950000.0</p><p>rooms: 2.5</p><p>area: 58.6</p><p>rent: 2976.0</p><p>latitude: 59.8623197</p><p>longitude: 17.6524483</p></section>" });
+google.maps.event.addListener(marker_6972, 'click', function() { infowindow_6972.open(map,marker_6972); });
+
+var marker_7013 = new google.maps.Marker({
+ position: { lat: 59.85598157, lng: 17.6203871 },
+ map: map,
+ title: "id: 7013",
+ icon: circleIcon
+});
+var infowindow_7013 = new google.maps.InfoWindow({ content: "<section><p>id: 7013</p><p>type: Lägenhet</p><p>location: Luthagen</p><p>address: Sankt Johannesgatan 31B</p><p>date: 2013-04-19</p><p>asked_price: 2200000.0</p><p>price: 2350000.0</p><p>rooms: 2.0</p><p>area: 62.0</p><p>rent: 1880.0</p><p>latitude: 59.85598157</p><p>longitude: 17.6203871</p></section>" });
+google.maps.event.addListener(marker_7013, 'click', function() { infowindow_7013.open(map,marker_7013); });
+
+var marker_7019 = new google.maps.Marker({
+ position: { lat: 59.86382631, lng: 17.67763832 },
+ map: map,
+ title: "id: 7019",
+ icon: circleIcon
+});
+var infowindow_7019 = new google.maps.InfoWindow({ content: "<section><p>id: 7019</p><p>type: Lägenhet</p><p>location: Sala Backe</p><p>address: Murargatan 31</p><p>date: 2013-04-19</p><p>asked_price: 1495000.0</p><p>price: 1670000.0</p><p>rooms: 2.0</p><p>area: 64.3</p><p>rent: 2244.0</p><p>latitude: 59.86382631</p><p>longitude: 17.67763832</p></section>" });
+google.maps.event.addListener(marker_7019, 'click', function() { infowindow_7019.open(map,marker_7019); });
+
+var marker_7049 = new google.maps.Marker({
+ position: { lat: 59.87700056, lng: 17.61963933 },
+ map: map,
+ title: "id: 7049",
+ icon: circleIcon
+});
+var infowindow_7049 = new google.maps.InfoWindow({ content: "<section><p>id: 7049</p><p>type: Lägenhet</p><p>location: Tuna Backar</p><p>address: Väpnargatan 9A</p><p>date: 2013-04-14</p><p>asked_price: 1395000.0</p><p>price: 1525000.0</p><p>rooms: 2.0</p><p>area: 63.5</p><p>rent: 2752.0</p><p>latitude: 59.87700056</p><p>longitude: 17.61963933</p></section>" });
+google.maps.event.addListener(marker_7049, 'click', function() { infowindow_7049.open(map,marker_7049); });
+
+var marker_7084 = new google.maps.Marker({
+ position: { lat: 59.87462152, lng: 17.64810047 },
+ map: map,
+ title: "id: 7084",
+ icon: circleIcon
+});
+var infowindow_7084 = new google.maps.InfoWindow({ content: "<section><p>id: 7084</p><p>type: Lägenhet</p><p>location: Löten</p><p>address: Stagneliusgatan 15</p><p>date: 2013-04-12</p><p>asked_price: 1195000.0</p><p>price: 1515000.0</p><p>rooms: 2.0</p><p>area: 65.5</p><p>rent: 2686.0</p><p>latitude: 59.87462152</p><p>longitude: 17.64810047</p></section>" });
+google.maps.event.addListener(marker_7084, 'click', function() { infowindow_7084.open(map,marker_7084); });
+
+var marker_7105 = new google.maps.Marker({
+ position: { lat: 59.86535093, lng: 17.66826175 },
+ map: map,
+ title: "id: 7105",
+ icon: circleIcon
+});
+var infowindow_7105 = new google.maps.InfoWindow({ content: "<section><p>id: 7105</p><p>type: Lägenhet</p><p>location: Sala Backe</p><p>address: Byggmästargatan 5B</p><p>date: 2013-04-04</p><p>asked_price: 1325000.0</p><p>price: 1525000.0</p><p>rooms: 2.0</p><p>area: 60.0</p><p>rent: 2642.0</p><p>latitude: 59.86535093</p><p>longitude: 17.66826175</p></section>" });
+google.maps.event.addListener(marker_7105, 'click', function() { infowindow_7105.open(map,marker_7105); });
+
+var marker_7159 = new google.maps.Marker({
+ position: { lat: 59.8755955, lng: 17.61734835 },
+ map: map,
+ title: "id: 7159",
+ icon: circleIcon
+});
+var infowindow_7159 = new google.maps.InfoWindow({ content: "<section><p>id: 7159</p><p>type: Lägenhet</p><p>location: Tuna Backar</p><p>address: Väpnargatan 17A</p><p>date: 2013-03-25</p><p>asked_price: 1450000.0</p><p>price: 1650000.0</p><p>rooms: 2.0</p><p>area: 64.5</p><p>rent: 2601.0</p><p>latitude: 59.8755955</p><p>longitude: 17.61734835</p></section>" });
+google.maps.event.addListener(marker_7159, 'click', function() { infowindow_7159.open(map,marker_7159); });
+
+var marker_7186 = new google.maps.Marker({
+ position: { lat: 59.86446907, lng: 17.67283632 },
+ map: map,
+ title: "id: 7186",
+ icon: circleIcon
+});
+var infowindow_7186 = new google.maps.InfoWindow({ content: "<section><p>id: 7186</p><p>type: Lägenhet</p><p>location: Sala Backe</p><p>address: Apelgatan 9C</p><p>date: 2013-03-20</p><p>asked_price: 1255000.0</p><p>price: 1730000.0</p><p>rooms: 2.0</p><p>area: 59.5</p><p>rent: 2946.0</p><p>latitude: 59.86446907</p><p>longitude: 17.67283632</p></section>" });
+google.maps.event.addListener(marker_7186, 'click', function() { infowindow_7186.open(map,marker_7186); });
+
+var marker_7218 = new google.maps.Marker({
+ position: { lat: 59.865959, lng: 17.646747 },
+ map: map,
+ title: "id: 7218",
+ icon: circleIcon
+});
+var infowindow_7218 = new google.maps.InfoWindow({ content: "<section><p>id: 7218</p><p>type: Lägenhet</p><p>location: Höganäs</p><p>address: Sankt Olofsgatan 43D</p><p>date: 2013-03-15</p><p>asked_price: 1490000.0</p><p>price: 1770000.0</p><p>rooms: 2.5</p><p>area: 61.0</p><p>rent: 2966.0</p><p>latitude: 59.865959</p><p>longitude: 17.646747</p></section>" });
+google.maps.event.addListener(marker_7218, 'click', function() { infowindow_7218.open(map,marker_7218); });
+
+var marker_7219 = new google.maps.Marker({
+ position: { lat: 59.86542446, lng: 17.64255724 },
+ map: map,
+ title: "id: 7219",
+ icon: circleIcon
+});
+var infowindow_7219 = new google.maps.InfoWindow({ content: "<section><p>id: 7219</p><p>type: Lägenhet</p><p>location: Centrum</p><p>address: Höganäsgatan 11B</p><p>date: 2013-03-15</p><p>asked_price: 1795000.0</p><p>price: 2160000.0</p><p>rooms: 2.0</p><p>area: 66.0</p><p>rent: 2413.0</p><p>latitude: 59.86542446</p><p>longitude: 17.64255724</p></section>" });
+google.maps.event.addListener(marker_7219, 'click', function() { infowindow_7219.open(map,marker_7219); });
+
+var marker_7256 = new google.maps.Marker({
+ position: { lat: 59.865022, lng: 17.641196 },
+ map: map,
+ title: "id: 7256",
+ icon: circleIcon
+});
+var infowindow_7256 = new google.maps.InfoWindow({ content: "<section><p>id: 7256</p><p>type: Lägenhet</p><p>location: Höganäs</p><p>address: Höganäsgatan 6E</p><p>date: 2013-03-08</p><p>asked_price: 1795000.0</p><p>price: 1915000.0</p><p>rooms: 2.5</p><p>area: 67.7</p><p>rent: 2925.0</p><p>latitude: 59.865022</p><p>longitude: 17.641196</p></section>" });
+google.maps.event.addListener(marker_7256, 'click', function() { infowindow_7256.open(map,marker_7256); });
+
+var marker_7262 = new google.maps.Marker({
+ position: { lat: 59.8594824, lng: 17.6582764 },
+ map: map,
+ title: "id: 7262",
+ icon: circleIcon
+});
+var infowindow_7262 = new google.maps.InfoWindow({ content: "<section><p>id: 7262</p><p>type: Lägenhet</p><p>location: Fålhagen</p><p>address: Syréngatan 13</p><p>date: 2013-03-08</p><p>asked_price: 1695000.0</p><p>price: 1995000.0</p><p>rooms: 2.0</p><p>area: 60.0</p><p>rent: 2981.0</p><p>latitude: 59.8594824</p><p>longitude: 17.6582764</p></section>" });
+google.maps.event.addListener(marker_7262, 'click', function() { infowindow_7262.open(map,marker_7262); });
+
+var marker_7280 = new google.maps.Marker({
+ position: { lat: 59.87278476, lng: 17.67649895 },
+ map: map,
+ title: "id: 7280",
+ icon: circleIcon
+});
+var infowindow_7280 = new google.maps.InfoWindow({ content: "<section><p>id: 7280</p><p>type: Lägenhet</p><p>location: Sala Backe</p><p>address: Johannesbäcksgatan 84B</p><p>date: 2013-03-03</p><p>asked_price: 1250000.0</p><p>price: 1600000.0</p><p>rooms: 2.0</p><p>area: 58.1</p><p>rent: 2942.0</p><p>latitude: 59.87278476</p><p>longitude: 17.67649895</p></section>" });
+google.maps.event.addListener(marker_7280, 'click', function() { infowindow_7280.open(map,marker_7280); });
+
+var marker_7323 = new google.maps.Marker({
+ position: { lat: 59.85707868, lng: 17.64528996 },
+ map: map,
+ title: "id: 7323",
+ icon: circleIcon
+});
+var infowindow_7323 = new google.maps.InfoWindow({ content: "<section><p>id: 7323</p><p>type: Lägenhet</p><p>location: Centrum</p><p>address: Vretgränd 19</p><p>date: 2013-02-22</p><p>asked_price: 1550000.0</p><p>price: 1880000.0</p><p>rooms: 2.5</p><p>area: 64.0</p><p>rent: 2895.0</p><p>latitude: 59.85707868</p><p>longitude: 17.64528996</p></section>" });
+google.maps.event.addListener(marker_7323, 'click', function() { infowindow_7323.open(map,marker_7323); });
+
+var marker_7326 = new google.maps.Marker({
+ position: { lat: 59.86375879, lng: 17.67859856 },
+ map: map,
+ title: "id: 7326",
+ icon: circleIcon
+});
+var infowindow_7326 = new google.maps.InfoWindow({ content: "<section><p>id: 7326</p><p>type: Lägenhet</p><p>location: Salabacke</p><p>address: Murargatan 29</p><p>date: 2013-02-21</p><p>asked_price: 1295000.0</p><p>price: 1555000.0</p><p>rooms: 2.0</p><p>area: 64.3</p><p>rent: 2202.0</p><p>latitude: 59.86375879</p><p>longitude: 17.67859856</p></section>" });
+google.maps.event.addListener(marker_7326, 'click', function() { infowindow_7326.open(map,marker_7326); });
+
+var marker_7330 = new google.maps.Marker({
+ position: { lat: 59.8618822, lng: 17.6519316 },
+ map: map,
+ title: "id: 7330",
+ icon: circleIcon
+});
+var infowindow_7330 = new google.maps.InfoWindow({ content: "<section><p>id: 7330</p><p>type: Lägenhet</p><p>location: Fålhagen</p><p>address: Norrtäljegatan 16B</p><p>date: 2013-02-21</p><p>asked_price: 1650000.0</p><p>price: 1920000.0</p><p>rooms: 2.0</p><p>area: 59.1</p><p>rent: 2696.0</p><p>latitude: 59.8618822</p><p>longitude: 17.6519316</p></section>" });
+google.maps.event.addListener(marker_7330, 'click', function() { infowindow_7330.open(map,marker_7330); });
+
+var marker_7331 = new google.maps.Marker({
+ position: { lat: 59.8620004, lng: 17.6224361 },
+ map: map,
+ title: "id: 7331",
+ icon: circleIcon
+});
+var infowindow_7331 = new google.maps.InfoWindow({ content: "<section><p>id: 7331</p><p>type: Lägenhet</p><p>location: Luthagen</p><p>address: Luthagsesplanaden 17A</p><p>date: 2013-02-21</p><p>asked_price: 1950000.0</p><p>price: 2225000.0</p><p>rooms: 2.0</p><p>area: 67.5</p><p>rent: 2357.0</p><p>latitude: 59.8620004</p><p>longitude: 17.6224361</p></section>" });
+google.maps.event.addListener(marker_7331, 'click', function() { infowindow_7331.open(map,marker_7331); });
+
+var marker_7428 = new google.maps.Marker({
+ position: { lat: 59.8630738, lng: 17.612893 },
+ map: map,
+ title: "id: 7428",
+ icon: circleIcon
+});
+var infowindow_7428 = new google.maps.InfoWindow({ content: "<section><p>id: 7428</p><p>type: Lägenhet</p><p>location: Luthagen</p><p>address: Börjegatan 38B</p><p>date: 2013-02-07</p><p>asked_price: 1550000.0</p><p>price: 1805000.0</p><p>rooms: 2.0</p><p>area: 59.9</p><p>rent: 2382.0</p><p>latitude: 59.8630738</p><p>longitude: 17.612893</p></section>" });
+google.maps.event.addListener(marker_7428, 'click', function() { infowindow_7428.open(map,marker_7428); });
+
+var marker_7459 = new google.maps.Marker({
+ position: { lat: 59.86281076, lng: 17.67581392 },
+ map: map,
+ title: "id: 7459",
+ icon: circleIcon
+});
+var infowindow_7459 = new google.maps.InfoWindow({ content: "<section><p>id: 7459</p><p>type: Lägenhet</p><p>location: Sala Backe</p><p>address: Murargatan 17</p><p>date: 2013-02-01</p><p>asked_price: 1425000.0</p><p>price: 1640000.0</p><p>rooms: 2.0</p><p>area: 62.5</p><p>rent: 2584.0</p><p>latitude: 59.86281076</p><p>longitude: 17.67581392</p></section>" });
+google.maps.event.addListener(marker_7459, 'click', function() { infowindow_7459.open(map,marker_7459); });
+
+var marker_7503 = new google.maps.Marker({
+ position: { lat: 59.85583975, lng: 17.64934665 },
+ map: map,
+ title: "id: 7503",
+ icon: circleIcon
+});
+var infowindow_7503 = new google.maps.InfoWindow({ content: "<section><p>id: 7503</p><p>type: Lägenhet</p><p>location: Innerstaden</p><p>address: Kungsgatan 54A</p><p>date: 2013-01-23</p><p>asked_price: 1675000.0</p><p>price: 1575000.0</p><p>rooms: 2.0</p><p>area: 67.0</p><p>rent: 2968.0</p><p>latitude: 59.85583975</p><p>longitude: 17.64934665</p></section>" });
+google.maps.event.addListener(marker_7503, 'click', function() { infowindow_7503.open(map,marker_7503); });
+
+var marker_7510 = new google.maps.Marker({
+ position: { lat: 59.87903667, lng: 17.62367953 },
+ map: map,
+ title: "id: 7510",
+ icon: circleIcon
+});
+var infowindow_7510 = new google.maps.InfoWindow({ content: "<section><p>id: 7510</p><p>type: Lägenhet</p><p>location: Svartbäcken</p><p>address: Sandgropsgatan 3</p><p>date: 2013-01-22</p><p>asked_price: 1375000.0</p><p>price: 1375000.0</p><p>rooms: 2.0</p><p>area: 67.5</p><p>rent: 0.0</p><p>latitude: 59.87903667</p><p>longitude: 17.62367953</p></section>" });
+google.maps.event.addListener(marker_7510, 'click', function() { infowindow_7510.open(map,marker_7510); });
+
+var marker_7571 = new google.maps.Marker({
+ position: { lat: 59.8632937, lng: 17.6254263 },
+ map: map,
+ title: "id: 7571",
+ icon: circleIcon
+});
+var infowindow_7571 = new google.maps.InfoWindow({ content: "<section><p>id: 7571</p><p>type: Lägenhet</p><p>location: Främre Luthagen</p><p>address: Luthagsesplanaden 9A</p><p>date: 2013-01-10</p><p>asked_price: 1595000.0</p><p>price: 1800000.0</p><p>rooms: 2.0</p><p>area: 63.1</p><p>rent: 2972.0</p><p>latitude: 59.8632937</p><p>longitude: 17.6254263</p></section>" });
+google.maps.event.addListener(marker_7571, 'click', function() { infowindow_7571.open(map,marker_7571); });
+
+var marker_7653 = new google.maps.Marker({
+ position: { lat: 59.87337951, lng: 17.62049569 },
+ map: map,
+ title: "id: 7653",
+ icon: circleIcon
+});
+var infowindow_7653 = new google.maps.InfoWindow({ content: "<section><p>id: 7653</p><p>type: Lägenhet</p><p>location: Svartbäcken</p><p>address: Folkungagatan 22A</p><p>date: 2012-12-07</p><p>asked_price: 1495000.0</p><p>price: 1580000.0</p><p>rooms: 2.0</p><p>area: 65.5</p><p>rent: 2677.0</p><p>latitude: 59.87337951</p><p>longitude: 17.62049569</p></section>" });
+google.maps.event.addListener(marker_7653, 'click', function() { infowindow_7653.open(map,marker_7653); });
+
+var marker_7678 = new google.maps.Marker({
+ position: { lat: 59.8634416, lng: 17.6210588 },
+ map: map,
+ title: "id: 7678",
+ icon: circleIcon
+});
+var infowindow_7678 = new google.maps.InfoWindow({ content: "<section><p>id: 7678</p><p>type: Lägenhet</p><p>location: Luthagen</p><p>address: Geijersgatan 18B</p><p>date: 2012-12-01</p><p>asked_price: 2050000.0</p><p>price: 2200000.0</p><p>rooms: 2.0</p><p>area: 74.0</p><p>rent: 2878.0</p><p>latitude: 59.8634416</p><p>longitude: 17.6210588</p></section>" });
+google.maps.event.addListener(marker_7678, 'click', function() { infowindow_7678.open(map,marker_7678); });
+
+var marker_7716 = new google.maps.Marker({
+ position: { lat: 59.86461005, lng: 17.66922009 },
+ map: map,
+ title: "id: 7716",
+ icon: circleIcon
+});
+var infowindow_7716 = new google.maps.InfoWindow({ content: "<section><p>id: 7716</p><p>type: Lägenhet</p><p>location: Salabacke</p><p>address: Byggmästargatan 9A</p><p>date: 2012-11-23</p><p>asked_price: 1195000.0</p><p>price: 1400000.0</p><p>rooms: 2.0</p><p>area: 63.0</p><p>rent: 2755.0</p><p>latitude: 59.86461005</p><p>longitude: 17.66922009</p></section>" });
+google.maps.event.addListener(marker_7716, 'click', function() { infowindow_7716.open(map,marker_7716); });
+
+var marker_7727 = new google.maps.Marker({
+ position: { lat: 59.87365074, lng: 17.67527943 },
+ map: map,
+ title: "id: 7727",
+ icon: circleIcon
+});
+var infowindow_7727 = new google.maps.InfoWindow({ content: "<section><p>id: 7727</p><p>type: Lägenhet</p><p>location: Salabacke</p><p>address: Johannesbäcksgatan 86B</p><p>date: 2012-11-22</p><p>asked_price: 1250000.0</p><p>price: 1400000.0</p><p>rooms: 2.0</p><p>area: 58.1</p><p>rent: 2942.0</p><p>latitude: 59.87365074</p><p>longitude: 17.67527943</p></section>" });
+google.maps.event.addListener(marker_7727, 'click', function() { infowindow_7727.open(map,marker_7727); });
+
+var marker_7741 = new google.maps.Marker({
+ position: { lat: 59.86026462, lng: 17.63009885 },
+ map: map,
+ title: "id: 7741",
+ icon: circleIcon
+});
+var infowindow_7741 = new google.maps.InfoWindow({ content: "<section><p>id: 7741</p><p>type: Lägenhet</p><p>location: Centrum</p><p>address: Sysslomansgatan 9A</p><p>date: 2012-11-19</p><p>asked_price: 2250000.0</p><p>price: 2860000.0</p><p>rooms: 2.0</p><p>area: 68.0</p><p>rent: 1944.0</p><p>latitude: 59.86026462</p><p>longitude: 17.63009885</p></section>" });
+google.maps.event.addListener(marker_7741, 'click', function() { infowindow_7741.open(map,marker_7741); });
+
+var marker_7743 = new google.maps.Marker({
+ position: { lat: 59.8593197, lng: 17.6508079 },
+ map: map,
+ title: "id: 7743",
+ icon: circleIcon
+});
+var infowindow_7743 = new google.maps.InfoWindow({ content: "<section><p>id: 7743</p><p>type: Lägenhet</p><p>location: Innerstaden</p><p>address: Frodegatan 5F</p><p>date: 2012-11-19</p><p>asked_price: 2375000.0</p><p>price: 2375000.0</p><p>rooms: 2.0</p><p>area: 65.0</p><p>rent: 2991.0</p><p>latitude: 59.8593197</p><p>longitude: 17.6508079</p></section>" });
+google.maps.event.addListener(marker_7743, 'click', function() { infowindow_7743.open(map,marker_7743); });
+
+var marker_7795 = new google.maps.Marker({
+ position: { lat: 59.86423513, lng: 17.62280039 },
+ map: map,
+ title: "id: 7795",
+ icon: circleIcon
+});
+var infowindow_7795 = new google.maps.InfoWindow({ content: "<section><p>id: 7795</p><p>type: Lägenhet</p><p>location: Luthagen</p><p>address: Geijersgatan 12A</p><p>date: 2012-11-10</p><p>asked_price: 1495000.0</p><p>price: 1605000.0</p><p>rooms: 2.0</p><p>area: 64.5</p><p>rent: 2363.0</p><p>latitude: 59.86423513</p><p>longitude: 17.62280039</p></section>" });
+google.maps.event.addListener(marker_7795, 'click', function() { infowindow_7795.open(map,marker_7795); });
+
+var marker_7876 = new google.maps.Marker({
+ position: { lat: 59.8717, lng: 17.672354 },
+ map: map,
+ title: "id: 7876",
+ icon: circleIcon
+});
+var infowindow_7876 = new google.maps.InfoWindow({ content: "<section><p>id: 7876</p><p>type: Lägenhet</p><p>location: Sala Backe</p><p>address: Källparksgatan 8D</p><p>date: 2012-10-28</p><p>asked_price: 1290000.0</p><p>price: 1460000.0</p><p>rooms: 2.0</p><p>area: 61.1</p><p>rent: 2649.0</p><p>latitude: 59.8717</p><p>longitude: 17.672354</p></section>" });
+google.maps.event.addListener(marker_7876, 'click', function() { infowindow_7876.open(map,marker_7876); });
+
+var marker_7905 = new google.maps.Marker({
+ position: { lat: 59.8643508, lng: 17.6551581 },
+ map: map,
+ title: "id: 7905",
+ icon: circleIcon
+});
+var infowindow_7905 = new google.maps.InfoWindow({ content: "<section><p>id: 7905</p><p>type: Lägenhet</p><p>location: Fålhagen</p><p>address: Petterslundsgatan 19</p><p>date: 2012-10-24</p><p>asked_price: 1445000.0</p><p>price: 1445000.0</p><p>rooms: 2.0</p><p>area: 61.3</p><p>rent: 2660.0</p><p>latitude: 59.8643508</p><p>longitude: 17.6551581</p></section>" });
+google.maps.event.addListener(marker_7905, 'click', function() { infowindow_7905.open(map,marker_7905); });
+
+var marker_7940 = new google.maps.Marker({
+ position: { lat: 59.86167653, lng: 17.67412579 },
+ map: map,
+ title: "id: 7940",
+ icon: circleIcon
+});
+var infowindow_7940 = new google.maps.InfoWindow({ content: "<section><p>id: 7940</p><p>type: Lägenhet</p><p>location: Sala Backe</p><p>address: Murargatan 7</p><p>date: 2012-10-17</p><p>asked_price: 1295000.0</p><p>price: 1500000.0</p><p>rooms: 2.0</p><p>area: 62.5</p><p>rent: 2584.0</p><p>latitude: 59.86167653</p><p>longitude: 17.67412579</p></section>" });
+google.maps.event.addListener(marker_7940, 'click', function() { infowindow_7940.open(map,marker_7940); });
+
+var marker_7963 = new google.maps.Marker({
+ position: { lat: 59.85573018, lng: 17.63854257 },
+ map: map,
+ title: "id: 7963",
+ icon: circleIcon
+});
+var infowindow_7963 = new google.maps.InfoWindow({ content: "<section><p>id: 7963</p><p>type: Lägenhet</p><p>location: Trädgårdsgatan</p><p>address: Trädgårdsgatan 16C</p><p>date: 2012-10-16</p><p>asked_price: 2275000.0</p><p>price: 1900000.0</p><p>rooms: 2.0</p><p>area: 67.0</p><p>rent: 2621.0</p><p>latitude: 59.85573018</p><p>longitude: 17.63854257</p></section>" });
+google.maps.event.addListener(marker_7963, 'click', function() { infowindow_7963.open(map,marker_7963); });
+
+var marker_7987 = new google.maps.Marker({
+ position: { lat: 59.856515, lng: 17.646653 },
+ map: map,
+ title: "id: 7987",
+ icon: circleIcon
+});
+var infowindow_7987 = new google.maps.InfoWindow({ content: "<section><p>id: 7987</p><p>type: Lägenhet</p><p>location: Bäverns Gränd</p><p>address: Bäverns Gränd 15A</p><p>date: 2012-10-12</p><p>asked_price: 1895000.0</p><p>price: 1925000.0</p><p>rooms: 2.0</p><p>area: 62.5</p><p>rent: 2951.0</p><p>latitude: 59.856515</p><p>longitude: 17.646653</p></section>" });
+google.maps.event.addListener(marker_7987, 'click', function() { infowindow_7987.open(map,marker_7987); });
+
+var marker_7990 = new google.maps.Marker({
+ position: { lat: 59.864585, lng: 17.669076 },
+ map: map,
+ title: "id: 7990",
+ icon: circleIcon
+});
+var infowindow_7990 = new google.maps.InfoWindow({ content: "<section><p>id: 7990</p><p>type: Lägenhet</p><p>location: Byggmästargatan</p><p>address: Byggmästargatan 9C</p><p>date: 2012-10-12</p><p>asked_price: 1375000.0</p><p>price: 1500000.0</p><p>rooms: 2.5</p><p>area: 66.0</p><p>rent: 2846.0</p><p>latitude: 59.864585</p><p>longitude: 17.669076</p></section>" });
+google.maps.event.addListener(marker_7990, 'click', function() { infowindow_7990.open(map,marker_7990); });
+
+var marker_8042 = new google.maps.Marker({
+ position: { lat: 59.8717, lng: 17.672354 },
+ map: map,
+ title: "id: 8042",
+ icon: circleIcon
+});
+var infowindow_8042 = new google.maps.InfoWindow({ content: "<section><p>id: 8042</p><p>type: Lägenhet</p><p>location: Sala Backe</p><p>address: Källparksgatan 8D</p><p>date: 2012-10-07</p><p>asked_price: 1250000.0</p><p>price: 1425000.0</p><p>rooms: 2.0</p><p>area: 60.8</p><p>rent: 2607.0</p><p>latitude: 59.8717</p><p>longitude: 17.672354</p></section>" });
+google.maps.event.addListener(marker_8042, 'click', function() { infowindow_8042.open(map,marker_8042); });
+
+var marker_8081 = new google.maps.Marker({
+ position: { lat: 59.87026044, lng: 17.65753708 },
+ map: map,
+ title: "id: 8081",
+ icon: circleIcon
+});
+var infowindow_8081 = new google.maps.InfoWindow({ content: "<section><p>id: 8081</p><p>type: Lägenhet</p><p>location: Gränby</p><p>address: Blixtgatan 27</p><p>date: 2012-09-28</p><p>asked_price: 1095000.0</p><p>price: 1410000.0</p><p>rooms: 2.0</p><p>area: 62.5</p><p>rent: 2611.0</p><p>latitude: 59.87026044</p><p>longitude: 17.65753708</p></section>" });
+google.maps.event.addListener(marker_8081, 'click', function() { infowindow_8081.open(map,marker_8081); });
+
+var marker_8103 = new google.maps.Marker({
+ position: { lat: 59.86124977, lng: 17.6172645 },
+ map: map,
+ title: "id: 8103",
+ icon: circleIcon
+});
+var infowindow_8103 = new google.maps.InfoWindow({ content: "<section><p>id: 8103</p><p>type: Lägenhet</p><p>location: Luthagen</p><p>address: Geijersgatan 25A</p><p>date: 2012-09-22</p><p>asked_price: 1890000.0</p><p>price: 1890000.0</p><p>rooms: 2.5</p><p>area: 65.0</p><p>rent: 2891.0</p><p>latitude: 59.86124977</p><p>longitude: 17.6172645</p></section>" });
+google.maps.event.addListener(marker_8103, 'click', function() { infowindow_8103.open(map,marker_8103); });
+
+var marker_8108 = new google.maps.Marker({
+ position: { lat: 59.87085292, lng: 17.65881995 },
+ map: map,
+ title: "id: 8108",
+ icon: circleIcon
+});
+var infowindow_8108 = new google.maps.InfoWindow({ content: "<section><p>id: 8108</p><p>type: Lägenhet</p><p>location: Gränby</p><p>address: Molngatan 29</p><p>date: 2012-09-21</p><p>asked_price: 1195000.0</p><p>price: 1400000.0</p><p>rooms: 2.0</p><p>area: 62.5</p><p>rent: 2567.0</p><p>latitude: 59.87085292</p><p>longitude: 17.65881995</p></section>" });
+google.maps.event.addListener(marker_8108, 'click', function() { infowindow_8108.open(map,marker_8108); });
+
+var marker_8122 = new google.maps.Marker({
+ position: { lat: 59.87126915, lng: 17.66050375 },
+ map: map,
+ title: "id: 8122",
+ icon: greenMakerIcon
+});
+var infowindow_8122 = new google.maps.InfoWindow({ content: "<section><p>id: 8122</p><p>type: Lägenhet</p><p>location: Gränby</p><p>address: Molngatan 19</p><p>date: 2012-09-19</p><p>asked_price: 1200000.0</p><p>price: 1300000.0</p><p>rooms: 2.0</p><p>area: 61.5</p><p>rent: 2677.0</p><p>latitude: 59.87126915</p><p>longitude: 17.66050375</p></section>" });
+google.maps.event.addListener(marker_8122, 'click', function() { infowindow_8122.open(map,marker_8122); });
+
+var marker_8161 = new google.maps.Marker({
+ position: { lat: 59.86496462, lng: 17.67334613 },
+ map: map,
+ title: "id: 8161",
+ icon: circleIcon
+});
+var infowindow_8161 = new google.maps.InfoWindow({ content: "<section><p>id: 8161</p><p>type: Lägenhet</p><p>location: Sala Backe</p><p>address: Verkmästargatan 5A</p><p>date: 2012-09-07</p><p>asked_price: 1250000.0</p><p>price: 1395000.0</p><p>rooms: 2.0</p><p>area: 61.5</p><p>rent: 2925.0</p><p>latitude: 59.86496462</p><p>longitude: 17.67334613</p></section>" });
+google.maps.event.addListener(marker_8161, 'click', function() { infowindow_8161.open(map,marker_8161); });
+
+var marker_8162 = new google.maps.Marker({
+ position: { lat: 59.8618822, lng: 17.6519316 },
+ map: map,
+ title: "id: 8162",
+ icon: circleIcon
+});
+var infowindow_8162 = new google.maps.InfoWindow({ content: "<section><p>id: 8162</p><p>type: Lägenhet</p><p>location: Fålhagen</p><p>address: Norrtäljegatan 16B</p><p>date: 2012-09-07</p><p>asked_price: 1645000.0</p><p>price: 1645000.0</p><p>rooms: 2.0</p><p>area: 59.1</p><p>rent: 2696.0</p><p>latitude: 59.8618822</p><p>longitude: 17.6519316</p></section>" });
+google.maps.event.addListener(marker_8162, 'click', function() { infowindow_8162.open(map,marker_8162); });
+
+var marker_8192 = new google.maps.Marker({
+ position: { lat: 59.8634072, lng: 17.6291718 },
+ map: map,
+ title: "id: 8192",
+ icon: circleIcon
+});
+var infowindow_8192 = new google.maps.InfoWindow({ content: "<section><p>id: 8192</p><p>type: Lägenhet</p><p>location: Främre Luthagen</p><p>address: Odensgatan 2B</p><p>date: 2012-09-02</p><p>asked_price: 1750000.0</p><p>price: 1890000.0</p><p>rooms: 2.5</p><p>area: 70.0</p><p>rent: 2373.0</p><p>latitude: 59.8634072</p><p>longitude: 17.6291718</p></section>" });
+google.maps.event.addListener(marker_8192, 'click', function() { infowindow_8192.open(map,marker_8192); });
+
+
+      } // end initMap
+    </script>
+    <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC_bDDqiXuZtYgGfkGZwuE-O_p2QyGqyJk&callback=initMap">
+    </script>
+  </body>
+</html>
