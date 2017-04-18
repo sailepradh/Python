@@ -7,8 +7,12 @@
 
 
 
+
+
 #### Some cool python stuffs
 
+
+```Python
 # Definition of radius
 r = 0.43
 
@@ -24,3 +28,4 @@ A = (math.pi)*r**2
 # Build printout
 print("Circumference: " + str(C))
 print("Area: " + str(A))
+```
